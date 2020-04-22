@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>纪惠de博客</title>
+  <icon>https://jihuistudy.github.io/icon.png</icon>
+  <subtitle>每一篇文件都是我成长的见证</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jihuistudy.github.io/"/>
+  <updated>2020-04-22T10:06:17.765Z</updated>
+  <id>https://jihuistudy.github.io/</id>
+  
+  <author>
+    <name>纪惠</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>怎么写文章</title>
+    <link href="https://jihuistudy.github.io/2020/04/21/%E6%80%8E%E4%B9%88%E5%86%99%E6%96%87%E7%AB%A0/"/>
+    <id>https://jihuistudy.github.io/2020/04/21/%E6%80%8E%E4%B9%88%E5%86%99%E6%96%87%E7%AB%A0/</id>
+    <published>2020-04-21T15:47:53.000Z</published>
+    <updated>2020-04-22T10:06:17.765Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;怎么用hexo博客写文章&quot;&gt;&lt;a href=&quot;#怎么用hexo博客写文章&quot; class=&quot;headerlink&quot; title=&quot;怎么用hexo博客写文章&quot;&gt;&lt;/a&gt;怎么用hexo博客写文章&lt;/h1&gt;&lt;h2 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;列表1&lt;/li&gt;
+&lt;li&gt;列表2&lt;br&gt;a 子列表&lt;br&gt;b 子列表&lt;/li&gt;
+&lt;li&gt;列表3&lt;/li&gt;&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="探索" scheme="https://jihuistudy.github.io/categories/%E6%8E%A2%E7%B4%A2/"/>
+    
+    
+      <category term="hexo" scheme="https://jihuistudy.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
