@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-04-22T15:26:32.120Z</updated>
+  <updated>2020-04-23T06:11:23.538Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二叉树概览</title>
+    <link href="https://jihuistudy.github.io/2020/04/23/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%A6%82%E8%A7%88/"/>
+    <id>https://jihuistudy.github.io/2020/04/23/%E4%BA%8C%E5%8F%89%E6%A0%91%E6%A6%82%E8%A7%88/</id>
+    <published>2020-04-23T05:58:53.000Z</published>
+    <updated>2020-04-23T06:11:23.538Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;树是用来模拟具有树状结构性质的数据集合。根据它的特性可以分为非常多的种类，对于我们来讲，掌握二叉树这种结构就足够了，它也是树最简单、应用最广泛的种类。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二叉树是一种典型的树树状结构。如它名字所描述的那样，二叉树是每个节点最多有两个子树的树结构，通常子树被称作“左子树”和“右子树”。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2019/08/18/3HdPxIMFOQv9yEz.jpg&quot; alt=&quot;图片&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://jihuistudy.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="数据结构，非原创" scheme="https://jihuistudy.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C%E9%9D%9E%E5%8E%9F%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>前端算法题汇总</title>
