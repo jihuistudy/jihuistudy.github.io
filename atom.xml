@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-08-31T09:20:25.513Z</updated>
+  <updated>2020-08-31T12:02:58.940Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="https://jihuistudy.github.io/2020/08/31/article/"/>
     <id>https://jihuistudy.github.io/2020/08/31/article/</id>
     <published>2020-08-31T08:22:10.000Z</published>
-    <updated>2020-08-31T09:20:25.513Z</updated>
+    <updated>2020-08-31T12:02:58.940Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;h2 id=&quot;1-DOCTYPE有什么意义&quot;&gt;&lt;a href=&quot;#1-DOCTYPE有什么意义&quot;
-        
-      
+      &lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;h2 id=&quot;1-DOCTYPE有什么意义&quot;&gt;&lt;a href=&quot;#1-DOCTYPE有什么意义&quot; class=&quot;headerlink&quot; title=&quot;1.DOCTYPE有什么意义&quot;&gt;&lt;/a&gt;1.DOCTYPE有什么意义&lt;/h2&gt;&lt;p&gt;声明文件类型定义（DTD），位于文档中最前面，作用是为了告知浏览器应该用哪种文档类型规范来解析文档。&lt;/p&gt;
+&lt;h2 id=&quot;2-如何区分严格模式和混杂模式？怎么区分？区分的意义是什么？&quot;&gt;&lt;a href=&quot;#2-如何区分严格模式和混杂模式？怎么区分？区分的意义是什么？&quot; class=&quot;headerlink&quot; title=&quot;2.如何区分严格模式和混杂模式？怎么区分？区分的意义是什么？&quot;&gt;&lt;/a&gt;2.如何区分严格模式和混杂模式？怎么区分？区分的意义是什么？&lt;/h2&gt;&lt;p&gt;-定义&lt;br&gt;严格模式（标准模式),浏览器按照W3C标准来解析；&lt;br&gt;混杂模式，向后兼容的解析方法，浏览器用自己的方式解析代码。&lt;/p&gt;
+&lt;p&gt;-如何区分？&lt;br&gt;用DTD来判断&lt;br&gt;严格格式DTD——严格模式；&lt;br&gt;有URL的过渡DTD——严格模式，没有URL的过渡DTD——混杂模式；&lt;br&gt;DTD不存在/格式不对——混杂模式；&lt;br&gt;HTML5没有严格和混杂之分&lt;/p&gt;
+&lt;p&gt;-区分的意义&lt;br&gt;严格模式的排版和js运行模式以浏览器支持的最高标准运行。如果只存在严格模式，那么很多旧网站站点无法工作。&lt;/p&gt;
     
     </summary>
     
