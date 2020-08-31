@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-04-23T12:32:04.040Z</updated>
+  <updated>2020-08-31T09:20:25.513Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端复习企划1-HTML</title>
+    <link href="https://jihuistudy.github.io/2020/08/31/article/"/>
+    <id>https://jihuistudy.github.io/2020/08/31/article/</id>
+    <published>2020-08-31T08:22:10.000Z</published>
+    <updated>2020-08-31T09:20:25.513Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h1&gt;&lt;h2 id=&quot;1-DOCTYPE有什么意义&quot;&gt;&lt;a href=&quot;#1-DOCTYPE有什么意义&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉树概览</title>
