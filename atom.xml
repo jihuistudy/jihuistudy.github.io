@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-01T02:06:02.325Z</updated>
+  <updated>2020-09-01T09:55:54.172Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端复习企划3-CSS</title>
+    <link href="https://jihuistudy.github.io/2020/09/01/CSS/"/>
+    <id>https://jihuistudy.github.io/2020/09/01/CSS/</id>
+    <published>2020-09-01T02:07:19.000Z</published>
+    <updated>2020-09-01T09:55:54.172Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h1&gt;&lt;h2 id=&quot;1-CSS哪些样式具有继承性？哪些没有？&quot;&gt;&lt;a href=&quot;#1-CSS哪些样式具有继承性？哪些没有？&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>2021秋笔试题汇总</title>
@@ -71,10 +100,10 @@
   
   <entry>
     <title>前端复习企划1-HTML</title>
-    <link href="https://jihuistudy.github.io/2020/08/31/article/"/>
-    <id>https://jihuistudy.github.io/2020/08/31/article/</id>
+    <link href="https://jihuistudy.github.io/2020/08/31/HTML/"/>
+    <id>https://jihuistudy.github.io/2020/08/31/HTML/</id>
     <published>2020-08-31T08:22:10.000Z</published>
-    <updated>2020-09-01T01:59:52.493Z</updated>
+    <updated>2020-09-01T09:55:41.518Z</updated>
     
     <summary type="html">
     
