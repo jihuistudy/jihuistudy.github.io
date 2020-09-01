@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-01T09:55:54.172Z</updated>
+  <updated>2020-09-01T12:18:05.735Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>前端复习企划3-CSS</title>
-    <link href="https://jihuistudy.github.io/2020/09/01/CSS/"/>
-    <id>https://jihuistudy.github.io/2020/09/01/CSS/</id>
-    <published>2020-09-01T02:07:19.000Z</published>
-    <updated>2020-09-01T09:55:54.172Z</updated>
+    <title>前端复习企划3-CSS3</title>
+    <link href="https://jihuistudy.github.io/2020/09/01/CSS3/"/>
+    <id>https://jihuistudy.github.io/2020/09/01/CSS3/</id>
+    <published>2020-09-01T10:54:37.000Z</published>
+    <updated>2020-09-01T12:18:05.735Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,33 @@
       
         
         
-          &lt;h1 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h1&gt;&lt;h2 id=&quot;1-CSS哪些样式具有继承性？哪些没有？&quot;&gt;&lt;a href=&quot;#1-CSS哪些样式具有继承性？哪些没有？&quot;
+          &lt;h1 id=&quot;CSS3&quot;&gt;&lt;a href=&quot;#CSS3&quot; class=&quot;headerlink&quot; title=&quot;CSS3&quot;&gt;&lt;/a&gt;CSS3&lt;/h1&gt;&lt;h2 id=&quot;1-CSS3新增基本选择器&quot;&gt;&lt;a href=&quot;#1-CSS3新增基本选择器&quot;
         
       
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端复习企划3-CSS</title>
+    <link href="https://jihuistudy.github.io/2020/09/01/CSS/"/>
+    <id>https://jihuistudy.github.io/2020/09/01/CSS/</id>
+    <published>2020-09-01T02:07:19.000Z</published>
+    <updated>2020-09-01T12:18:02.507Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h1&gt;&lt;h2 id=&quot;1-CSS哪些样式具有继承性？哪些没有？&quot;&gt;&lt;a href=&quot;#1-CSS哪些样式具有继承性？哪些没有？&quot; class=&quot;headerlink&quot; title=&quot;1.CSS哪些样式具有继承性？哪些没有？&quot;&gt;&lt;/a&gt;1.CSS哪些样式具有继承性？哪些没有？&lt;/h2&gt;&lt;p&gt;与字体、段落相关的样式通常都可以继承，与尺寸（盒子模型）相关的样式通常不能继承，颜色color，透明度opacity可以继承，背景颜色background-color不可以继承&lt;/p&gt;
+&lt;h2 id=&quot;2-浮动模型与层模型相关&quot;&gt;&lt;a href=&quot;#2-浮动模型与层模型相关&quot; class=&quot;headerlink&quot; title=&quot;2.浮动模型与层模型相关&quot;&gt;&lt;/a&gt;2.浮动模型与层模型相关&lt;/h2&gt;&lt;p&gt;标签元素一旦有position:absolute;或float:left/right;语句其中之一，元素就会变成内联块元素inline-block&lt;br&gt;所以任何元素都可以实现浮动&lt;/p&gt;
     
     </summary>
     
