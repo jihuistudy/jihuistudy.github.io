@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-02T05:33:36.574Z</updated>
+  <updated>2020-09-02T05:59:55.166Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Hexo博客引入本地图片不显示问题</title>
+    <link href="https://jihuistudy.github.io/2020/09/02/%E8%A7%A3%E5%86%B3Hexo%E5%8D%9A%E5%AE%A2%E5%BC%95%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>https://jihuistudy.github.io/2020/09/02/%E8%A7%A3%E5%86%B3Hexo%E5%8D%9A%E5%AE%A2%E5%BC%95%E5%85%A5%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
+    <published>2020-09-02T05:38:35.000Z</published>
+    <updated>2020-09-02T05:59:55.166Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;解决方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装一个图片路径转换的插件，这个插件名字是hexo-asset-image&lt;br&gt;&lt;code&gt;npm install https://github.com/CodeFalling/hexo-asset-image
+        
+      
+    
+    </summary>
+    
+    
+      <category term="探索" scheme="https://jihuistudy.github.io/categories/%E6%8E%A2%E7%B4%A2/"/>
+    
+    
+      <category term="hexo" scheme="https://jihuistudy.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>前端复习企划3-CSS3</title>
