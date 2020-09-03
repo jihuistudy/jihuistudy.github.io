@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-03T05:55:23.189Z</updated>
+  <updated>2020-09-03T06:46:40.253Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>圣杯布局与双飞翼布局究极解析</title>
-    <link href="https://jihuistudy.github.io/2020/09/03/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%E7%A9%B6%E6%9E%81%E8%A7%A3%E6%9E%90/"/>
-    <id>https://jihuistudy.github.io/2020/09/03/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%E7%A9%B6%E6%9E%81%E8%A7%A3%E6%9E%90/</id>
-    <published>2020-09-03T01:49:13.000Z</published>
-    <updated>2020-09-03T05:55:23.189Z</updated>
+    <title>居中对齐的实现方式总结</title>
+    <link href="https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
+    <id>https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</id>
+    <published>2020-09-03T06:46:40.000Z</published>
+    <updated>2020-09-03T06:46:40.253Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>查漏补缺-css中宽高的百分比参照</title>
+    <link href="https://jihuistudy.github.io/2020/09/03/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA-css%E4%B8%AD%E5%AE%BD%E9%AB%98%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94%E5%8F%82%E7%85%A7/"/>
+    <id>https://jihuistudy.github.io/2020/09/03/%E6%9F%A5%E6%BC%8F%E8%A1%A5%E7%BC%BA-css%E4%B8%AD%E5%AE%BD%E9%AB%98%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94%E5%8F%82%E7%85%A7/</id>
+    <published>2020-09-03T05:57:48.000Z</published>
+    <updated>2020-09-03T06:42:17.260Z</updated>
     
     <summary type="html">
     
@@ -29,12 +44,38 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;圣杯布局和双飞翼布局两者的功能相同，都是为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id=&quot;圣杯布局&quot;&gt;&lt;a href=&quot;#圣杯布局&quot; class=&quot;headerlink&quot;
+          &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;百分比数参照物&lt;br&gt; 父元素宽度：padding，margin，width，text-indent&lt;br&gt; 父元素高度：height&lt;br&gt; 自身：transform中的translate（）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其他单位&lt;br&gt;
         
       
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://jihuistudy.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>圣杯布局与双飞翼布局究极解析</title>
+    <link href="https://jihuistudy.github.io/2020/09/03/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%E7%A9%B6%E6%9E%81%E8%A7%A3%E6%9E%90/"/>
+    <id>https://jihuistudy.github.io/2020/09/03/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80%E4%B8%8E%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80%E7%A9%B6%E6%9E%81%E8%A7%A3%E6%9E%90/</id>
+    <published>2020-09-03T01:49:13.000Z</published>
+    <updated>2020-09-03T13:31:38.147Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;圣杯布局和双飞翼布局两者的功能相同，都是为了实现一个两侧宽度固定，中间宽度自适应的三栏布局。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;圣杯布局&quot;&gt;&lt;a href=&quot;#圣杯布局&quot; class=&quot;headerlink&quot; title=&quot;圣杯布局&quot;&gt;&lt;/a&gt;圣杯布局&lt;/h1&gt;&lt;h2 id=&quot;实现思路：&quot;&gt;&lt;a href=&quot;#实现思路：&quot; class=&quot;headerlink&quot; title=&quot;实现思路：&quot;&gt;&lt;/a&gt;实现思路：&lt;/h2&gt;&lt;p&gt;1.在html中,先定义好 header和 footer的样式,使之横向撑满。&lt;br&gt;2.在container中的三列设为浮动(float:left)&lt;br&gt;3.给外层的父容器container设置padding:0 150px 0 200px;空出左右区域的位置，同时添加overflow:hidden;语句形成BFC，解决父容器高度塌陷的问题&lt;br&gt;4.center要放在最前面,中间部分在DOM结构上优先，以便先行渲染&lt;br&gt;5.三列的左右两列分别定宽200px和150px,中间部分center设置100%撑满父元素container,左右两块区域被挤到下一行&lt;br&gt;6.接下来设置left区域的左边界margin-left:-100%;,让left区域回到上一行父容器的最左侧&lt;br&gt;7.但这会把center区域遮住一部分,所以通过对左区域left设置相对定位，1eft:-200px;把left拉到父元素外面，定位到页面的最左侧，填补父元素空出的左内边距&lt;br&gt;8.同样的,对于right区域,设置 margin-left:-150px;把right拉回第一行，使用相对定位，设置right:-150px;填补父容器空出的右内边距&lt;/p&gt;
     
     </summary>
     
