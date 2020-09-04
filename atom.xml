@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-04T07:18:11.042Z</updated>
+  <updated>2020-09-04T08:45:54.284Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -17,11 +17,58 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BFC详解</title>
+    <link href="https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-09-04T08:45:54.000Z</published>
+    <updated>2020-09-04T08:45:54.284Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>重排与重绘详解</title>
+    <link href="https://jihuistudy.github.io/2020/09/04/%E9%87%8D%E6%8E%92%E4%B8%8E%E9%87%8D%E7%BB%98%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://jihuistudy.github.io/2020/09/04/%E9%87%8D%E6%8E%92%E4%B8%8E%E9%87%8D%E7%BB%98%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-09-04T07:59:08.000Z</published>
+    <updated>2020-09-04T12:51:46.460Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTML渲染过程：&quot;&gt;&lt;a href=&quot;#HTML渲染过程：&quot; class=&quot;headerlink&quot; title=&quot;HTML渲染过程：&quot;&gt;&lt;/a&gt;HTML渲染过程：&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;HTML被HTML解析器解析成DOM Tree,
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="CSS" scheme="https://jihuistudy.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>居中对齐的实现方式总结</title>
     <link href="https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
     <id>https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</id>
     <published>2020-09-03T06:46:40.000Z</published>
-    <updated>2020-09-04T07:18:11.042Z</updated>
+    <updated>2020-09-04T12:24:11.885Z</updated>
     
     <summary type="html">
     
@@ -138,7 +185,7 @@
     <link href="https://jihuistudy.github.io/2020/09/01/CSS3/"/>
     <id>https://jihuistudy.github.io/2020/09/01/CSS3/</id>
     <published>2020-09-01T10:54:37.000Z</published>
-    <updated>2020-09-03T14:24:09.624Z</updated>
+    <updated>2020-09-04T12:27:03.283Z</updated>
     
     <summary type="html">
     
@@ -165,7 +212,7 @@
     <link href="https://jihuistudy.github.io/2020/09/01/CSS/"/>
     <id>https://jihuistudy.github.io/2020/09/01/CSS/</id>
     <published>2020-09-01T02:07:19.000Z</published>
-    <updated>2020-09-03T14:34:20.154Z</updated>
+    <updated>2020-09-04T12:24:03.843Z</updated>
     
     <summary type="html">
     
@@ -177,7 +224,7 @@
 &lt;li&gt;列表布局属性&lt;br&gt;list-style 列表风格 包括list-style-type list-style-image等&lt;/li&gt;
 &lt;li&gt;光标属性&lt;br&gt;cursor 光标显示的各种形态&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;2-浮动模型与层模型相关&quot;&gt;&lt;a href=&quot;#2-浮动模型与层模型相关&quot; class=&quot;headerlink&quot; title=&quot;2.浮动模型与层模型相关&quot;&gt;&lt;/a&gt;2.浮动模型与层模型相关&lt;/h2&gt;&lt;p&gt;标签元素一旦有position:absolute;或float:left/right;语句其中之一，元素就会变成内联块元素inline-block&lt;br&gt;所以任何元素都可以实现浮动&lt;/p&gt;
+&lt;h2 id=&quot;2-浮动模型与层模型相关概念&quot;&gt;&lt;a href=&quot;#2-浮动模型与层模型相关概念&quot; class=&quot;headerlink&quot; title=&quot;2.浮动模型与层模型相关概念&quot;&gt;&lt;/a&gt;2.浮动模型与层模型相关概念&lt;/h2&gt;&lt;p&gt;标签元素一旦有position:absolute;或float:left/right;语句其中之一，元素就会变成内联块元素inline-block&lt;br&gt;所以任何元素都可以实现浮动&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;浮动模型&lt;br&gt;浮动的框可以向左或向右移动，直到他的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流的块框表现得就像浮动框不存在一样。浮动的块框会漂浮在文档普通流的块框上。&lt;/li&gt;
 &lt;/ul&gt;
