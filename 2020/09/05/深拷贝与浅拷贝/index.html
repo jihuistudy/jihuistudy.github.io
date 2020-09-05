@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jihuistudy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="什么是浅拷贝？什么是深拷贝？-浅拷贝是指只拷贝最外面一层，深层次对象级别就只拷贝引用；-深拷贝是每一层的数据都会拷贝。简单来说就是浅拷贝的时候如果第一层数据是基本数据类型，那么就如同直接赋值那样，会拷贝其本身；如果第一层数据除了基本数据之外还有一层的对象，那么对于浅拷贝来说，就只能拷贝其引用。那当原对象的值发生了变化，那么这个结果不光会反映到原对象上，也会反映到拷贝的对象上。但是深拷贝就不一样，即">
+<meta property="og:type" content="article">
+<meta property="og:title" content="深拷贝与浅拷贝">
+<meta property="og:url" content="https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/index.html">
+<meta property="og:site_name" content="纪惠de博客">
+<meta property="og:description" content="什么是浅拷贝？什么是深拷贝？-浅拷贝是指只拷贝最外面一层，深层次对象级别就只拷贝引用；-深拷贝是每一层的数据都会拷贝。简单来说就是浅拷贝的时候如果第一层数据是基本数据类型，那么就如同直接赋值那样，会拷贝其本身；如果第一层数据除了基本数据之外还有一层的对象，那么对于浅拷贝来说，就只能拷贝其引用。那当原对象的值发生了变化，那么这个结果不光会反映到原对象上，也会反映到拷贝的对象上。但是深拷贝就不一样，即">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-09-05T06:59:37.000Z">
+<meta property="article:modified_time" content="2020-09-05T08:16:21.823Z">
+<meta property="article:author" content="纪惠">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="面试">
+<meta property="article:tag" content="JS">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>深拷贝与浅拷贝 | 纪惠de博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="纪惠de博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">纪惠de博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">每一篇文件都是我成长的见证</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          深拷贝与浅拷贝
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-05 14:59:37 / 修改时间：16:16:21" itemprop="dateCreated datePublished" datetime="2020-09-05T14:59:37+08:00">2020-09-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="什么是浅拷贝？什么是深拷贝？"><a href="#什么是浅拷贝？什么是深拷贝？" class="headerlink" title="什么是浅拷贝？什么是深拷贝？"></a>什么是浅拷贝？什么是深拷贝？</h1><p>-浅拷贝是指只拷贝最外面一层，深层次对象级别就只拷贝引用；<br>-深拷贝是每一层的数据都会拷贝。<br>简单来说就是浅拷贝的时候如果第一层数据是基本数据类型，那么就如同直接赋值那样，会拷贝其本身；<br>如果第一层数据除了基本数据之外还有一层的对象，那么对于浅拷贝来说，就只能拷贝其引用。那当原对象的值发生了变化，那么这个结果不光会反映到原对象上，也会反映到拷贝的对象上。<br>但是深拷贝就不一样，即使有嵌套关系依然会全部的拷贝出来，原对象和拷贝对象互相独立。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">	age: 1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let b &#x3D; a;</span><br><span class="line">a.age &#x3D; 2;</span><br><span class="line">console.log(b.age); &#x2F;&#x2F; 输出2</span><br></pre></td></tr></table></figure>
+<p>从上述例子中我们可以发现，如果给一个变量赋值一个对象，那么两者的值引用同一个内存地址，其中一方改变，另一方也会改变。</p>
+<p>下面我们可以使用浅拷贝来解决这个问题</p>
+<h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><h3 id="通过-Object-assign-来解决这个问题"><a href="#通过-Object-assign-来解决这个问题" class="headerlink" title="通过 Object.assign 来解决这个问题"></a>通过 Object.assign 来解决这个问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; Object.assign(&#123;&#125;, a)</span><br><span class="line">a.age &#x3D; 2</span><br><span class="line">console.log(b.age) &#x2F;&#x2F; 1</span><br></pre></td></tr></table></figure>
+<h3 id="通过展开运算符（…）来解决"><a href="#通过展开运算符（…）来解决" class="headerlink" title="通过展开运算符（…）来解决"></a>通过展开运算符（…）来解决</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; &#123;...a&#125;</span><br><span class="line">a.age &#x3D; 2</span><br><span class="line">console.log(b.age) &#x2F;&#x2F; 1</span><br></pre></td></tr></table></figure>
+<p>浅拷贝只拷贝第一层，如果第一层的属性值中还嵌套对象的话，嵌套的对象还是存在引用内存地址引起的问题。要解决这个问题，我们需要引入深拷贝。</p>
+<h2 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h2><h3 id="JSON-parse-JSON-stringify-object"><a href="#JSON-parse-JSON-stringify-object" class="headerlink" title="JSON.parse(JSON.stringify(object))"></a>JSON.parse(JSON.stringify(object))</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1,</span><br><span class="line">    jobs: &#123;</span><br><span class="line">        first: &#39;FE&#39;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; JSON.parse(JSON.stringify(a))</span><br><span class="line">a.jobs.first &#x3D; &#39;native&#39;</span><br><span class="line">console.log(b.jobs.first) &#x2F;&#x2F; FE</span><br></pre></td></tr></table></figure>
+<ul>
+<li>但是该方法也是有局限性的：<br>会忽略 undefined和symbol<br>不能序列化函数<br>不能解决循环引用的对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: undefined,</span><br><span class="line">    jobs: function() &#123;&#125;,</span><br><span class="line">    name: &#39;poetries&#39;</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; JSON.parse(JSON.stringify(a))</span><br><span class="line">console.log(b) &#x2F;&#x2F; 输出&#123;name: &quot;poetries&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="手写深拷贝"><a href="#手写深拷贝" class="headerlink" title="手写深拷贝"></a>手写深拷贝</h2><p>以上的深拷贝与浅拷贝的方式都有一定缺陷，下面手写一段深拷贝可以很好的解决问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const obj1 &#x3D; &#123;</span><br><span class="line">	age: 20,</span><br><span class="line">	name: &#39;xiaoming&#39;,</span><br><span class="line">	address: &#123;</span><br><span class="line">		city: &#39;beijing&#39;</span><br><span class="line">	&#125;,</span><br><span class="line">	arr: [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]</span><br><span class="line">&#125;</span><br><span class="line">const obj2 &#x3D; deepClone(obj1);</span><br><span class="line">obj2.address.city &#x3D; &#39;shanghai&#39;;</span><br><span class="line">obj2.arr[0] &#x3D; &#39;a1&#39;;</span><br><span class="line">console.log(obj1.address.city);</span><br><span class="line">console.log(obj1.arr[0]);</span><br></pre></td></tr></table></figure>
+<p>自封装深拷贝函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function deepClone(obj&#x3D;&#123;&#125;) &#123;</span><br><span class="line">	if(typeof obj !&#x3D;&#x3D;&#39;object&#39;||obj &#x3D;&#x3D; null)&#123; &#x2F;&#x2F; 如果obj是null或者不是对象和数组（基本数据类型直接赋值即为深拷贝），则直接返回</span><br><span class="line">		return obj</span><br><span class="line">	&#125;</span><br><span class="line">	let result &#x2F;&#x2F; 根据obj的类型设置存放拷贝内容的容器类型</span><br><span class="line">	if (obj instanceof Array) &#123;</span><br><span class="line">		result &#x3D; []</span><br><span class="line">	&#125;else &#123;</span><br><span class="line">		result &#x3D; &#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	for (let key in obj) &#123; &#x2F;&#x2F; 遍历obj的属性</span><br><span class="line">		if(obj.hasOwnProperty(key)) &#123; &#x2F;&#x2F; 保证该属性不是原型的属性，将obj对象的属性与属性值存放到拷贝容器中</span><br><span class="line">			result[key] &#x3D; deepClone(obj[key]) &#x2F;&#x2F; 递归使用深拷贝函数，保证多层对象都可以成功拷贝</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">	return result &#x2F;&#x2F; 返回生成的拷贝容器，与原对象独立</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+              <a href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag"># 面试</a>
+              <a href="/tags/JS/" rel="tag"># JS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/" rel="prev" title="前端复习企划5-JS">
+      <i class="fa fa-chevron-left"></i> 前端复习企划5-JS
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是浅拷贝？什么是深拷贝？"><span class="nav-number">1.</span> <span class="nav-text">什么是浅拷贝？什么是深拷贝？</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浅拷贝"><span class="nav-number">1.1.</span> <span class="nav-text">浅拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#通过-Object-assign-来解决这个问题"><span class="nav-number">1.1.1.</span> <span class="nav-text">通过 Object.assign 来解决这个问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过展开运算符（…）来解决"><span class="nav-number">1.1.2.</span> <span class="nav-text">通过展开运算符（…）来解决</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#深拷贝"><span class="nav-number">1.2.</span> <span class="nav-text">深拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON-parse-JSON-stringify-object"><span class="nav-number">1.2.1.</span> <span class="nav-text">JSON.parse(JSON.stringify(object))</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手写深拷贝"><span class="nav-number">1.3.</span> <span class="nav-text">手写深拷贝</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="纪惠"
+      src="/images/touxiang.jpg">
+  <p class="site-author-name" itemprop="name">纪惠</p>
+  <div class="site-description" itemprop="description">坚持就是胜利</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jihuistudy" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jihuistudy" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:jihui_96870@163.com" title="E-Mail → mailto:jihui_96870@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">纪惠</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+      <span class="post-meta-item-text">站点总字数：</span>
+    <span title="站点总字数">34k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">31 分钟</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+-->
+
+
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("04/20/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "网站已运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  
+</body>
+</html>
+
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>

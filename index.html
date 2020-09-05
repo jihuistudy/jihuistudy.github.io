@@ -159,6 +159,185 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/" class="post-title-link" itemprop="url">深拷贝与浅拷贝</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-05 14:59:37 / 修改时间：16:16:21" itemprop="dateCreated datePublished" datetime="2020-09-05T14:59:37+08:00">2020-09-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="什么是浅拷贝？什么是深拷贝？"><a href="#什么是浅拷贝？什么是深拷贝？" class="headerlink" title="什么是浅拷贝？什么是深拷贝？"></a>什么是浅拷贝？什么是深拷贝？</h1><p>-浅拷贝是指只拷贝最外面一层，深层次对象级别就只拷贝引用；<br>-深拷贝是每一层的数据都会拷贝。<br>简单来说就是浅拷贝的时候如果第一层数据是基本数据类型，那么就如同直接赋值那样，会拷贝其本身；<br>如果第一层数据除了基本数据之外还有一层的对象，那么对于浅拷贝来说，就只能拷贝其引用。那当原对象的值发生了变化，那么这个结果不光会反映到原对象上，也会反映到拷贝的对象上。<br>但是深拷贝就不一样，即使有嵌套关系依然会全部的拷贝出来，原对象和拷贝对象互相独立。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">	age: 1</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let b &#x3D; a;</span><br><span class="line">a.age &#x3D; 2;</span><br><span class="line">console.log(b.age); &#x2F;&#x2F; 输出2</span><br></pre></td></tr></table></figure>
+<p>从上述例子中我们可以发现，如果给一个变量赋值一个对象，那么两者的值引用同一个内存地址，其中一方改变，另一方也会改变。</p>
+<p>下面我们可以使用浅拷贝来解决这个问题</p>
+<h2 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h2><h3 id="通过-Object-assign-来解决这个问题"><a href="#通过-Object-assign-来解决这个问题" class="headerlink" title="通过 Object.assign 来解决这个问题"></a>通过 Object.assign 来解决这个问题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; Object.assign(&#123;&#125;, a)</span><br><span class="line">a.age &#x3D; 2</span><br><span class="line">console.log(b.age) &#x2F;&#x2F; 1</span><br></pre></td></tr></table></figure>
+<h3 id="通过展开运算符（…）来解决"><a href="#通过展开运算符（…）来解决" class="headerlink" title="通过展开运算符（…）来解决"></a>通过展开运算符（…）来解决</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; &#123;...a&#125;</span><br><span class="line">a.age &#x3D; 2</span><br><span class="line">console.log(b.age) &#x2F;&#x2F; 1</span><br></pre></td></tr></table></figure>
+<p>浅拷贝只拷贝第一层，如果第一层的属性值中还嵌套对象的话，嵌套的对象还是存在引用内存地址引起的问题。要解决这个问题，我们需要引入深拷贝。</p>
+<h2 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h2><h3 id="JSON-parse-JSON-stringify-object"><a href="#JSON-parse-JSON-stringify-object" class="headerlink" title="JSON.parse(JSON.stringify(object))"></a>JSON.parse(JSON.stringify(object))</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: 1,</span><br><span class="line">    jobs: &#123;</span><br><span class="line">        first: &#39;FE&#39;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; JSON.parse(JSON.stringify(a))</span><br><span class="line">a.jobs.first &#x3D; &#39;native&#39;</span><br><span class="line">console.log(b.jobs.first) &#x2F;&#x2F; FE</span><br></pre></td></tr></table></figure>
+<ul>
+<li>但是该方法也是有局限性的：<br>会忽略 undefined和symbol<br>不能序列化函数<br>不能解决循环引用的对象<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">let a &#x3D; &#123;</span><br><span class="line">    age: undefined,</span><br><span class="line">    jobs: function() &#123;&#125;,</span><br><span class="line">    name: &#39;poetries&#39;</span><br><span class="line">&#125;</span><br><span class="line">let b &#x3D; JSON.parse(JSON.stringify(a))</span><br><span class="line">console.log(b) &#x2F;&#x2F; 输出&#123;name: &quot;poetries&quot;&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="手写深拷贝"><a href="#手写深拷贝" class="headerlink" title="手写深拷贝"></a>手写深拷贝</h2><p>以上的深拷贝与浅拷贝的方式都有一定缺陷，下面手写一段深拷贝可以很好的解决问题</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const obj1 &#x3D; &#123;</span><br><span class="line">	age: 20,</span><br><span class="line">	name: &#39;xiaoming&#39;,</span><br><span class="line">	address: &#123;</span><br><span class="line">		city: &#39;beijing&#39;</span><br><span class="line">	&#125;,</span><br><span class="line">	arr: [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]</span><br><span class="line">&#125;</span><br><span class="line">const obj2 &#x3D; deepClone(obj1);</span><br><span class="line">obj2.address.city &#x3D; &#39;shanghai&#39;;</span><br><span class="line">obj2.arr[0] &#x3D; &#39;a1&#39;;</span><br><span class="line">console.log(obj1.address.city);</span><br><span class="line">console.log(obj1.arr[0]);</span><br></pre></td></tr></table></figure>
+<p>自封装深拷贝函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">function deepClone(obj&#x3D;&#123;&#125;) &#123;</span><br><span class="line">	if(typeof obj !&#x3D;&#x3D;&#39;object&#39;||obj &#x3D;&#x3D; null)&#123; &#x2F;&#x2F; 如果obj是null或者不是对象和数组（基本数据类型直接赋值即为深拷贝），则直接返回</span><br><span class="line">		return obj</span><br><span class="line">	&#125;</span><br><span class="line">	let result &#x2F;&#x2F; 根据obj的类型设置存放拷贝内容的容器类型</span><br><span class="line">	if (obj instanceof Array) &#123;</span><br><span class="line">		result &#x3D; []</span><br><span class="line">	&#125;else &#123;</span><br><span class="line">		result &#x3D; &#123;&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	for (let key in obj) &#123; &#x2F;&#x2F; 遍历obj的属性</span><br><span class="line">		if(obj.hasOwnProperty(key)) &#123; &#x2F;&#x2F; 保证该属性不是原型的属性，将obj对象的属性与属性值存放到拷贝容器中</span><br><span class="line">			result[key] &#x3D; deepClone(obj[key]) &#x2F;&#x2F; 递归使用深拷贝函数，保证多层对象都可以成功拷贝</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">	return result &#x2F;&#x2F; 返回生成的拷贝容器，与原对象独立</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/" class="post-title-link" itemprop="url">前端复习企划5-JS</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-05 13:37:44 / 修改时间：14:59:07" itemprop="dateCreated datePublished" datetime="2020-09-05T13:37:44+08:00">2020-09-05</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>67</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h1><h2 id="1-JS的基本数据类型，引用数据类型，typeof运算符"><a href="#1-JS的基本数据类型，引用数据类型，typeof运算符" class="headerlink" title="1.JS的基本数据类型，引用数据类型，typeof运算符"></a>1.JS的基本数据类型，引用数据类型，typeof运算符</h2><h2 id="2-JS的变量计算-强制类型转换"><a href="#2-JS的变量计算-强制类型转换" class="headerlink" title="2.JS的变量计算-强制类型转换"></a>2.JS的变量计算-强制类型转换</h2><p>字符串拼接，==运算符，if语句，逻辑运算</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -929,187 +1108,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/01/2021%E7%A7%8B%E7%AC%94%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/01/2021%E7%A7%8B%E7%AC%94%E8%AF%95%E9%A2%98%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">2021秋笔试题汇总</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-09-01 09:11:48 / 修改时间：10:06:02" itemprop="dateCreated datePublished" datetime="2020-09-01T09:11:48+08:00">2020-09-01</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>448</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="持续更新"><a href="#持续更新" class="headerlink" title="持续更新"></a>持续更新</h1><h2 id="2021-CVTE笔试题"><a href="#2021-CVTE笔试题" class="headerlink" title="2021 CVTE笔试题"></a>2021 CVTE笔试题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var a&#x3D;30;</span><br><span class="line">function alc() &#123;</span><br><span class="line">	var b &#x3D; 2*a; &#x2F;&#x2F; a为在函数作用域里声明的局部变量，变量提升var a，a没有赋值为undefined（有局部变量就不会去全局找变量），所以b为NaN</span><br><span class="line">	var a&#x3D;40;</span><br><span class="line">	var c&#x3D; a&#x2F;2; &#x2F;&#x2F; 这里a赋值了为40，c为20</span><br><span class="line">	console.log(b,c);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">alc();</span><br></pre></td></tr></table></figure>
-<p>考点：局部变量，全局变量，变量提升<br>输出：NaN 20</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function *foo(x) &#123;</span><br><span class="line">	let y &#x3D;2*(yield(x+1));</span><br><span class="line">	let z &#x3D; yield(x&#x2F;3);</span><br><span class="line">	return(x+y+z);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let it &#x3D; foo(5);</span><br><span class="line">console.log(it.next());</span><br></pre></td></tr></table></figure>
-<p>考点：局部变量，全局变量，变量提升<br>考点：异步生成器<br>输出：{done=false;value=6}</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/08/31/HTML5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/31/HTML5/" class="post-title-link" itemprop="url">前端复习企划2-HTML5</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-31 20:10:53" itemprop="dateCreated datePublished" datetime="2020-08-31T20:10:53+08:00">2020-08-31</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-01 09:57:55" itemprop="dateModified" datetime="2020-09-01T09:57:55+08:00">2020-09-01</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="1-HTML5有哪些新特性？移除了哪些元素？"><a href="#1-HTML5有哪些新特性？移除了哪些元素？" class="headerlink" title="1.HTML5有哪些新特性？移除了哪些元素？"></a>1.HTML5有哪些新特性？移除了哪些元素？</h2><h2 id="2-如何区别HTML与HTML5？"><a href="#2-如何区别HTML与HTML5？" class="headerlink" title="2.如何区别HTML与HTML5？"></a>2.如何区别HTML与HTML5？</h2><p>-概念：HTML即超文本标记语言，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。HTML5是HTML的第五次重大修改而成的，可以理解为升级版，但里面的内容是非常丰富的　　<br>-区分 html 和 html5有很多方法，下面举例看一下区别：　　<br>1.在文档类型声明上　　<br>html:<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;&gt;</code><br>HTML5:<br><code>&lt;!DOCTYPE html&gt;</code>　<br>说明：在文档声明上，html代码很长，而html5只有简简单单的声明。　　<br>2.在结构语义上　　<br>html4.0：没有体现结构语义化的标签　　<br>html5：在语义上却有很大的优势。提供了一些新的html5标签，比如:<br><code>&lt;header&gt; 、&lt;nav&gt;、&lt;article&gt;、&lt;aside&gt;、&lt;footer&gt;</code><br>3.在html5新特性上</p>
-<h2 id="3-为什么HTML5只需要写-lt-DOCTYPE-HTML-gt"><a href="#3-为什么HTML5只需要写-lt-DOCTYPE-HTML-gt" class="headerlink" title="3.为什么HTML5只需要写&lt;!DOCTYPE HTML&gt;?"></a>3.为什么HTML5只需要写<code>&lt;!DOCTYPE HTML&gt;</code>?</h2><p>HTML5不基于SGML(标准通用标记语言)，因此不需要DTD(文档类型定义)，但是需要doctype来规范浏览器的行为。而HTML基于SGML，需要DTD，才能告知浏览器所使用的文档类型。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/31/HTML5/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1181,7 +1179,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1194,7 +1192,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1239,13 +1237,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">32k</span>
+    <span title="站点总字数">34k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">29 分钟</span>
+    <span title="站点阅读时长">31 分钟</span>
 </div>
 
 <!--
