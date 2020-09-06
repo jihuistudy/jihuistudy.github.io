@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-06T09:58:14.649Z</updated>
+  <updated>2020-09-06T10:55:08.087Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -21,23 +21,24 @@
     <link href="https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
     <id>https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/</id>
     <published>2020-09-06T08:38:00.000Z</published>
-    <updated>2020-09-06T09:58:14.649Z</updated>
+    <updated>2020-09-06T10:55:08.087Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt; 对于三个令人匪夷所思的答案 &lt;/p&gt;
-&lt;ol&gt;
+      &lt;h1 id=&quot;对于三个令人匪夷所思的答案&quot;&gt;&lt;a href=&quot;#对于三个令人匪夷所思的答案&quot; class=&quot;headerlink&quot; title=&quot;对于三个令人匪夷所思的答案&quot;&gt;&lt;/a&gt;对于三个令人匪夷所思的答案&lt;/h1&gt;&lt;ol&gt;
 &lt;li&gt;‘true’ == true // false&lt;/li&gt;
 &lt;li&gt;{} == !{} // false&lt;/li&gt;
 &lt;li&gt;[] == ![] // true&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1
-        
-      
+&lt;h1 id=&quot;对于’true’-true的解释&quot;&gt;&lt;a href=&quot;#对于’true’-true的解释&quot; class=&quot;headerlink&quot; title=&quot;对于’true’ == true的解释&quot;&gt;&lt;/a&gt;对于’true’ == true的解释&lt;/h1&gt;&lt;h2 id=&quot;相等操作符&quot;&gt;&lt;a href=&quot;#相等操作符&quot; class=&quot;headerlink&quot; title=&quot;相等操作符&quot;&gt;&lt;/a&gt;相等操作符&lt;/h2&gt;&lt;p&gt;在转换不同的数据类型时，相等和不相等操作符遵循下列基本规则：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;如果有一个操作数是布尔值，则在比较相等性之前先将其转换为数值——false转换为0，而true转换为1；&lt;/li&gt;
+&lt;li&gt;如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；&lt;/li&gt;
+&lt;li&gt;如果一个操作数是对象，另一个操作数不是，则调用对象的valueOf()方法，用得到的基本类型值按照前面的两条规则进行比较；&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先 ‘true’ == true 符合规则1，这样就转化成了对 &lt;code&gt;&amp;#39;true&amp;#39; == 1&lt;/code&gt;进行求值，’true’ == 1 表达式符合规则2——如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；&lt;br&gt;也就是说需要将 ‘true’ 转换成数值之后，再与数字 1 进行比较。把 ‘true’ 转换成数值是使用 Number 函数。&lt;/p&gt;
     
     </summary>
     
@@ -56,18 +57,14 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E9%97%AD%E5%8C%85/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E9%97%AD%E5%8C%85/</id>
     <published>2020-09-05T12:00:47.000Z</published>
-    <updated>2020-09-05T14:34:30.284Z</updated>
+    <updated>2020-09-06T10:08:24.083Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;什么是闭包？&quot;&gt;&lt;a href=&quot;#什么是闭包？&quot; class=&quot;headerlink&quot; title=&quot;什么是闭包？&quot;&gt;&lt;/a&gt;什么是闭包？&lt;/h1&gt;&lt;p&gt;闭包就是能够读取其他函数内部变量的函数&lt;/p&gt;
-&lt;h1 id=&quot;闭包的特性&quot;&gt;&lt;a
-        
-      
+      &lt;h1 id=&quot;什么是闭包？&quot;&gt;&lt;a href=&quot;#什么是闭包？&quot; class=&quot;headerlink&quot; title=&quot;什么是闭包？&quot;&gt;&lt;/a&gt;什么是闭包？&lt;/h1&gt;&lt;p&gt;闭包就是能够读取其他函数内部变量的函数&lt;/p&gt;
+&lt;h1 id=&quot;闭包的特性&quot;&gt;&lt;a href=&quot;#闭包的特性&quot; class=&quot;headerlink&quot; title=&quot;闭包的特性&quot;&gt;&lt;/a&gt;闭包的特性&lt;/h1&gt;&lt;p&gt;函数内再嵌套函数&lt;br&gt;可以读取其他函数参数和变量&lt;br&gt;参数和变量不会被垃圾回收机制回收&lt;/p&gt;
+&lt;h1 id=&quot;闭包的优缺点&quot;&gt;&lt;a href=&quot;#闭包的优缺点&quot; class=&quot;headerlink&quot; title=&quot;闭包的优缺点&quot;&gt;&lt;/a&gt;闭包的优缺点&lt;/h1&gt;&lt;p&gt;优点：可以避免全局变量的污染，能够实现封装和缓存等&lt;br&gt;缺点：消耗内存、不正当使用会造成内存溢出的问题&lt;/p&gt;
+&lt;h1 id=&quot;闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot;&gt;&lt;a href=&quot;#闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot; class=&quot;headerlink&quot; title=&quot;闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot;&gt;&lt;/a&gt;闭包的形成跟变量的作用域以及变量的生存周期密切相关&lt;/h1&gt;&lt;h2 id=&quot;变量作用域&quot;&gt;&lt;a href=&quot;#变量作用域&quot; class=&quot;headerlink&quot; title=&quot;变量作用域&quot;&gt;&lt;/a&gt;变量作用域&lt;/h2&gt;&lt;p&gt;作用域分为全局作用域和局部作用域。&lt;br&gt;函数内部可访问全局变量。&lt;br&gt;函数外却不可以访问函数内的变量。&lt;/p&gt;
     
     </summary>
     
