@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-05T14:34:30.284Z</updated>
+  <updated>2020-09-06T09:58:14.649Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,41 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>几个令人费解却有趣的隐式转换</title>
+    <link href="https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/</id>
+    <published>2020-09-06T08:38:00.000Z</published>
+    <updated>2020-09-06T09:58:14.649Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt; 对于三个令人匪夷所思的答案 &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;‘true’ == true // false&lt;/li&gt;
+&lt;li&gt;{} == !{} // false&lt;/li&gt;
+&lt;li&gt;[] == ![] // true&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>闭包</title>
