@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-06T14:32:09.967Z</updated>
+  <updated>2020-09-07T02:39:40.338Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS的垃圾回收机制</title>
+    <link href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
+    <id>https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
+    <published>2020-09-07T02:36:08.000Z</published>
+    <updated>2020-09-07T02:39:40.338Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>原型与原型链</title>
@@ -132,7 +155,7 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/</id>
     <published>2020-09-05T05:37:44.000Z</published>
-    <updated>2020-09-06T14:32:28.157Z</updated>
+    <updated>2020-09-07T02:39:48.765Z</updated>
     
     <summary type="html">
     
