@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-07T03:54:32.287Z</updated>
+  <updated>2020-09-07T03:57:24.483Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -21,17 +21,18 @@
     <link href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
     <id>https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
     <published>2020-09-07T02:36:08.000Z</published>
-    <updated>2020-09-07T03:54:32.287Z</updated>
+    <updated>2020-09-07T03:57:24.483Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;什么是垃圾回收机制？&quot;&gt;&lt;a href=&quot;#什么是垃圾回收机制？&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;什么是垃圾回收机制？&quot;&gt;&lt;a href=&quot;#什么是垃圾回收机制？&quot; class=&quot;headerlink&quot; title=&quot;什么是垃圾回收机制？&quot;&gt;&lt;/a&gt;什么是垃圾回收机制？&lt;/h1&gt;&lt;p&gt;释放无用的数据，回收内存，会按照固定的时间间隔周期性的执行。&lt;/p&gt;
+&lt;h1 id=&quot;JS中常见的垃圾回收方式是标记清除和引用技术&quot;&gt;&lt;a href=&quot;#JS中常见的垃圾回收方式是标记清除和引用技术&quot; class=&quot;headerlink&quot; title=&quot;JS中常见的垃圾回收方式是标记清除和引用技术&quot;&gt;&lt;/a&gt;JS中常见的垃圾回收方式是标记清除和引用技术&lt;/h1&gt;&lt;h2 id=&quot;标记清除&quot;&gt;&lt;a href=&quot;#标记清除&quot; class=&quot;headerlink&quot; title=&quot;标记清除&quot;&gt;&lt;/a&gt;标记清除&lt;/h2&gt;&lt;h3 id=&quot;工作原理&quot;&gt;&lt;a href=&quot;#工作原理&quot; class=&quot;headerlink&quot; title=&quot;工作原理&quot;&gt;&lt;/a&gt;工作原理&lt;/h3&gt;&lt;p&gt;是当变量进入环境时（函数中声明一个临时变量），将这个变量标记为“进入环境”。当变量离开环境时，则将其标记为“离开环境”。标记“离开环境”的变量就被回收内存。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function test()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var a &amp;#x3D; 10;    &amp;#x2F;&amp;#x2F;被标记&amp;quot;进入环境&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var b &amp;#x3D; &amp;quot;hello&amp;quot;;    &amp;#x2F;&amp;#x2F;被标记&amp;quot;进入环境&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;test();    &amp;#x2F;&amp;#x2F;执行完毕后之后，a和b又被标记&amp;quot;离开环境&amp;quot;，被回收&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;工作流程&quot;&gt;&lt;a href=&quot;#工作流程&quot; class=&quot;headerlink&quot; title=&quot;工作流程&quot;&gt;&lt;/a&gt;工作流程&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;垃圾回收机制在运行的时候会给存储在内存中的所有变量都加上标记（可以是任何标记方式）&lt;/li&gt;
+&lt;li&gt;去掉处在环境中的变量和被环境中变量引用的变量（闭包）的标记&lt;/li&gt;
+&lt;li&gt;在此之后剩下的带有标记的变量被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了&lt;/li&gt;
+&lt;li&gt;最后垃圾回收机制到下一个周期运行时，将释放这些带有标记的变量的内存，回收它们所占用的空间&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
