@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-07T14:10:21.566Z</updated>
+  <updated>2020-09-08T14:13:48.422Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>创建对象的几种方式</title>
+    <link href="https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
+    <id>https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</id>
+    <published>2020-09-08T13:23:49.000Z</published>
+    <updated>2020-09-08T14:13:48.422Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一共有5种创建对象的方式&lt;/p&gt;
+&lt;h1 id=&quot;1-Object构造函数生成&quot;&gt;&lt;a href=&quot;#1-Object构造函数生成&quot; class=&quot;headerlink&quot; title=&quot;1. Object构造函数生成&quot;&gt;&lt;/a&gt;1. Object构造函数生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; new Object();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.属性 &amp;#x3D; 属性值;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.方法 &amp;#x3D; function(str) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Object是所有对象的基类，根，所有的JavaScript对象都是由Object延伸的&lt;/p&gt;
+&lt;h1 id=&quot;2-对象字面量生成&quot;&gt;&lt;a href=&quot;#2-对象字面量生成&quot; class=&quot;headerlink&quot; title=&quot;2. 对象字面量生成&quot;&gt;&lt;/a&gt;2. 对象字面量生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	属性名称:属性值,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法名称:function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>继承详解</title>
@@ -68,18 +96,18 @@
     <link href="https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     <id>https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
     <published>2020-09-06T14:01:54.000Z</published>
-    <updated>2020-09-08T13:17:51.309Z</updated>
+    <updated>2020-09-08T14:14:06.318Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;使用构造函数创建对象&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
-        
-      
+      &lt;p&gt;使用构造函数创建对象&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function Person() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Person.prototype.name &amp;#x3D; &amp;#39;Kevin&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var person &amp;#x3D; new Person();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(person.name) &amp;#x2F;&amp;#x2F; Kevin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;Person 就是一个构造函数，我们使用 new 创建了一个实例对象 person&lt;/p&gt;
+&lt;h1 id=&quot;什么是原型？&quot;&gt;&lt;a href=&quot;#什么是原型？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型？&quot;&gt;&lt;/a&gt;什么是原型？&lt;/h1&gt;&lt;p&gt;每个声明的函数（对象）（Person）都有一个prototype属性，这个属性引用了一个对象，即原型对象，也简称原型。原型对象带有constructor属性，constructor属性指向这个原型对象所在的函数（即声明的函数Person）。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Person.prototype.constructor &amp;#x3D;&amp;#x3D; Person &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;原型是利用prototype属性给函数对象添加属性和方法。&lt;/p&gt;
+&lt;h1 id=&quot;什么是原型链？&quot;&gt;&lt;a href=&quot;#什么是原型链？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型链？&quot;&gt;&lt;/a&gt;什么是原型链？&lt;/h1&gt;&lt;p&gt;JS在创建对象（不论是普通对象还是函数对象）（person）的时候，都有一个叫做&lt;strong&gt;proto&lt;/strong&gt;的内置属性，用于指向它的构造函数（Person）的prototype属性。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__ &amp;#x3D;&amp;#x3D; Person.prototype &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -555,37 +583,6 @@
       <category term="数据结构" scheme="https://jihuistudy.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
       <category term="非原创" scheme="https://jihuistudy.github.io/tags/%E9%9D%9E%E5%8E%9F%E5%88%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端算法题汇总</title>
-    <link href="https://jihuistudy.github.io/2020/04/22/%E5%89%8D%E7%AB%AF%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    <id>https://jihuistudy.github.io/2020/04/22/%E5%89%8D%E7%AB%AF%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</id>
-    <published>2020-04-22T14:45:37.000Z</published>
-    <updated>2020-04-22T15:26:32.120Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;斐波那契数列&quot;&gt;&lt;a href=&quot;#斐波那契数列&quot; class=&quot;headerlink&quot; title=&quot;斐波那契数列&quot;&gt;&lt;/a&gt;斐波那契数列&lt;/h1&gt;&lt;p&gt;形如1, 1, 2, 3, 5, 8, 13, 21, 34,
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="算法" scheme="https://jihuistudy.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
