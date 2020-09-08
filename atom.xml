@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-08T14:13:48.422Z</updated>
+  <updated>2020-09-08T14:27:06.340Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
     <id>https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</id>
     <published>2020-09-08T13:23:49.000Z</published>
-    <updated>2020-09-08T14:13:48.422Z</updated>
+    <updated>2020-09-08T14:27:06.340Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;一共有5种创建对象的方式&lt;/p&gt;
+      &lt;p&gt;一共有6种创建对象的方式&lt;/p&gt;
 &lt;h1 id=&quot;1-Object构造函数生成&quot;&gt;&lt;a href=&quot;#1-Object构造函数生成&quot; class=&quot;headerlink&quot; title=&quot;1. Object构造函数生成&quot;&gt;&lt;/a&gt;1. Object构造函数生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; new Object();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.属性 &amp;#x3D; 属性值;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.方法 &amp;#x3D; function(str) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;Object是所有对象的基类，根，所有的JavaScript对象都是由Object延伸的&lt;/p&gt;
 &lt;h1 id=&quot;2-对象字面量生成&quot;&gt;&lt;a href=&quot;#2-对象字面量生成&quot; class=&quot;headerlink&quot; title=&quot;2. 对象字面量生成&quot;&gt;&lt;/a&gt;2. 对象字面量生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	属性名称:属性值,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法名称:function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -96,7 +96,7 @@
     <link href="https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     <id>https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
     <published>2020-09-06T14:01:54.000Z</published>
-    <updated>2020-09-08T14:14:06.318Z</updated>
+    <updated>2020-09-08T14:15:42.509Z</updated>
     
     <summary type="html">
     
@@ -216,7 +216,7 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/</id>
     <published>2020-09-05T05:37:44.000Z</published>
-    <updated>2020-09-07T02:39:48.765Z</updated>
+    <updated>2020-09-08T14:16:12.343Z</updated>
     
     <summary type="html">
     
