@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-07T03:57:24.483Z</updated>
+  <updated>2020-09-07T14:10:21.566Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>继承详解</title>
+    <link href="https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-09-07T14:10:21.000Z</published>
+    <updated>2020-09-07T14:10:21.566Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>JS的垃圾回收机制</title>
@@ -53,9 +68,18 @@
     <link href="https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     <id>https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
     <published>2020-09-06T14:01:54.000Z</published>
-    <updated>2020-09-06T14:32:09.967Z</updated>
+    <updated>2020-09-08T13:17:51.309Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用构造函数创建对象&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
     
     </summary>
     
@@ -562,30 +586,6 @@
       <category term="算法" scheme="https://jihuistudy.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
       <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>怎么写文章</title>
-    <link href="https://jihuistudy.github.io/2020/04/21/%E6%80%8E%E4%B9%88%E5%86%99%E6%96%87%E7%AB%A0/"/>
-    <id>https://jihuistudy.github.io/2020/04/21/%E6%80%8E%E4%B9%88%E5%86%99%E6%96%87%E7%AB%A0/</id>
-    <published>2020-04-21T15:47:53.000Z</published>
-    <updated>2020-09-02T06:45:26.268Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;怎么用hexo博客写文章&quot;&gt;&lt;a href=&quot;#怎么用hexo博客写文章&quot; class=&quot;headerlink&quot; title=&quot;怎么用hexo博客写文章&quot;&gt;&lt;/a&gt;怎么用hexo博客写文章&lt;/h1&gt;&lt;h2 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;列表1&lt;/li&gt;
-&lt;li&gt;列表2&lt;br&gt;a 子列表&lt;br&gt;b 子列表&lt;/li&gt;
-&lt;li&gt;列表3&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="探索" scheme="https://jihuistudy.github.io/categories/%E6%8E%A2%E7%B4%A2/"/>
-    
-    
-      <category term="hexo" scheme="https://jihuistudy.github.io/tags/hexo/"/>
     
   </entry>
   
