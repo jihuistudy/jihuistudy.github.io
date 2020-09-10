@@ -49,13 +49,29 @@
     <link href="https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/"/>
     <id>https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-09-07T14:10:21.000Z</published>
-    <updated>2020-09-07T14:10:21.566Z</updated>
+    <updated>2020-09-10T14:33:54.439Z</updated>
     
     <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;继承的原理&quot;&gt;&lt;a href=&quot;#继承的原理&quot; class=&quot;headerlink&quot;
+        
+      
     
     </summary>
     
     
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     
   </entry>
   
@@ -64,7 +80,7 @@
     <link href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
     <id>https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
     <published>2020-09-07T02:36:08.000Z</published>
-    <updated>2020-09-07T03:57:24.483Z</updated>
+    <updated>2020-09-09T00:54:02.824Z</updated>
     
     <summary type="html">
     
@@ -92,11 +108,11 @@
   </entry>
   
   <entry>
-    <title>原型与原型链</title>
+    <title>原型，原型链与instanceof</title>
     <link href="https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
     <id>https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
     <published>2020-09-06T14:01:54.000Z</published>
-    <updated>2020-09-08T14:15:42.509Z</updated>
+    <updated>2020-09-10T13:52:17.634Z</updated>
     
     <summary type="html">
     
@@ -105,6 +121,10 @@
 &lt;p&gt;Person 就是一个构造函数，我们使用 new 创建了一个实例对象 person&lt;/p&gt;
 &lt;h1 id=&quot;什么是原型？&quot;&gt;&lt;a href=&quot;#什么是原型？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型？&quot;&gt;&lt;/a&gt;什么是原型？&lt;/h1&gt;&lt;p&gt;每个声明的函数（对象）（Person）都有一个prototype属性，这个属性引用了一个对象，即原型对象，也简称原型。原型对象带有constructor属性，constructor属性指向这个原型对象所在的函数（即声明的函数Person）。&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Person.prototype.constructor &amp;#x3D;&amp;#x3D; Person &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;用constructor属性来判断某实例对象是否是某构造函数直接生成的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__.constructor &amp;#x3D;&amp;#x3D; Person &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__.constructor &amp;#x3D;&amp;#x3D; Object &amp;#x2F;&amp;#x2F; false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;原型是利用prototype属性给函数对象添加属性和方法。&lt;/p&gt;
 &lt;h1 id=&quot;什么是原型链？&quot;&gt;&lt;a href=&quot;#什么是原型链？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型链？&quot;&gt;&lt;/a&gt;什么是原型链？&lt;/h1&gt;&lt;p&gt;JS在创建对象（不论是普通对象还是函数对象）（person）的时候，都有一个叫做&lt;strong&gt;proto&lt;/strong&gt;的内置属性，用于指向它的构造函数（Person）的prototype属性。&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__ &amp;#x3D;&amp;#x3D; Person.prototype &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -216,7 +236,7 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/</id>
     <published>2020-09-05T05:37:44.000Z</published>
-    <updated>2020-09-08T14:16:12.343Z</updated>
+    <updated>2020-09-09T00:55:47.352Z</updated>
     
     <summary type="html">
     
