@@ -49,17 +49,16 @@
     <link href="https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/"/>
     <id>https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-09-07T14:10:21.000Z</published>
-    <updated>2020-09-10T14:33:54.439Z</updated>
+    <updated>2020-09-11T13:03:42.539Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;继承的原理&quot;&gt;&lt;a href=&quot;#继承的原理&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;继承的原理&quot;&gt;&lt;a href=&quot;#继承的原理&quot; class=&quot;headerlink&quot; title=&quot;继承的原理&quot;&gt;&lt;/a&gt;继承的原理&lt;/h1&gt;&lt;p&gt;与原型和原型链有关。每个函数都有个原型对象，这个对象用来存储通过这个函数所创建的所有实例的共有属性和方法。在读取某个对象属性的时候，从实例开始，如果实例有就返回，如果没有就找原型对象，找到了就返回。通过实例只能访问原型对象里的值，但是不能修改，这就实现了继承。通过继承可以使子类的实例使用在父类中定义的属性和方法。&lt;/p&gt;
+&lt;h1 id=&quot;继承的几种方式&quot;&gt;&lt;a href=&quot;#继承的几种方式&quot; class=&quot;headerlink&quot; title=&quot;继承的几种方式&quot;&gt;&lt;/a&gt;继承的几种方式&lt;/h1&gt;&lt;h2 id=&quot;1-原型链继承&quot;&gt;&lt;a href=&quot;#1-原型链继承&quot; class=&quot;headerlink&quot; title=&quot;1.原型链继承&quot;&gt;&lt;/a&gt;1.原型链继承&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function Parent1() &amp;#123; &amp;#x2F;&amp;#x2F; 父类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.name &amp;#x3D; &amp;#39;parent1&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.sum &amp;#x3D; function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		alert(this.name)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Parent1.prototype.age &amp;#x3D; 50;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var p1 &amp;#x3D; new Parent1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;p1.sex &amp;#x3D; &amp;#39;man&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function Child1() &amp;#123; &amp;#x2F;&amp;#x2F; 子类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.type &amp;#x3D; &amp;#39;child1&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Child1.prototype &amp;#x3D; new Parent1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var c1 &amp;#x3D; new Child1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.name); &amp;#x2F;&amp;#x2F; &amp;#39;parent1&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.age); &amp;#x2F;&amp;#x2F; 50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1 instanceof Parent1); &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.sex); &amp;#x2F;&amp;#x2F; undefined 新实例不会继承父类实例的属性！&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;重点：&lt;br&gt;让新实例的原型等于父类的实例。&lt;br&gt;特点：&lt;br&gt;1、实例可继承的属性有：实例的构造函数的属性，父类构造函数属性，父类原型的属性。（新实例不会继承父类实例的属性！）&lt;br&gt;缺点：&lt;br&gt;1、新实例无法向父类构造函数传参。&lt;br&gt;2、继承单一。&lt;br&gt;3、所有新实例都会共享父类实例的属性。（原型链中的原型对象是共用的，一个实例修改了原型属性，另一个实例的原型属性也会被修改！）&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -236,7 +235,7 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/</id>
     <published>2020-09-05T05:37:44.000Z</published>
-    <updated>2020-09-09T00:55:47.352Z</updated>
+    <updated>2020-09-11T08:20:06.685Z</updated>
     
     <summary type="html">
     
