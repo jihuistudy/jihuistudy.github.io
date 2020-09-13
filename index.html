@@ -159,7 +159,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/11/%E5%85%B3%E4%BA%8E%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E4%B8%AA%E6%95%B0%E7%BB%84API/">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
@@ -173,7 +173,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/11/%E5%85%B3%E4%BA%8E%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E4%B8%AA%E6%95%B0%E7%BB%84API/" class="post-title-link" itemprop="url">关于遍历数组元素的几个数组API</a>
+            <a href="/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/" class="post-title-link" itemprop="url">数组常用API与分类</a>
         </h2>
 
         <div class="post-meta">
@@ -182,10 +182,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-11 21:31:11 / 修改时间：22:31:45" itemprop="dateCreated datePublished" datetime="2020-09-11T21:31:11+08:00">2020-09-11</time>
+              <time title="创建时间：2020-09-11 21:31:11" itemprop="dateCreated datePublished" datetime="2020-09-11T21:31:11+08:00">2020-09-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-13 12:09:22" itemprop="dateModified" datetime="2020-09-13T12:09:22+08:00">2020-09-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -202,14 +208,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.5k</span>
+              <span>6.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>6 分钟</span>
             </span>
 
         </div>
@@ -221,13 +227,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="数组API"><a href="#数组API" class="headerlink" title="数组API"></a>数组API</h1><h2 id="1-forEach遍历数组所有元素"><a href="#1-forEach遍历数组所有元素" class="headerlink" title="1.forEach遍历数组所有元素"></a>1.forEach遍历数组所有元素</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [1,2,3,4,5];</span><br><span class="line">arr.forEach(function (item,index) &#123;</span><br><span class="line">	console.log(index,item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+          <h1 id="数组迭代器"><a href="#数组迭代器" class="headerlink" title="数组迭代器"></a>数组迭代器</h1><p>arr.keys()返回索引值迭代器;<br>arr.values()返回元素值迭代器;<br>arr.entries()返回键值对。</p>
+<h1 id="遍历数组的数组API"><a href="#遍历数组的数组API" class="headerlink" title="遍历数组的数组API"></a>遍历数组的数组API</h1><h2 id="1-forEach遍历数组所有元素"><a href="#1-forEach遍历数组所有元素" class="headerlink" title="1.forEach遍历数组所有元素"></a>1.forEach遍历数组所有元素</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [1,2,3,4,5];</span><br><span class="line">arr.forEach(function (item,index) &#123;</span><br><span class="line">	console.log(index,item)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>输出： 0 1; 1 2; 2 3; 3 4; 4 5;</p>
 <h2 id="2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false"><a href="#2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false" class="headerlink" title="2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false"></a>2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [1,2,3,4,5];</span><br><span class="line">arr.every(function (item,index) &#123;</span><br><span class="line">	if(item &lt; 4) &#123;</span><br><span class="line">		return true</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>输出：false</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/09/11/%E5%85%B3%E4%BA%8E%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E4%B8%AA%E6%95%B0%E7%BB%84API/#more" rel="contents">
+              <a class="btn" href="/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -970,7 +977,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-11 16:20:06" itemprop="dateModified" datetime="2020-09-11T16:20:06+08:00">2020-09-11</time>
+                <time title="修改时间：2020-09-12 09:01:48" itemprop="dateModified" datetime="2020-09-12T09:01:48+08:00">2020-09-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -988,7 +995,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.9k</span>
+              <span>2.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1009,7 +1016,7 @@
       
           <h1 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h1><h2 id="1-JS的基本数据类型，引用数据类型，typeof运算符"><a href="#1-JS的基本数据类型，引用数据类型，typeof运算符" class="headerlink" title="1.JS的基本数据类型，引用数据类型，typeof运算符"></a>1.JS的基本数据类型，引用数据类型，typeof运算符</h2><p>-保存基本数据类型的变量保存的是值本身，保存引用类型的变量保存的并不是对象本身，而是一个指向该对象的引用地址。<br>-基本数据类型的值会把本身保存在栈中，引用类型保存在栈中的是引用地址，内容会存放在堆内存中。<br>-引用类型数据赋值，赋的是引用地址，所以被赋值的对象b以及原对象a的引用地址一样，该引用地址所对应的内容会共享。<br>-如果原对象a被重新赋值，a会改变地址，在堆内存中开辟一个新的空间，被赋值的对象b的地址与被重新赋值的对象a不一样了，所以改变a的值不会影响b。</p>
 <h2 id="2-JS的变量计算-强制类型转换"><a href="#2-JS的变量计算-强制类型转换" class="headerlink" title="2.JS的变量计算-强制类型转换"></a>2.JS的变量计算-强制类型转换</h2><p>字符串拼接，==运算符，if语句，逻辑运算</p>
-<h2 id="3-JS中有哪些内置函数——数据封装类对象"><a href="#3-JS中有哪些内置函数——数据封装类对象" class="headerlink" title="3.JS中有哪些内置函数——数据封装类对象"></a>3.JS中有哪些内置函数——数据封装类对象</h2><p>Object/Array/Boolean/Number/String/Function/Date/RegExp/Error</p>
+<h2 id="3-JS中有哪些内置函数（数据封装类对象），内置对象？"><a href="#3-JS中有哪些内置函数（数据封装类对象），内置对象？" class="headerlink" title="3.JS中有哪些内置函数（数据封装类对象），内置对象？"></a>3.JS中有哪些内置函数（数据封装类对象），内置对象？</h2><p>内置函数：Object/Array/Boolean/Number/String/Function/Date/RegExp/Error<br>内置对象：Math/JSON</p>
 <h2 id="4-this的不同应用场景，如何取值"><a href="#4-this的不同应用场景，如何取值" class="headerlink" title="4.this的不同应用场景，如何取值"></a>4.this的不同应用场景，如何取值</h2><ul>
 <li>当作普通函数被调用(即函数独立调用时) —— 返回window</li>
 <li>使用call，apply，bind的时候 —— 第一个参数传入什么值就指向什么值，如果第一个参数为空，那么就指向window。call和apply的使用可以直接执行函数，bind要返回一个新的函数执行。</li>
@@ -1219,7 +1226,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">10</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1264,13 +1271,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">55k</span>
+    <span title="站点总字数">60k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">50 分钟</span>
+    <span title="站点阅读时长">54 分钟</span>
 </div>
 
 <!--

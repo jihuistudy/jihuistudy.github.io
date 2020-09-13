@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-11T14:31:45.835Z</updated>
+  <updated>2020-09-13T04:09:22.533Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -17,15 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>关于遍历数组元素的几个数组API</title>
-    <link href="https://jihuistudy.github.io/2020/09/11/%E5%85%B3%E4%BA%8E%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E4%B8%AA%E6%95%B0%E7%BB%84API/"/>
-    <id>https://jihuistudy.github.io/2020/09/11/%E5%85%B3%E4%BA%8E%E9%81%8D%E5%8E%86%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9A%84%E5%87%A0%E4%B8%AA%E6%95%B0%E7%BB%84API/</id>
+    <title>数组常用API与分类</title>
+    <link href="https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/"/>
+    <id>https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/</id>
     <published>2020-09-11T13:31:11.000Z</published>
-    <updated>2020-09-11T14:31:45.835Z</updated>
+    <updated>2020-09-13T04:09:22.533Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;数组API&quot;&gt;&lt;a href=&quot;#数组API&quot; class=&quot;headerlink&quot; title=&quot;数组API&quot;&gt;&lt;/a&gt;数组API&lt;/h1&gt;&lt;h2 id=&quot;1-forEach遍历数组所有元素&quot;&gt;&lt;a href=&quot;#1-forEach遍历数组所有元素&quot; class=&quot;headerlink&quot; title=&quot;1.forEach遍历数组所有元素&quot;&gt;&lt;/a&gt;1.forEach遍历数组所有元素&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr &amp;#x3D; [1,2,3,4,5];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.forEach(function (item,index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(index,item)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;h1 id=&quot;数组迭代器&quot;&gt;&lt;a href=&quot;#数组迭代器&quot; class=&quot;headerlink&quot; title=&quot;数组迭代器&quot;&gt;&lt;/a&gt;数组迭代器&lt;/h1&gt;&lt;p&gt;arr.keys()返回索引值迭代器;&lt;br&gt;arr.values()返回元素值迭代器;&lt;br&gt;arr.entries()返回键值对。&lt;/p&gt;
+&lt;h1 id=&quot;遍历数组的数组API&quot;&gt;&lt;a href=&quot;#遍历数组的数组API&quot; class=&quot;headerlink&quot; title=&quot;遍历数组的数组API&quot;&gt;&lt;/a&gt;遍历数组的数组API&lt;/h1&gt;&lt;h2 id=&quot;1-forEach遍历数组所有元素&quot;&gt;&lt;a href=&quot;#1-forEach遍历数组所有元素&quot; class=&quot;headerlink&quot; title=&quot;1.forEach遍历数组所有元素&quot;&gt;&lt;/a&gt;1.forEach遍历数组所有元素&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr &amp;#x3D; [1,2,3,4,5];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.forEach(function (item,index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(index,item)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;输出： 0 1; 1 2; 2 3; 3 4; 4 5;&lt;/p&gt;
 &lt;h2 id=&quot;2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot;&gt;&lt;a href=&quot;#2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot; class=&quot;headerlink&quot; title=&quot;2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot;&gt;&lt;/a&gt;2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr &amp;#x3D; [1,2,3,4,5];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.every(function (item,index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	if(item &amp;lt; 4) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;输出：false&lt;/p&gt;
@@ -41,6 +42,8 @@
       <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
       <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+      <category term="数组" scheme="https://jihuistudy.github.io/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
@@ -263,13 +266,13 @@
     <link href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/"/>
     <id>https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/</id>
     <published>2020-09-05T05:37:44.000Z</published>
-    <updated>2020-09-11T08:20:06.685Z</updated>
+    <updated>2020-09-12T01:01:48.309Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;JS&quot;&gt;&lt;a href=&quot;#JS&quot; class=&quot;headerlink&quot; title=&quot;JS&quot;&gt;&lt;/a&gt;JS&lt;/h1&gt;&lt;h2 id=&quot;1-JS的基本数据类型，引用数据类型，typeof运算符&quot;&gt;&lt;a href=&quot;#1-JS的基本数据类型，引用数据类型，typeof运算符&quot; class=&quot;headerlink&quot; title=&quot;1.JS的基本数据类型，引用数据类型，typeof运算符&quot;&gt;&lt;/a&gt;1.JS的基本数据类型，引用数据类型，typeof运算符&lt;/h2&gt;&lt;p&gt;-保存基本数据类型的变量保存的是值本身，保存引用类型的变量保存的并不是对象本身，而是一个指向该对象的引用地址。&lt;br&gt;-基本数据类型的值会把本身保存在栈中，引用类型保存在栈中的是引用地址，内容会存放在堆内存中。&lt;br&gt;-引用类型数据赋值，赋的是引用地址，所以被赋值的对象b以及原对象a的引用地址一样，该引用地址所对应的内容会共享。&lt;br&gt;-如果原对象a被重新赋值，a会改变地址，在堆内存中开辟一个新的空间，被赋值的对象b的地址与被重新赋值的对象a不一样了，所以改变a的值不会影响b。&lt;/p&gt;
 &lt;h2 id=&quot;2-JS的变量计算-强制类型转换&quot;&gt;&lt;a href=&quot;#2-JS的变量计算-强制类型转换&quot; class=&quot;headerlink&quot; title=&quot;2.JS的变量计算-强制类型转换&quot;&gt;&lt;/a&gt;2.JS的变量计算-强制类型转换&lt;/h2&gt;&lt;p&gt;字符串拼接，==运算符，if语句，逻辑运算&lt;/p&gt;
-&lt;h2 id=&quot;3-JS中有哪些内置函数——数据封装类对象&quot;&gt;&lt;a href=&quot;#3-JS中有哪些内置函数——数据封装类对象&quot; class=&quot;headerlink&quot; title=&quot;3.JS中有哪些内置函数——数据封装类对象&quot;&gt;&lt;/a&gt;3.JS中有哪些内置函数——数据封装类对象&lt;/h2&gt;&lt;p&gt;Object/Array/Boolean/Number/String/Function/Date/RegExp/Error&lt;/p&gt;
+&lt;h2 id=&quot;3-JS中有哪些内置函数（数据封装类对象），内置对象？&quot;&gt;&lt;a href=&quot;#3-JS中有哪些内置函数（数据封装类对象），内置对象？&quot; class=&quot;headerlink&quot; title=&quot;3.JS中有哪些内置函数（数据封装类对象），内置对象？&quot;&gt;&lt;/a&gt;3.JS中有哪些内置函数（数据封装类对象），内置对象？&lt;/h2&gt;&lt;p&gt;内置函数：Object/Array/Boolean/Number/String/Function/Date/RegExp/Error&lt;br&gt;内置对象：Math/JSON&lt;/p&gt;
 &lt;h2 id=&quot;4-this的不同应用场景，如何取值&quot;&gt;&lt;a href=&quot;#4-this的不同应用场景，如何取值&quot; class=&quot;headerlink&quot; title=&quot;4.this的不同应用场景，如何取值&quot;&gt;&lt;/a&gt;4.this的不同应用场景，如何取值&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;当作普通函数被调用(即函数独立调用时) —— 返回window&lt;/li&gt;
 &lt;li&gt;使用call，apply，bind的时候 —— 第一个参数传入什么值就指向什么值，如果第一个参数为空，那么就指向window。call和apply的使用可以直接执行函数，bind要返回一个新的函数执行。&lt;/li&gt;
