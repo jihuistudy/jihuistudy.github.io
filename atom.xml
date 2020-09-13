@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-09-13T06:11:53.377Z</updated>
+  <updated>2020-09-13T14:35:11.731Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JS入门编程题的知识点汇总</title>
+    <link href="https://jihuistudy.github.io/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/"/>
+    <id>https://jihuistudy.github.io/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/</id>
+    <published>2020-09-13T09:15:54.000Z</published>
+    <updated>2020-09-13T14:35:11.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h1&gt;&lt;p&gt;1.str.split(“符号”) 将字符串以自定义符号分割成数组，以数组索引值来获取被分割的字符串。&lt;br&gt;2.Math.round(num
+        
+      
+    
+    </summary>
+    
+    
+      <category term="编程题" scheme="https://jihuistudy.github.io/categories/%E7%BC%96%E7%A8%8B%E9%A2%98/"/>
+    
+    
+      <category term="算法" scheme="https://jihuistudy.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>JS进制转换</title>
@@ -583,30 +612,6 @@
       <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="笔试" scheme="https://jihuistudy.github.io/tags/%E7%AC%94%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端复习企划2-HTML5</title>
-    <link href="https://jihuistudy.github.io/2020/08/31/HTML5/"/>
-    <id>https://jihuistudy.github.io/2020/08/31/HTML5/</id>
-    <published>2020-08-31T12:10:53.000Z</published>
-    <updated>2020-09-01T01:57:55.554Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;HTML5&quot;&gt;&lt;a href=&quot;#HTML5&quot; class=&quot;headerlink&quot; title=&quot;HTML5&quot;&gt;&lt;/a&gt;HTML5&lt;/h1&gt;&lt;h2 id=&quot;1-HTML5有哪些新特性？移除了哪些元素？&quot;&gt;&lt;a href=&quot;#1-HTML5有哪些新特性？移除了哪些元素？&quot; class=&quot;headerlink&quot; title=&quot;1.HTML5有哪些新特性？移除了哪些元素？&quot;&gt;&lt;/a&gt;1.HTML5有哪些新特性？移除了哪些元素？&lt;/h2&gt;&lt;h2 id=&quot;2-如何区别HTML与HTML5？&quot;&gt;&lt;a href=&quot;#2-如何区别HTML与HTML5？&quot; class=&quot;headerlink&quot; title=&quot;2.如何区别HTML与HTML5？&quot;&gt;&lt;/a&gt;2.如何区别HTML与HTML5？&lt;/h2&gt;&lt;p&gt;-概念：HTML即超文本标记语言，标准通用标记语言下的一个应用。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。HTML5是HTML的第五次重大修改而成的，可以理解为升级版，但里面的内容是非常丰富的　　&lt;br&gt;-区分 html 和 html5有很多方法，下面举例看一下区别：　　&lt;br&gt;1.在文档类型声明上　　&lt;br&gt;html:&lt;br&gt;&lt;code&gt;&amp;lt;!DOCTYPE html PUBLIC &amp;quot;-//W3C//DTD XHTML 1.0 Transitional//EN&amp;quot;&amp;gt;&lt;/code&gt;&lt;br&gt;HTML5:&lt;br&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/code&gt;　&lt;br&gt;说明：在文档声明上，html代码很长，而html5只有简简单单的声明。　　&lt;br&gt;2.在结构语义上　　&lt;br&gt;html4.0：没有体现结构语义化的标签　　&lt;br&gt;html5：在语义上却有很大的优势。提供了一些新的html5标签，比如:&lt;br&gt;&lt;code&gt;&amp;lt;header&amp;gt; 、&amp;lt;nav&amp;gt;、&amp;lt;article&amp;gt;、&amp;lt;aside&amp;gt;、&amp;lt;footer&amp;gt;&lt;/code&gt;&lt;br&gt;3.在html5新特性上&lt;/p&gt;
-&lt;h2 id=&quot;3-为什么HTML5只需要写-lt-DOCTYPE-HTML-gt&quot;&gt;&lt;a href=&quot;#3-为什么HTML5只需要写-lt-DOCTYPE-HTML-gt&quot; class=&quot;headerlink&quot; title=&quot;3.为什么HTML5只需要写&amp;lt;!DOCTYPE HTML&amp;gt;?&quot;&gt;&lt;/a&gt;3.为什么HTML5只需要写&lt;code&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/code&gt;?&lt;/h2&gt;&lt;p&gt;HTML5不基于SGML(标准通用标记语言)，因此不需要DTD(文档类型定义)，但是需要doctype来规范浏览器的行为。而HTML基于SGML，需要DTD，才能告知浏览器所使用的文档类型。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
