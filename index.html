@@ -190,7 +190,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-05 12:00:33" itemprop="dateModified" datetime="2020-10-05T12:00:33+08:00">2020-10-05</time>
+                <time title="修改时间：2020-10-05 15:55:55" itemprop="dateModified" datetime="2020-10-05T15:55:55+08:00">2020-10-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,14 +208,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1k</span>
+              <span>2.4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -227,14 +227,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h1><p>1.str.split(“符号”) 将字符串以自定义符号分割成数组，以数组索引值来获取被分割的字符串。<br>2.Math.round(num * 100) / 100; 实现数字的小数四舍五入并保留两位小数<br>3.num.toFixed(2); 给数字保留两位小数，但是他不是四舍五入的，而是根据四舍六入五取偶（又称四舍六入五留双）法则保留位数的。简单来说就是：四舍六入五考虑，五后非零就进一，五后为零看奇偶，五前为偶应舍去，五前为奇要进一。<br>综上：给数字保留N位小数并且最后一位四舍五入的方法为 </p>
+          <h1 id="1-保留两位小数最好的方法"><a href="#1-保留两位小数最好的方法" class="headerlink" title="1. 保留两位小数最好的方法"></a>1. 保留两位小数最好的方法</h1><p>1.str.split(“符号”) 将字符串以自定义符号分割成数组，以数组索引值来获取被分割的字符串。<br>2.Math.round(num * 100) / 100; 实现数字的小数四舍五入并保留两位小数<br>3.num.toFixed(2); 给数字保留两位小数，但是他不是四舍五入的，而是根据四舍六入五取偶（又称四舍六入五留双）法则保留位数的。简单来说就是：四舍六入五考虑，五后非零就进一，五后为零看奇偶，五前为偶应舍去，五前为奇要进一。<br><font color="red">综上：给数字保留N位小数并且最后一位四舍五入的方法为 </font></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Math.round(num * 10^N) &#x2F; 10^N).toFixed(N);</span><br></pre></td></tr></table></figure>
 <p>4.将字符串转换为数字的方法<br>parseInt() 转换为整数<br>parseFloat() 转换为浮点数</p>
-<h1 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h1><p>String.fromCharCode(ASCII码); 输出ASCII码对应字符</p>
+<h1 id="2-字符与ASCII码的相互转化"><a href="#2-字符与ASCII码的相互转化" class="headerlink" title="2.字符与ASCII码的相互转化"></a>2.字符与ASCII码的相互转化</h1><p>String.fromCharCode(ASCII码); 输出ASCII码对应字符</p>
 <p>var str = ‘c’;<br>str.charCodeAt(); 输出字符对应ASCII码</p>
+<h2 id="大写字母转小写"><a href="#大写字母转小写" class="headerlink" title="大写字母转小写"></a>大写字母转小写</h2><p><code>String.fromCharCode(&#39;c&#39;.charCodeAt()+32)</code> // c –&gt; C</p>
 <h1 id="3-反转字符串"><a href="#3-反转字符串" class="headerlink" title="3. 反转字符串"></a>3. 反转字符串</h1><p>1.将字符串变成数组var array = str.split(‘’)<br>2.将数组元素反转var rearray = array.reverse()—-输出还是数组<br>3.将数组转化为字符串rearray.join(‘’)完成字符串反转</p>
-<h1 id="4"><a href="#4" class="headerlink" title="4."></a>4.</h1><p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/%E9%A2%98%E7%9B%AEkiki%E7%AE%97%E6%B3%95.JPG" alt="Alt"></p>
+<h1 id="4-slice字符串-数组API"><a href="#4-slice字符串-数组API" class="headerlink" title="4. slice字符串/数组API"></a>4. slice字符串/数组API</h1><p>str.slice(start,end)  slice字符串/数组API，用来提取字符串的某个部分，并以新的字符串返回被提取的部分<br>使用 start（包含） 和 end（不包含） 参数来指定字符串提取的部分。<br>字符串中第一个字符位置为 0, 第二个字符位置为 1, 以此类推。<br>提示： 如果是负数，则该参数规定的是从字符串的尾部开始算起的位置。也就是说，-1 指字符串的最后一个字符，-2 指倒数第二个字符，以此类推。<br>则str.slice(-2)可以获取字符串最后两个字符</p>
+<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/%E9%A2%98%E7%9B%AEkiki%E7%AE%97%E6%B3%95.JPG" alt="Alt"></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var input &#x3D; readline().split(&#39; &#39;); &#x2F;&#x2F; readline()输入一行字符串&quot;40 85&quot;</span><br><span class="line">var a &#x3D; input[0];</span><br><span class="line">var b &#x3D; input[1];</span><br><span class="line">function count (num1,num2) &#123;</span><br><span class="line">    var sum</span><br><span class="line">    if(parseInt(num1)&gt;0 &amp;&amp; parseInt(num2)&gt;0)&#123;</span><br><span class="line">       var renum1 &#x3D; num1.slice(-2);</span><br><span class="line">       var renum2 &#x3D; num2.slice(-2);</span><br><span class="line">       sum &#x3D; parseInt(renum1) + parseInt(renum2);</span><br><span class="line">    &#125;</span><br><span class="line">    var sumstr &#x3D; sum.toString().slice(-2);</span><br><span class="line">    if(sumstr.indexOf(&#39;0&#39;)&#x3D;&#x3D; 0) &#123;</span><br><span class="line">       return sumstr.slice(-1); </span><br><span class="line">    &#125;</span><br><span class="line">    return sumstr; </span><br><span class="line">&#125;</span><br><span class="line">console.log(count(a,b));</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-对于牛客变成系统单行输入与多行输入的区别"><a href="#5-对于牛客变成系统单行输入与多行输入的区别" class="headerlink" title="5.对于牛客变成系统单行输入与多行输入的区别"></a>5.对于牛客变成系统单行输入与多行输入的区别</h1><h2 id="单行输入"><a href="#单行输入" class="headerlink" title="单行输入"></a>单行输入</h2><p>输入是字符串形式，使用split API来分割输入为数组项，使用数组索引来获取输入<br>输入：40 85</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var input &#x3D; readline().split(&#39; &#39;); &#x2F;&#x2F; 数组</span><br><span class="line">var a &#x3D; input[0]; &#x2F;&#x2F; 字符串</span><br></pre></td></tr></table></figure>
+<h2 id="多行输入"><a href="#多行输入" class="headerlink" title="多行输入"></a>多行输入</h2><p>输入多行，输出多行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var str;</span><br><span class="line">while (str &#x3D; readline()) &#123;</span><br><span class="line">    console.log(str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="6-JS移位运算符"><a href="#6-JS移位运算符" class="headerlink" title="6.JS移位运算符"></a>6.JS移位运算符</h1><h2 id="“-lt-lt-”运算符执行左移位运算"><a href="#“-lt-lt-”运算符执行左移位运算" class="headerlink" title="“&lt;&lt;”运算符执行左移位运算"></a>“&lt;&lt;”运算符执行左移位运算</h2><p>在移位运算过程中，符号位始终保持不变。如果右侧空出位置，则自动填充为 0；超出 32 位的值，则自动丢弃。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(5 &lt;&lt; 2);  &#x2F;&#x2F;返回值20</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/6-1.jpg" alt="Alt"></p>
+<h2 id="“-gt-gt-”运算符执行有符号右移位运算"><a href="#“-gt-gt-”运算符执行有符号右移位运算" class="headerlink" title="“&gt;&gt;”运算符执行有符号右移位运算"></a>“&gt;&gt;”运算符执行有符号右移位运算</h2><p>与左移运算操作相反，它把32位数字中的所有有效位整体右移，再使用<code>符号位</code>的值填充空位，移动过程中超出的值将被丢弃。如果为负数则左边空出的位置由1填充。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(1000 &gt;&gt; 8);  &#x2F;&#x2F;返回值3</span><br><span class="line">console.log(-1000 &gt;&gt; 8);  &#x2F;&#x2F;返回值 -4</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/6-2.jpg" alt="Alt"><br><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/6-3.jpg" alt="Alt"></p>
+<h2 id="“-gt-gt-gt-”运算符执行无符号右移位运算"><a href="#“-gt-gt-gt-”运算符执行无符号右移位运算" class="headerlink" title="“&gt;&gt;&gt;”运算符执行无符号右移位运算"></a>“&gt;&gt;&gt;”运算符执行无符号右移位运算</h2><p>它把无符号的 32 位整数所有数位整体右移。对于无符号数或正数右移运算，无符号右移与有符号右移运算的结果是相同的。<br>对于负数来说，无符号右移将使用 0 来填充所有的空位，同时会把负数作为正数来处理。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(1000 &gt;&gt; 8);  &#x2F;&#x2F;返回值3</span><br><span class="line">console.log(1000 &gt;&gt; 8);  &#x2F;&#x2F;返回值3</span><br><span class="line">console.log(-1000 &gt;&gt; 8);  &#x2F;&#x2F;返回值 -4</span><br><span class="line">console.log(-1000 &gt;&gt;&gt; 8);  &#x2F;&#x2F;返回值 16777212</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/6-4.jpg" alt="Alt"></p>
+<h2 id="题目-1"><a href="#题目-1" class="headerlink" title="题目"></a>题目</h2><p><img src="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/%E9%A2%98%E7%9B%AE%E8%AE%A1%E7%AE%972%E7%9A%84n%E6%AC%A1%E6%96%B9.JPG" alt="Alt"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">while(line &#x3D; readline())&#123;</span><br><span class="line">    function power(line)&#123; </span><br><span class="line">        return 1 &lt;&lt; line; &#x2F;&#x2F;通过位运算中的符号左移&lt;&lt;line位，二进制将1左移n位，即变为2的n次方</span><br><span class="line">    &#125;</span><br><span class="line">    console.log(power(line));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -1250,13 +1270,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">62k</span>
+    <span title="站点总字数">63k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">56 分钟</span>
+    <span title="站点阅读时长">57 分钟</span>
 </div>
 
 <!--
