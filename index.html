@@ -184,7 +184,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-10-11 14:01:39 / 修改时间：21:24:09" itemprop="dateCreated datePublished" datetime="2020-10-11T14:01:39+08:00">2020-10-11</time>
+              <time title="创建时间：2020-10-11 14:01:39 / 修改时间：22:35:34" itemprop="dateCreated datePublished" datetime="2020-10-11T14:01:39+08:00">2020-10-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -202,7 +202,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.1k</span>
+              <span>2.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -286,6 +286,7 @@
 <li>updateChildren</li>
 </ul>
 <h1 id="4-vuex是什么？"><a href="#4-vuex是什么？" class="headerlink" title="4.vuex是什么？"></a>4.vuex是什么？</h1><p>全局状态管理，所有页面共享数据。<br>Vuex有5种属性: 分别是 state、getter、mutation、action、module<br>state：包含了store中存储的各个状态，或者说存储的变量。<br>getter：类似vue的计算属性，主要用来过滤一些数据。<br>mutation：定义的方法动态修改Vuex的store 中的状态或数据，只能是同步操作。<br>action：将mutations里面处理数据的方法变成可异步的处理数据的方法，简单的说就是可以异步操作数据。<br><img src="/2020/10/11/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%92-VUE/vuex.png" alt="Alt"></p>
+<h1 id="5-vue父组件与子组件参数的传递"><a href="#5-vue父组件与子组件参数的传递" class="headerlink" title="5.vue父组件与子组件参数的传递"></a>5.vue父组件与子组件参数的传递</h1><p>父组件传给子组件：子组件通过props方法接受数据；<br>子组件传给父组件： $emit 方法传递参数<br>非父子组件间的数据传递，兄弟组件传值<br>eventBus，就是创建一个事件中心，相当于中转站，可以用它来传递事件和接收事件。项目比较小时，用这个比较合适（虽然也有不少人推荐直接用VUEX，具体来说看需求）</p>
 
       
     </div>
