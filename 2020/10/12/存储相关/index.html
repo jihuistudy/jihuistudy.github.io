@@ -20,22 +20,21 @@
     var CONFIG = {"hostname":"jihuistudy.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="什么是垃圾回收机制？释放无用的数据，回收内存，会按照固定的时间间隔周期性的执行。 JS中常见的垃圾回收方式是标记清除和引用技术标记清除工作原理是当变量进入环境时（函数中声明一个临时变量），将这个变量标记为“进入环境”。当变量离开环境时，则将其标记为“离开环境”。标记“离开环境”的变量就被回收内存。 12345function test()&amp;#123;    var a &#x3D; 10;">
+  <meta name="description" content="1.cookie，localStorage，sessionStorage">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JS的垃圾回收机制">
-<meta property="og:url" content="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/index.html">
+<meta property="og:title" content="存储相关">
+<meta property="og:url" content="https://jihuistudy.github.io/2020/10/12/%E5%AD%98%E5%82%A8%E7%9B%B8%E5%85%B3/index.html">
 <meta property="og:site_name" content="纪惠de博客">
-<meta property="og:description" content="什么是垃圾回收机制？释放无用的数据，回收内存，会按照固定的时间间隔周期性的执行。 JS中常见的垃圾回收方式是标记清除和引用技术标记清除工作原理是当变量进入环境时（函数中声明一个临时变量），将这个变量标记为“进入环境”。当变量离开环境时，则将其标记为“离开环境”。标记“离开环境”的变量就被回收内存。 12345function test()&amp;#123;    var a &#x3D; 10;">
+<meta property="og:description" content="1.cookie，localStorage，sessionStorage">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-09-07T02:36:08.000Z">
-<meta property="article:modified_time" content="2020-09-09T00:54:02.824Z">
+<meta property="article:published_time" content="2020-10-12T00:51:28.000Z">
+<meta property="article:modified_time" content="2020-10-12T00:57:19.703Z">
 <meta property="article:author" content="纪惠">
 <meta property="article:tag" content="前端">
-<meta property="article:tag" content="面试">
-<meta property="article:tag" content="JS">
+<meta property="article:tag" content="存储">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
+<link rel="canonical" href="https://jihuistudy.github.io/2020/10/12/%E5%AD%98%E5%82%A8%E7%9B%B8%E5%85%B3/">
 
 
 <script id="page-configurations">
@@ -48,7 +47,7 @@
   };
 </script>
 
-  <title>JS的垃圾回收机制 | 纪惠de博客</title>
+  <title>存储相关 | 纪惠de博客</title>
   
 
 
@@ -165,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/10/12/%E5%AD%98%E5%82%A8%E7%9B%B8%E5%85%B3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/touxiang.jpg">
@@ -178,7 +177,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          JS的垃圾回收机制
+          存储相关
         </h1>
 
         <div class="post-meta">
@@ -187,16 +186,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-09-07 10:36:08" itemprop="dateCreated datePublished" datetime="2020-09-07T10:36:08+08:00">2020-09-07</time>
+              <time title="创建时间：2020-10-12 08:51:28 / 修改时间：08:57:19" itemprop="dateCreated datePublished" datetime="2020-10-12T08:51:28+08:00">2020-10-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-09 08:54:02" itemprop="dateModified" datetime="2020-09-09T08:54:02+08:00">2020-09-09</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -213,7 +206,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>36</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -232,38 +225,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="什么是垃圾回收机制？"><a href="#什么是垃圾回收机制？" class="headerlink" title="什么是垃圾回收机制？"></a>什么是垃圾回收机制？</h1><p>释放无用的数据，回收内存，会按照固定的时间间隔周期性的执行。</p>
-<h1 id="JS中常见的垃圾回收方式是标记清除和引用技术"><a href="#JS中常见的垃圾回收方式是标记清除和引用技术" class="headerlink" title="JS中常见的垃圾回收方式是标记清除和引用技术"></a>JS中常见的垃圾回收方式是标记清除和引用技术</h1><h2 id="标记清除"><a href="#标记清除" class="headerlink" title="标记清除"></a>标记清除</h2><h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><p>是当变量进入环境时（函数中声明一个临时变量），将这个变量标记为“进入环境”。当变量离开环境时，则将其标记为“离开环境”。标记“离开环境”的变量就被回收内存。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function test()&#123;</span><br><span class="line">    var a &#x3D; 10;    &#x2F;&#x2F;被标记&quot;进入环境&quot;</span><br><span class="line">    var b &#x3D; &quot;hello&quot;;    &#x2F;&#x2F;被标记&quot;进入环境&quot;</span><br><span class="line">&#125;</span><br><span class="line">test();    &#x2F;&#x2F;执行完毕后之后，a和b又被标记&quot;离开环境&quot;，被回收</span><br></pre></td></tr></table></figure>
-<h3 id="工作流程"><a href="#工作流程" class="headerlink" title="工作流程"></a>工作流程</h3><ul>
-<li>垃圾回收机制在运行的时候会给存储在内存中的所有变量都加上标记（可以是任何标记方式）</li>
-<li>去掉处在环境中的变量和被环境中变量引用的变量（闭包）的标记</li>
-<li>在此之后剩下的带有标记的变量被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了</li>
-<li>最后垃圾回收机制到下一个周期运行时，将释放这些带有标记的变量的内存，回收它们所占用的空间<a id="more"></a>
-
-</li>
-</ul>
-<h2 id="引用计数"><a href="#引用计数" class="headerlink" title="引用计数"></a>引用计数</h2><h3 id="工作原理-1"><a href="#工作原理-1" class="headerlink" title="工作原理"></a>工作原理</h3><p>跟踪标记每个值被引用的次数。</p>
-<h3 id="工作流程-1"><a href="#工作流程-1" class="headerlink" title="工作流程"></a>工作流程</h3><ul>
-<li>声明了一个变量并将一个引用类型的值赋值给这个变量，这个引用类型值的引用次数就是1</li>
-<li>同一个值又被赋值给另一个变量，这个引用类型值的引用次数加1，</li>
-<li>当包含这个引用类型值的变量又被赋值成另一个值了，那么这个引用类型值的引用次数减1</li>
-<li>当引用次数变成0时，说明没办法访问这个值了</li>
-<li>当垃圾收集器下一周期运行时，它就会释放引用次数是0的值所占的内存<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var xm &#x3D; &#123;name:&#39;xm&#39;, age:15&#125;; &#x2F;&#x2F; 数据引用次数为1（这数据引用次数是对同一个内存地址的引用次数）</span><br><span class="line">var xh &#x3D; xm; &#x2F;&#x2F; 数据引用次数为2</span><br><span class="line">xh &#x3D; &#123;&#125;; &#x2F;&#x2F; 数据引用次数为1</span><br><span class="line">xm &#x3D; &#123;&#125;; &#x2F;&#x2F; 数据引用次数为0，数据可以被回收</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h3 id="缺点：循环引用"><a href="#缺点：循环引用" class="headerlink" title="缺点：循环引用"></a>缺点：循环引用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function fn(argument) &#123;</span><br><span class="line">	var xm &#x3D; &#123;&#125;; &#x2F;&#x2F; 地址1数据引用次数为1</span><br><span class="line">	var xh &#x3D; &#123;&#125;; &#x2F;&#x2F; 地址2数据引用次数为1</span><br><span class="line">&#125;</span><br><span class="line">fn(); &#x2F;&#x2F; 地址1，2的数据引用次数会变为0</span><br></pre></td></tr></table></figure>
-<p>fn()执行完毕后fn()中的局部变量xh，xm会被赋值为null，数据引用次数会变为0，因此会被回收</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function fn(argument) &#123;</span><br><span class="line">	var xm &#x3D; &#123;&#125;; &#x2F;&#x2F; 地址1数据引用次数为1</span><br><span class="line">	var xh &#x3D; &#123;&#125;; &#x2F;&#x2F; 地址2数据引用次数为1</span><br><span class="line">	xm.wife &#x3D; xh; &#x2F;&#x2F; 地址2数据引用次数为2</span><br><span class="line">	xh.husband &#x3D; xm; &#x2F;&#x2F; 地址1数据引用次数为2</span><br><span class="line">&#125;</span><br><span class="line">fn(); &#x2F;&#x2F; 地址1，2的数据引用次数会变为1,不会被回收</span><br></pre></td></tr></table></figure>
-<p>fn()执行完毕后fn()中的局部变量xh，xm会被赋值为null，数据引用次数会变为1，不会被回收，释放不掉内存</p>
-<p>手动将变量赋值为null就可以消除（循环）引用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">xm.wife &#x3D; null; </span><br><span class="line">xh.husband &#x3D; null;</span><br></pre></td></tr></table></figure>
-<p>解除引用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var arr &#x3D; [];</span><br><span class="line">arr &#x3D; null;</span><br></pre></td></tr></table></figure>
-
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p><a href="https://www.cnblogs.com/mayun0504/p/10646620.html" target="_blank" rel="noopener">链接1</a><br><a href="https://blog.csdn.net/qq_17550381/article/details/81126809" target="_blank" rel="noopener">链接2</a><br><a href="https://blog.csdn.net/qq_31659129/article/details/94401084" target="_blank" rel="noopener">链接3</a></p>
-
+        <h1 id="1-cookie，localStorage，sessionStorage"><a href="#1-cookie，localStorage，sessionStorage" class="headerlink" title="1.cookie，localStorage，sessionStorage"></a>1.cookie，localStorage，sessionStorage</h1>
     </div>
 
     
@@ -273,8 +235,7 @@
       <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
-              <a href="/tags/%E9%9D%A2%E8%AF%95/" rel="tag"># 面试</a>
-              <a href="/tags/JS/" rel="tag"># JS</a>
+              <a href="/tags/%E5%AD%98%E5%82%A8/" rel="tag"># 存储</a>
           </div>
 
         
@@ -283,13 +244,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/" rel="prev" title="原型，原型链与instanceof">
-      <i class="fa fa-chevron-left"></i> 原型，原型链与instanceof
+    <a href="/2020/10/12/Vue%E4%B8%AD%E7%9A%84scoped%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/" rel="prev" title="Vue中的scoped实现原理">
+      <i class="fa fa-chevron-left"></i> Vue中的scoped实现原理
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/" rel="next" title="继承详解">
-      继承详解 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -348,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是垃圾回收机制？"><span class="nav-number">1.</span> <span class="nav-text">什么是垃圾回收机制？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JS中常见的垃圾回收方式是标记清除和引用技术"><span class="nav-number">2.</span> <span class="nav-text">JS中常见的垃圾回收方式是标记清除和引用技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#标记清除"><span class="nav-number">2.1.</span> <span class="nav-text">标记清除</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作原理"><span class="nav-number">2.1.1.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流程"><span class="nav-number">2.1.2.</span> <span class="nav-text">工作流程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用计数"><span class="nav-number">2.2.</span> <span class="nav-text">引用计数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#工作原理-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">工作原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#工作流程-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">工作流程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点：循环引用"><span class="nav-number">2.2.3.</span> <span class="nav-text">缺点：循环引用</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-cookie，localStorage，sessionStorage"><span class="nav-number">1.</span> <span class="nav-text">1.cookie，localStorage，sessionStorage</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
