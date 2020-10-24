@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-10-24T14:29:15.855Z</updated>
+  <updated>2020-10-24T14:38:53.886Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Event loop宏任务与微任务详解</title>
+    <link href="https://jihuistudy.github.io/2020/10/24/%E3%80%90JS%E3%80%91-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%BE%AE%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://jihuistudy.github.io/2020/10/24/%E3%80%90JS%E3%80%91-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%BE%AE%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/</id>
+    <published>2020-10-24T14:31:50.000Z</published>
+    <updated>2020-10-24T14:38:53.886Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>进程与线程</title>
@@ -104,10 +125,10 @@
   
   <entry>
     <title>Vue中的scoped实现原理</title>
-    <link href="https://jihuistudy.github.io/2020/10/12/Vue%E4%B8%AD%E7%9A%84scoped%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
-    <id>https://jihuistudy.github.io/2020/10/12/Vue%E4%B8%AD%E7%9A%84scoped%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</id>
+    <link href="https://jihuistudy.github.io/2020/10/12/%E3%80%90VUE%E3%80%91-Vue%E4%B8%AD%E7%9A%84scoped%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/"/>
+    <id>https://jihuistudy.github.io/2020/10/12/%E3%80%90VUE%E3%80%91-Vue%E4%B8%AD%E7%9A%84scoped%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86/</id>
     <published>2020-10-12T00:27:32.000Z</published>
-    <updated>2020-10-12T00:46:27.597Z</updated>
+    <updated>2020-10-24T14:39:01.208Z</updated>
     
     <summary type="html">
     
@@ -396,10 +417,10 @@
   
   <entry>
     <title>几个令人费解却有趣的隐式转换</title>
-    <link href="https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
-    <id>https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/</id>
+    <link href="https://jihuistudy.github.io/2020/09/06/%E3%80%90JS%E3%80%91-%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
+    <id>https://jihuistudy.github.io/2020/09/06/%E3%80%90JS%E3%80%91-%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/</id>
     <published>2020-09-06T08:38:00.000Z</published>
-    <updated>2020-09-06T11:56:17.893Z</updated>
+    <updated>2020-09-06T14:33:21.238Z</updated>
     
     <summary type="html">
     
@@ -515,10 +536,10 @@
   
   <entry>
     <title>BFC详解</title>
-    <link href="https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/</id>
+    <link href="https://jihuistudy.github.io/2020/09/04/%E3%80%90CSS%E3%80%91-BFC%E8%AF%A6%E8%A7%A3/"/>
+    <id>https://jihuistudy.github.io/2020/09/04/%E3%80%90CSS%E3%80%91-BFC%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-09-04T08:45:54.000Z</published>
-    <updated>2020-09-05T01:54:35.059Z</updated>
+    <updated>2020-09-05T02:17:28.762Z</updated>
     
     <summary type="html">
     
@@ -558,34 +579,6 @@
 &lt;h1 id=&quot;重排&quot;&gt;&lt;a href=&quot;#重排&quot; class=&quot;headerlink&quot; title=&quot;重排&quot;&gt;&lt;/a&gt;重排&lt;/h1&gt;&lt;h2 id=&quot;什么是重排&quot;&gt;&lt;a href=&quot;#什么是重排&quot; class=&quot;headerlink&quot; title=&quot;什么是重排?&quot;&gt;&lt;/a&gt;什么是重排?&lt;/h2&gt;&lt;p&gt;由于浏览器渲染界面是基于流式布局模型的，也就是某一个DOM节点信息更改了，就需要对DOM结构进行重新计算，重新布局界面，引发重排。&lt;/p&gt;
 &lt;p&gt;-当元素脱离文档流时(有position:absolute;或position:fixed;属性的元素)，不会引起重排。&lt;br&gt;-当有position:relative;或position:static;属性的元素会引起重排。&lt;/p&gt;
 &lt;h2 id=&quot;引起重排的操作有哪些？&quot;&gt;&lt;a href=&quot;#引起重排的操作有哪些？&quot; class=&quot;headerlink&quot; title=&quot;引起重排的操作有哪些？&quot;&gt;&lt;/a&gt;引起重排的操作有哪些？&lt;/h2&gt;&lt;p&gt;页面首次渲染&lt;br&gt;浏览器窗口大小发生改变&lt;br&gt;元素尺寸或位置发生改变&lt;br&gt;元素内容变化（文字数量或图片大小等等）&lt;br&gt;元素字体大小变化&lt;br&gt;添加或者删除可见的DOM元素&lt;br&gt;激活CSS伪类（例:hover）&lt;br&gt;查询某些属性或调用某些方法&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="CSS" scheme="https://jihuistudy.github.io/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>居中对齐的实现方式总结</title>
-    <link href="https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/"/>
-    <id>https://jihuistudy.github.io/2020/09/03/%E5%B1%85%E4%B8%AD%E5%AF%B9%E9%BD%90%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F%E6%80%BB%E7%BB%93/</id>
-    <published>2020-09-03T06:46:40.000Z</published>
-    <updated>2020-09-05T02:04:25.198Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;如何实现水平居中&quot;&gt;&lt;a href=&quot;#如何实现水平居中&quot; class=&quot;headerlink&quot; title=&quot;如何实现水平居中&quot;&gt;&lt;/a&gt;如何实现水平居中&lt;/h1&gt;&lt;h2 id=&quot;方法1：针对固定宽度的块状元素，使用margin-0-auto-实现水平居中&quot;&gt;&lt;a href=&quot;#方法1：针对固定宽度的块状元素，使用margin-0-auto-实现水平居中&quot; class=&quot;headerlink&quot; title=&quot;方法1：针对固定宽度的块状元素，使用margin:0 auto;实现水平居中&quot;&gt;&lt;/a&gt;方法1：针对固定宽度的块状元素，使用margin:0 auto;实现水平居中&lt;/h2&gt;&lt;h3 id=&quot;CSS&quot;&gt;&lt;a href=&quot;#CSS&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.box&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	width:100px; &amp;#x2F;*width可以固定px也可以使用百分比*&amp;#x2F;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	margin:0 auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	background-color:red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;HTML&quot;&gt;&lt;a href=&quot;#HTML&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;div class&amp;#x3D;&amp;quot;content&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &amp;lt;div class&amp;#x3D;&amp;quot;box&amp;quot;&amp;gt;Demo&amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;方法2-针对固定宽度的任意元素-块-内联块-内联均可-使用绝对定位absolute和负边距&quot;&gt;&lt;a href=&quot;#方法2-针对固定宽度的任意元素-块-内联块-内联均可-使用绝对定位absolute和负边距&quot; class=&quot;headerlink&quot; title=&quot;方法2:针对固定宽度的任意元素(块/内联块/内联均可),使用绝对定位absolute和负边距&quot;&gt;&lt;/a&gt;方法2:针对固定宽度的任意元素(块/内联块/内联均可),使用绝对定位absolute和负边距&lt;/h2&gt;&lt;h3 id=&quot;CSS-1&quot;&gt;&lt;a href=&quot;#CSS-1&quot; class=&quot;headerlink&quot; title=&quot;CSS&quot;&gt;&lt;/a&gt;CSS&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.content&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    position: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;.box&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    position: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    left: 50%;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: 100px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    margin-left: -50px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    background-color: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;HTML-1&quot;&gt;&lt;a href=&quot;#HTML-1&quot; class=&quot;headerlink&quot; title=&quot;HTML&quot;&gt;&lt;/a&gt;HTML&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;div class&amp;#x3D;&amp;quot;content&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &amp;lt;div class&amp;#x3D;&amp;quot;box&amp;quot;&amp;gt;Demo&amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&amp;#x2F;div&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
