@@ -159,6 +159,192 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">JS入门编程题的知识点汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-13 17:15:54" itemprop="dateCreated datePublished" datetime="2020-09-13T17:15:54+08:00">2020-09-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-10-18 22:35:12" itemprop="dateModified" datetime="2020-10-18T22:35:12+08:00">2020-10-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%BC%96%E7%A8%8B%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">编程题</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>8.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-保留两位小数最好的方法"><a href="#1-保留两位小数最好的方法" class="headerlink" title="1. 保留两位小数最好的方法"></a>1. 保留两位小数最好的方法</h1><p>1.str.split(“符号”) 将字符串以自定义符号分割成数组，以数组索引值来获取被分割的字符串。<br>2.Math.round(num * 100) / 100; 实现数字的小数四舍五入并保留两位小数<br>3.num.toFixed(2); 给数字保留两位小数，但是他不是四舍五入的，而是根据四舍六入五取偶（又称四舍六入五留双）法则保留位数的。简单来说就是：四舍六入五考虑，五后非零就进一，五后为零看奇偶，五前为偶应舍去，五前为奇要进一。<br><font color="red">综上：给数字保留N位小数并且最后一位四舍五入的方法为 </font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(Math.round(num * 10^N) &#x2F; 10^N).toFixed(N);</span><br></pre></td></tr></table></figure>
+<p>4.将字符串转换为数字的方法<br>parseInt() 转换为整数<br>parseFloat() 转换为浮点数</p>
+<h1 id="2-字符与ASCII码的相互转化"><a href="#2-字符与ASCII码的相互转化" class="headerlink" title="2.字符与ASCII码的相互转化"></a>2.字符与ASCII码的相互转化</h1><p>String.fromCharCode(ASCII码); 输出ASCII码对应字符</p>
+<p>var str = ‘c’;<br>str.charCodeAt(); 输出字符对应ASCII码</p>
+<h2 id="大写字母转小写"><a href="#大写字母转小写" class="headerlink" title="大写字母转小写"></a>大写字母转小写</h2><p><code>String.fromCharCode(&#39;c&#39;.charCodeAt()+32)</code> // c –&gt; C</p>
+<h1 id="3-反转字符串"><a href="#3-反转字符串" class="headerlink" title="3. 反转字符串"></a>3. 反转字符串</h1><p>1.将字符串变成数组var array = str.split(‘’)<br>2.将数组元素反转var rearray = array.reverse()—-输出还是数组<br>3.将数组转化为字符串rearray.join(‘’)完成字符串反转</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/09/13/JS%E5%85%A5%E9%97%A8%E7%BC%96%E7%A8%8B%E9%A2%98%E7%9A%84%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/13/JS%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/13/JS%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/" class="post-title-link" itemprop="url">JS进制转换</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-13 13:21:23 / 修改时间：14:11:53" itemprop="dateCreated datePublished" datetime="2020-09-13T13:21:23+08:00">2020-09-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>780</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="十进制转其他进制，数组转字符串"><a href="#十进制转其他进制，数组转字符串" class="headerlink" title="十进制转其他进制，数组转字符串"></a>十进制转其他进制，数组转字符串</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var num &#x3D; 1234;</span><br><span class="line">var str2 &#x3D; num.toString(2);</span><br><span class="line">console.log(str2); &#x2F;&#x2F; &quot;10011010010&quot; 转二进制</span><br><span class="line"></span><br><span class="line">var str8 &#x3D; num.toString(8);</span><br><span class="line">console.log(str8); &#x2F;&#x2F; &quot;2322&quot; 转八进制</span><br><span class="line"></span><br><span class="line">var str16 &#x3D; num.toString(16);</span><br><span class="line">console.log(str16); &#x2F;&#x2F; &quot;4d2&quot; 转十六进制</span><br><span class="line">console.log(num); &#x2F;&#x2F; 1234</span><br></pre></td></tr></table></figure>
+
+<h1 id="其他进制转十进制，字符串转数值"><a href="#其他进制转十进制，字符串转数值" class="headerlink" title="其他进制转十进制，字符串转数值"></a>其他进制转十进制，字符串转数值</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var str &#x3D; &quot;101010&quot;;</span><br><span class="line">console.log(parseInt(str, 2));      &#x2F;&#x2F; 42 二进制转十进制且转为数值</span><br><span class="line">console.log(parseInt(str, 8));      &#x2F;&#x2F; 33288 八进制转十进制</span><br><span class="line">console.log(parseInt(str, 16));     &#x2F;&#x2F; 1052688 十六进制转十进制</span><br><span class="line">console.log(parseInt(str, 10));     &#x2F;&#x2F; 101010 十进制转十进制</span><br><span class="line">console.log(parseInt(str));         &#x2F;&#x2F; &quot;101010&quot;</span><br></pre></td></tr></table></figure>
+
+<h1 id="其他进制转其他进制，使用十进制过渡"><a href="#其他进制转其他进制，使用十进制过渡" class="headerlink" title="其他进制转其他进制，使用十进制过渡"></a>其他进制转其他进制，使用十进制过渡</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var str &#x3D; &quot;110110&quot;;</span><br><span class="line">console.log(parseInt(str, 2).toString(8));    &#x2F;&#x2F; &quot;66&quot; 二进制转十进制转八进制</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -942,206 +1128,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/" class="post-title-link" itemprop="url">前端复习企划5-JS</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-05 13:37:44" itemprop="dateCreated datePublished" datetime="2020-09-05T13:37:44+08:00">2020-09-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-12 09:01:48" itemprop="dateModified" datetime="2020-09-12T09:01:48+08:00">2020-09-12</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h1><h2 id="1-JS的基本数据类型，引用数据类型，typeof运算符"><a href="#1-JS的基本数据类型，引用数据类型，typeof运算符" class="headerlink" title="1.JS的基本数据类型，引用数据类型，typeof运算符"></a>1.JS的基本数据类型，引用数据类型，typeof运算符</h2><p>-保存基本数据类型的变量保存的是值本身，保存引用类型的变量保存的并不是对象本身，而是一个指向该对象的引用地址。<br>-基本数据类型的值会把本身保存在栈中，引用类型保存在栈中的是引用地址，内容会存放在堆内存中。<br>-引用类型数据赋值，赋的是引用地址，所以被赋值的对象b以及原对象a的引用地址一样，该引用地址所对应的内容会共享。<br>-如果原对象a被重新赋值，a会改变地址，在堆内存中开辟一个新的空间，被赋值的对象b的地址与被重新赋值的对象a不一样了，所以改变a的值不会影响b。</p>
-<h2 id="2-JS的变量计算-强制类型转换"><a href="#2-JS的变量计算-强制类型转换" class="headerlink" title="2.JS的变量计算-强制类型转换"></a>2.JS的变量计算-强制类型转换</h2><p>字符串拼接，==运算符，if语句，逻辑运算</p>
-<h2 id="3-JS中有哪些内置函数（数据封装类对象），内置对象？"><a href="#3-JS中有哪些内置函数（数据封装类对象），内置对象？" class="headerlink" title="3.JS中有哪些内置函数（数据封装类对象），内置对象？"></a>3.JS中有哪些内置函数（数据封装类对象），内置对象？</h2><p>内置函数：Object/Array/Boolean/Number/String/Function/Date/RegExp/Error<br>内置对象：Math/JSON</p>
-<h2 id="4-this的不同应用场景，如何取值"><a href="#4-this的不同应用场景，如何取值" class="headerlink" title="4.this的不同应用场景，如何取值"></a>4.this的不同应用场景，如何取值</h2><ul>
-<li>当作普通函数被调用(即函数独立调用时) —— 返回window</li>
-<li>使用call，apply，bind的时候 —— 第一个参数传入什么值就指向什么值，如果第一个参数为空，那么就指向window。call和apply的使用可以直接执行函数，bind要返回一个新的函数执行。</li>
-<li>作为对象方法调用 —— 返回对象本身</li>
-<li>在class的方法中调用 —— 返回当前实例本身</li>
-<li>箭头函数 —— 箭头函数其实是没有this的，找上级作用域的this值返回，或包裹箭头函数的第一个普通函数的 this。另外对箭头函数使用bind这类函数是无效的。</li></ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/05/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%925-JS/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/" class="post-title-link" itemprop="url">BFC详解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-04 16:45:54" itemprop="dateCreated datePublished" datetime="2020-09-04T16:45:54+08:00">2020-09-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 10:17:28" itemprop="dateModified" datetime="2020-09-05T10:17:28+08:00">2020-09-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>2.3k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="什么是BFC？"><a href="#什么是BFC？" class="headerlink" title="什么是BFC？"></a>什么是BFC？</h1><p>BFC(Block Formatting Context)，块级格式化上下文，是一个独立的渲染区域，让处于 BFC 内部的元素与外部的元素相互隔离，使内外元素的定位不会相互影响。</p>
-<h1 id="如何创建BFC？"><a href="#如何创建BFC？" class="headerlink" title="如何创建BFC？"></a>如何创建BFC？</h1><p>给元素设置以下之一属性就可以创建BFC<br>1、float的值不是none<br>2、position的值不是static或者relative<br>3、display的值是inline-block、table-cell、flex、table-caption或者inline-flex<br>4、overflow的值不是visible(overflow:visible)</p>
-<h1 id="BFC布局规则有？"><a href="#BFC布局规则有？" class="headerlink" title="BFC布局规则有？"></a>BFC布局规则有？</h1><p>-当父级元素触发了BFC时，浮动的子元素会被父级元素计算高度——可以解决父元素高度塌陷的问题<br>-当非浮动元素触发了BFC时，非浮动元素不会覆盖浮动元素的位置——可以解决自适应两栏布局内容溢出的问题<br>-当父级触发BFC时，子元素的上下外边距margin不会和父元素的上下margin重叠，但是属于同一个BFC的两个相邻的子元素的上下margin会重叠——可以解决相邻两个元素的上下margin重叠的问题<br>-BFC容器内与容器外互不影响<br>-BFC内部的子元素（不管是内联/内联块/块状元素都会单独占一行）会在垂直方向，一个接一个地放置。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/04/BFC%E8%AF%A6%E8%A7%A3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1213,7 +1199,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">33</span>
+          <span class="site-state-item-count">35</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1261,7 +1247,7 @@
 <div class="copyright">
   
   &copy; 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -1271,13 +1257,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">75k</span>
+    <span title="站点总字数">76k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:08</span>
+    <span title="站点阅读时长">1:09</span>
 </div>
 
 <!--
