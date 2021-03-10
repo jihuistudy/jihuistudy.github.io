@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2020-12-22T10:35:12.203Z</updated>
+  <updated>2021-03-10T04:47:11.264Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【HTML】Web标准和W3C</title>
+    <link href="https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91Web%E6%A0%87%E5%87%86%E5%92%8CW3C/"/>
+    <id>https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91Web%E6%A0%87%E5%87%86%E5%92%8CW3C/</id>
+    <published>2021-03-09T08:18:07.000Z</published>
+    <updated>2021-03-10T04:47:11.264Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web标准&quot;&gt;&lt;a href=&quot;#Web标准&quot; class=&quot;headerlink&quot; title=&quot;Web标准&quot;&gt;&lt;/a&gt;Web标准&lt;/h1&gt;&lt;p&gt;Web标准不是某一个标准，而是由W3C组织和其他标准化组织制定的一系列标准的集合。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【HTML】常见浏览器内核</title>
+    <link href="https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91%E5%B8%B8%E8%A7%81%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8/"/>
+    <id>https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91%E5%B8%B8%E8%A7%81%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8/</id>
+    <published>2021-03-09T06:42:07.000Z</published>
+    <updated>2021-03-10T05:15:36.941Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;什么是浏览器内核？&quot;&gt;&lt;a href=&quot;#什么是浏览器内核？&quot; class=&quot;headerlink&quot; title=&quot;什么是浏览器内核？&quot;&gt;&lt;/a&gt;什么是浏览器内核？&lt;/h1&gt;&lt;p&gt;浏览器内核：Rendering
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【计算机基础】编程语言的分类</title>
@@ -528,61 +591,6 @@
     
     
       <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>闭包</title>
-    <link href="https://jihuistudy.github.io/2020/09/05/%E9%97%AD%E5%8C%85/"/>
-    <id>https://jihuistudy.github.io/2020/09/05/%E9%97%AD%E5%8C%85/</id>
-    <published>2020-09-05T12:00:47.000Z</published>
-    <updated>2020-09-06T12:17:32.510Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;什么是闭包？&quot;&gt;&lt;a href=&quot;#什么是闭包？&quot; class=&quot;headerlink&quot; title=&quot;什么是闭包？&quot;&gt;&lt;/a&gt;什么是闭包？&lt;/h1&gt;&lt;p&gt;闭包就是能够读取其他函数内部变量的函数&lt;/p&gt;
-&lt;h1 id=&quot;闭包的特性&quot;&gt;&lt;a href=&quot;#闭包的特性&quot; class=&quot;headerlink&quot; title=&quot;闭包的特性&quot;&gt;&lt;/a&gt;闭包的特性&lt;/h1&gt;&lt;p&gt;函数内再嵌套函数&lt;br&gt;可以读取其他函数参数和变量&lt;br&gt;参数和变量不会被垃圾回收机制回收&lt;/p&gt;
-&lt;h1 id=&quot;闭包的优缺点&quot;&gt;&lt;a href=&quot;#闭包的优缺点&quot; class=&quot;headerlink&quot; title=&quot;闭包的优缺点&quot;&gt;&lt;/a&gt;闭包的优缺点&lt;/h1&gt;&lt;p&gt;优点：可以避免全局变量的污染，能够实现封装和缓存等&lt;br&gt;缺点：消耗内存、不正当使用会造成内存溢出的问题&lt;/p&gt;
-&lt;h1 id=&quot;闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot;&gt;&lt;a href=&quot;#闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot; class=&quot;headerlink&quot; title=&quot;闭包的形成跟变量的作用域以及变量的生存周期密切相关&quot;&gt;&lt;/a&gt;闭包的形成跟变量的作用域以及变量的生存周期密切相关&lt;/h1&gt;&lt;h2 id=&quot;变量作用域&quot;&gt;&lt;a href=&quot;#变量作用域&quot; class=&quot;headerlink&quot; title=&quot;变量作用域&quot;&gt;&lt;/a&gt;变量作用域&lt;/h2&gt;&lt;p&gt;作用域分为全局作用域和局部作用域。&lt;br&gt;函数内部可访问全局变量。&lt;br&gt;函数外却不可以访问函数内的变量。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深拷贝与浅拷贝</title>
-    <link href="https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
-    <id>https://jihuistudy.github.io/2020/09/05/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
-    <published>2020-09-05T06:59:37.000Z</published>
-    <updated>2020-09-05T12:43:51.572Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;什么是浅拷贝？什么是深拷贝？&quot;&gt;&lt;a href=&quot;#什么是浅拷贝？什么是深拷贝？&quot; class=&quot;headerlink&quot; title=&quot;什么是浅拷贝？什么是深拷贝？&quot;&gt;&lt;/a&gt;什么是浅拷贝？什么是深拷贝？&lt;/h1&gt;&lt;p&gt;-浅拷贝是指只拷贝最外面一层，深层次对象级别就只拷贝引用；&lt;br&gt;-深拷贝是每一层的数据都会拷贝。&lt;br&gt;简单来说就是浅拷贝的时候如果第一层数据是基本数据类型，那么就如同直接赋值那样，会拷贝其本身；&lt;br&gt;如果第一层数据除了基本数据之外还有一层的对象，那么对于浅拷贝来说，就只能拷贝其引用。那当原对象的值发生了变化，那么这个结果不光会反映到原对象上，也会反映到拷贝的对象上。&lt;br&gt;但是深拷贝就不一样，即使有嵌套关系依然会全部的拷贝出来，原对象和拷贝对象互相独立。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;let a &amp;#x3D; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	age: 1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;let b &amp;#x3D; a;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;a.age &amp;#x3D; 2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(b.age); &amp;#x2F;&amp;#x2F; 输出2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;从上述例子中我们可以发现，如果给一个变量赋值一个对象，那么两者的值引用同一个内存地址，其中一方改变，另一方也会改变。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
       <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     
