@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2021-03-10T05:28:05.333Z</updated>
+  <updated>2021-03-10T12:15:12.258Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -17,11 +17,104 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【HTML】页面语言lang</title>
+    <link href="https://jihuistudy.github.io/2021/03/10/%E3%80%90HTML%E3%80%91%E9%A1%B5%E9%9D%A2%E8%AF%AD%E8%A8%80lang/"/>
+    <id>https://jihuistudy.github.io/2021/03/10/%E3%80%90HTML%E3%80%91%E9%A1%B5%E9%9D%A2%E8%AF%AD%E8%A8%80lang/</id>
+    <published>2021-03-10T12:03:51.000Z</published>
+    <updated>2021-03-10T12:15:12.258Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;lt-html-lang-quot-quot-gt-指定html语言种类&quot;&gt;&lt;a href=&quot;#lt-html-lang-quot-quot-gt-指定html语言种类&quot; class=&quot;headerlink&quot; title=&quot;&amp;lt;html
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【HTML】文档类型DOCTYPE</title>
+    <link href="https://jihuistudy.github.io/2021/03/10/%E3%80%90HTML%E3%80%91%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8BDOCTYPE/"/>
+    <id>https://jihuistudy.github.io/2021/03/10/%E3%80%90HTML%E3%80%91%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8BDOCTYPE/</id>
+    <published>2021-03-10T10:46:58.000Z</published>
+    <updated>2021-03-10T11:29:08.394Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;DOCTYPE的作用&quot;&gt;&lt;a href=&quot;#DOCTYPE的作用&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【SublimeText】SublimeText代码开发工具的小Tips</title>
+    <link href="https://jihuistudy.github.io/2021/03/10/%E3%80%90SublimeText%E3%80%91SublimeText%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%9A%84%E5%B0%8FTips/"/>
+    <id>https://jihuistudy.github.io/2021/03/10/%E3%80%90SublimeText%E3%80%91SublimeText%E4%BB%A3%E7%A0%81%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%9A%84%E5%B0%8FTips/</id>
+    <published>2021-03-10T07:00:14.000Z</published>
+    <updated>2021-03-10T12:03:01.870Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;SublimeText生成html骨架的小技巧&quot;&gt;&lt;a href=&quot;#SublimeText生成html骨架的小技巧&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="前端开发工具" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="SublimeText" scheme="https://jihuistudy.github.io/tags/SublimeText/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【HTML】Web标准和W3C</title>
     <link href="https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91Web%E6%A0%87%E5%87%86%E5%92%8CW3C/"/>
     <id>https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91Web%E6%A0%87%E5%87%86%E5%92%8CW3C/</id>
     <published>2021-03-09T08:18:07.000Z</published>
-    <updated>2021-03-10T05:28:05.333Z</updated>
+    <updated>2021-03-10T12:02:53.760Z</updated>
     
     <summary type="html">
     
@@ -53,7 +146,7 @@
     <link href="https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91%E5%B8%B8%E8%A7%81%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8/"/>
     <id>https://jihuistudy.github.io/2021/03/09/%E3%80%90HTML%E3%80%91%E5%B8%B8%E8%A7%81%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8/</id>
     <published>2021-03-09T06:42:07.000Z</published>
-    <updated>2021-03-10T05:51:24.211Z</updated>
+    <updated>2021-03-10T12:02:57.656Z</updated>
     
     <summary type="html">
     
@@ -490,107 +583,6 @@
       <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS的垃圾回收机制</title>
-    <link href="https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
-    <id>https://jihuistudy.github.io/2020/09/07/JS%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
-    <published>2020-09-07T02:36:08.000Z</published>
-    <updated>2020-09-09T00:54:02.824Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;什么是垃圾回收机制？&quot;&gt;&lt;a href=&quot;#什么是垃圾回收机制？&quot; class=&quot;headerlink&quot; title=&quot;什么是垃圾回收机制？&quot;&gt;&lt;/a&gt;什么是垃圾回收机制？&lt;/h1&gt;&lt;p&gt;释放无用的数据，回收内存，会按照固定的时间间隔周期性的执行。&lt;/p&gt;
-&lt;h1 id=&quot;JS中常见的垃圾回收方式是标记清除和引用技术&quot;&gt;&lt;a href=&quot;#JS中常见的垃圾回收方式是标记清除和引用技术&quot; class=&quot;headerlink&quot; title=&quot;JS中常见的垃圾回收方式是标记清除和引用技术&quot;&gt;&lt;/a&gt;JS中常见的垃圾回收方式是标记清除和引用技术&lt;/h1&gt;&lt;h2 id=&quot;标记清除&quot;&gt;&lt;a href=&quot;#标记清除&quot; class=&quot;headerlink&quot; title=&quot;标记清除&quot;&gt;&lt;/a&gt;标记清除&lt;/h2&gt;&lt;h3 id=&quot;工作原理&quot;&gt;&lt;a href=&quot;#工作原理&quot; class=&quot;headerlink&quot; title=&quot;工作原理&quot;&gt;&lt;/a&gt;工作原理&lt;/h3&gt;&lt;p&gt;是当变量进入环境时（函数中声明一个临时变量），将这个变量标记为“进入环境”。当变量离开环境时，则将其标记为“离开环境”。标记“离开环境”的变量就被回收内存。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function test()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var a &amp;#x3D; 10;    &amp;#x2F;&amp;#x2F;被标记&amp;quot;进入环境&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    var b &amp;#x3D; &amp;quot;hello&amp;quot;;    &amp;#x2F;&amp;#x2F;被标记&amp;quot;进入环境&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;test();    &amp;#x2F;&amp;#x2F;执行完毕后之后，a和b又被标记&amp;quot;离开环境&amp;quot;，被回收&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;工作流程&quot;&gt;&lt;a href=&quot;#工作流程&quot; class=&quot;headerlink&quot; title=&quot;工作流程&quot;&gt;&lt;/a&gt;工作流程&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;垃圾回收机制在运行的时候会给存储在内存中的所有变量都加上标记（可以是任何标记方式）&lt;/li&gt;
-&lt;li&gt;去掉处在环境中的变量和被环境中变量引用的变量（闭包）的标记&lt;/li&gt;
-&lt;li&gt;在此之后剩下的带有标记的变量被视为准备删除的变量，原因是环境中的变量已经无法访问到这些变量了&lt;/li&gt;
-&lt;li&gt;最后垃圾回收机制到下一个周期运行时，将释放这些带有标记的变量的内存，回收它们所占用的空间&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>原型，原型链与instanceof</title>
-    <link href="https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/"/>
-    <id>https://jihuistudy.github.io/2020/09/06/%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</id>
-    <published>2020-09-06T14:01:54.000Z</published>
-    <updated>2020-09-10T13:52:17.634Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;使用构造函数创建对象&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function Person() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Person.prototype.name &amp;#x3D; &amp;#39;Kevin&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var person &amp;#x3D; new Person();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(person.name) &amp;#x2F;&amp;#x2F; Kevin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Person 就是一个构造函数，我们使用 new 创建了一个实例对象 person&lt;/p&gt;
-&lt;h1 id=&quot;什么是原型？&quot;&gt;&lt;a href=&quot;#什么是原型？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型？&quot;&gt;&lt;/a&gt;什么是原型？&lt;/h1&gt;&lt;p&gt;每个声明的函数（对象）（Person）都有一个prototype属性，这个属性引用了一个对象，即原型对象，也简称原型。原型对象带有constructor属性，constructor属性指向这个原型对象所在的函数（即声明的函数Person）。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Person.prototype.constructor &amp;#x3D;&amp;#x3D; Person &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;用constructor属性来判断某实例对象是否是某构造函数直接生成的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__.constructor &amp;#x3D;&amp;#x3D; Person &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__.constructor &amp;#x3D;&amp;#x3D; Object &amp;#x2F;&amp;#x2F; false&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;原型是利用prototype属性给函数对象添加属性和方法。&lt;/p&gt;
-&lt;h1 id=&quot;什么是原型链？&quot;&gt;&lt;a href=&quot;#什么是原型链？&quot; class=&quot;headerlink&quot; title=&quot;什么是原型链？&quot;&gt;&lt;/a&gt;什么是原型链？&lt;/h1&gt;&lt;p&gt;JS在创建对象（不论是普通对象还是函数对象）（person）的时候，都有一个叫做&lt;strong&gt;proto&lt;/strong&gt;的内置属性，用于指向它的构造函数（Person）的prototype属性。&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;person.__proto__ &amp;#x3D;&amp;#x3D; Person.prototype &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>几个令人费解却有趣的隐式转换</title>
-    <link href="https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/"/>
-    <id>https://jihuistudy.github.io/2020/09/06/%E5%87%A0%E4%B8%AA%E4%BB%A4%E4%BA%BA%E8%B4%B9%E8%A7%A3%E5%8D%B4%E6%9C%89%E8%B6%A3%E7%9A%84%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2/</id>
-    <published>2020-09-06T08:38:00.000Z</published>
-    <updated>2020-09-06T14:33:21.238Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;对于三个令人匪夷所思的答案&quot;&gt;&lt;a href=&quot;#对于三个令人匪夷所思的答案&quot; class=&quot;headerlink&quot; title=&quot;对于三个令人匪夷所思的答案&quot;&gt;&lt;/a&gt;对于三个令人匪夷所思的答案&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#39;true&amp;#39; &amp;#x3D;&amp;#x3D; true &amp;#x2F;&amp;#x2F; false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&amp;#125; &amp;#x3D;&amp;#x3D; !&amp;#123;&amp;#125; &amp;#x2F;&amp;#x2F; false&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[] &amp;#x3D;&amp;#x3D; ![] &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;对于’true’-true的解释&quot;&gt;&lt;a href=&quot;#对于’true’-true的解释&quot; class=&quot;headerlink&quot; title=&quot;对于’true’ == true的解释&quot;&gt;&lt;/a&gt;对于’true’ == true的解释&lt;/h1&gt;&lt;h2 id=&quot;相等操作符&quot;&gt;&lt;a href=&quot;#相等操作符&quot; class=&quot;headerlink&quot; title=&quot;相等操作符&quot;&gt;&lt;/a&gt;相等操作符&lt;/h2&gt;&lt;p&gt;在转换不同的数据类型时，相等和不相等操作符遵循下列基本规则：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;如果有一个操作数是布尔值，则在比较相等性之前先将其转换为数值——false转换为0，而true转换为1；&lt;/li&gt;
-&lt;li&gt;如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；&lt;/li&gt;
-&lt;li&gt;如果一个操作数是对象，另一个操作数不是，则调用对象的valueOf()方法，用得到的基本类型值按照前面的两条规则进行比较；&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;首先 ‘true’ == true 符合规则1，这样就转化成了对 &lt;code&gt;&amp;#39;true&amp;#39; == 1&lt;/code&gt;进行求值，’true’ == 1 表达式符合规则2——如果一个操作数是字符串，另一个操作数是数值，在比较相等性之前先将字符串转换为数值；&lt;br&gt;也就是说需要将 ‘true’ 转换成数值之后，再与数字 1 进行比较。把 ‘true’ 转换成数值是使用 Number 函数。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     
