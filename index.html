@@ -275,10 +275,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-03-10 18:46:58 / 修改时间：19:29:08" itemprop="dateCreated datePublished" datetime="2021-03-10T18:46:58+08:00">2021-03-10</time>
+              <time title="创建时间：2021-03-10 18:46:58" itemprop="dateCreated datePublished" datetime="2021-03-10T18:46:58+08:00">2021-03-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-11 11:21:52" itemprop="dateModified" datetime="2021-03-11T11:21:52+08:00">2021-03-11</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -295,7 +301,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>150</span>
+              <span>984</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -314,8 +320,41 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="DOCTYPE的作用"><a href="#DOCTYPE的作用" class="headerlink" title="DOCTYPE的作用"></a>DOCTYPE的作用</h1><p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中最前面的位置，处于<code>&lt;html&gt;</code>标签之前。此标签可告知浏览器文档使用哪种HTML或XHTML规范。</p>
+          <h1 id="DOCTYPE的作用"><a href="#DOCTYPE的作用" class="headerlink" title="DOCTYPE的作用"></a>DOCTYPE的作用</h1><p><code>&lt;!DOCTYPE&gt;</code>声明位于文档中最前面的位置，处于<code>&lt;html&gt;</code>标签之前。此标签可告知浏览器的解析器，用什么文档类型规范来解析这个文档。</p>
+<blockquote>
+<p><code>&lt;!DOCTYPE html&gt;</code>声明是告诉浏览器按照HTML5规范解析页面</p>
+</blockquote>
 <h1 id="DOCTYPE有什么意义"><a href="#DOCTYPE有什么意义" class="headerlink" title="DOCTYPE有什么意义?"></a>DOCTYPE有什么意义?</h1><p>声明文件类型定义（DTD），位于文档中最前面，作用是为了告知浏览器应该用哪种文档类型规范来解析文档。</p>
+<h1 id="文档类型声明"><a href="#文档类型声明" class="headerlink" title="文档类型声明　"></a>文档类型声明　</h1><ul>
+<li>HTML:<br><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;&gt;</code></li>
+<li>HTML5:<br><code>&lt;!DOCTYPE html&gt;</code></li>
+</ul>
+<blockquote>
+<p>说明：在文档声明上，HTML声明很长，而HTML5只有简简单单的声明。　</p>
+</blockquote>
+<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="为什么HTML5只需要写-lt-DOCTYPE-HTML-gt-HTML与HTML5的声明为什么不一样"><a href="#为什么HTML5只需要写-lt-DOCTYPE-HTML-gt-HTML与HTML5的声明为什么不一样" class="headerlink" title="为什么HTML5只需要写&lt;!DOCTYPE HTML&gt;/HTML与HTML5的声明为什么不一样?"></a>为什么HTML5只需要写<code>&lt;!DOCTYPE HTML&gt;</code>/HTML与HTML5的声明为什么不一样?</h2><p>HTML5不基于SGML(标准通用标记语言)，因此不需要DTD(文档类型定义)，但是需要DOCTYPE来规范浏览器的行为。<br>而HTML基于SGML，需要DTD，才能告知浏览器所使用的文档类型。</p>
+<h2 id="HTML和XHTML有什么区别？"><a href="#HTML和XHTML有什么区别？" class="headerlink" title="HTML和XHTML有什么区别？"></a>HTML和XHTML有什么区别？</h2><h3 id="答案1"><a href="#答案1" class="headerlink" title="答案1"></a>答案1</h3><ul>
+<li>HTML是一种基于Web网页的设计语言，XHTML是一种基于XML、语法严格、标准的设计语言。</li>
+<li>两者主要的不同是：<ul>
+<li>XHTML元素必须正确地嵌套，元素必须关闭，标签必须小写，必须有根元素；</li>
+<li>HTML没有这些限制。</li>
+</ul>
+</li>
+</ul>
+<h3 id="答案2"><a href="#答案2" class="headerlink" title="答案2"></a>答案2</h3><ul>
+<li>一个是功能上的差别<br>  主要是XHTML可兼容各大浏览器、手机以及PAD，并且浏览器也能快速正确地编译网页</li>
+<li>另外是书写习惯的差别<br>  XHTML 元素必须被正确地嵌套，闭合，区分大小写，文档必须拥有根元素</li>
+</ul>
+<h2 id="严格模式与混杂模式如何区分？如何触发这两种模式？"><a href="#严格模式与混杂模式如何区分？如何触发这两种模式？" class="headerlink" title="严格模式与混杂模式如何区分？如何触发这两种模式？"></a>严格模式与混杂模式如何区分？如何触发这两种模式？</h2><ul>
+<li><p>严格模式就是浏览器根据Web标准去解析页面的方法，是一种要求严格的DTD，不允许使用任何表现层的语法。严格模式的排版和JavaScript运行模式以该浏览器支持的最高标准运行。</p>
+</li>
+<li><p>混杂模式是一种向后兼容的解析方法。页面以宽松的向后兼容的方式显示，模拟老式浏览器的行为以防止站点无法工作（主要针对IE浏览器）。</p>
+</li>
+<li><p>触发严格模式就是在HTML标签前声明正确的DTD。</p>
+</li>
+<li><p>触发混杂模式可以在HTML文档开始时不声明DTD，或者在DOCTYPE前加入XML声明。DOCTYPE不存在或格式不正确都会导致文档以混杂模式呈现。</p>
+</li>
+</ul>
 
       
     </div>
@@ -452,7 +491,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-10 20:02:53" itemprop="dateModified" datetime="2021-03-10T20:02:53+08:00">2021-03-10</time>
+                <time title="修改时间：2021-03-11 11:27:49" itemprop="dateModified" datetime="2021-03-11T11:27:49+08:00">2021-03-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -470,7 +509,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>425</span>
+              <span>472</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -502,7 +541,7 @@
 </ul>
 <h2 id="Web标准构成"><a href="#Web标准构成" class="headerlink" title="Web标准构成"></a>Web标准构成</h2><p>构成：主要包括结构(Structure)——HTML、表现(Presentation)——CSS和行为(Behavior)——JS三个方面。</p>
 <h1 id="W3C——万维网联盟，是一个Web开发的国际性联盟"><a href="#W3C——万维网联盟，是一个Web开发的国际性联盟" class="headerlink" title="W3C——万维网联盟，是一个Web开发的国际性联盟"></a>W3C——万维网联盟，是一个Web开发的国际性联盟</h1><p>W3C万维网联盟是国际最著名的标准化组织。1994年成立后，至今已发布近百项相关万维网的标准，对万维网发展做出了杰出的贡献。</p>
-<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="谈谈你对Web标准以及W3C的理解和认识"><a href="#谈谈你对Web标准以及W3C的理解和认识" class="headerlink" title="谈谈你对Web标准以及W3C的理解和认识"></a>谈谈你对Web标准以及W3C的理解和认识</h2><p>标签闭合、标签小写、不乱嵌套、使用外链css和js、结构行为表现的分离</p>
+<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="谈谈你对Web标准以及W3C的理解和认识"><a href="#谈谈你对Web标准以及W3C的理解和认识" class="headerlink" title="谈谈你对Web标准以及W3C的理解和认识"></a>谈谈你对Web标准以及W3C的理解和认识</h2><p>标签闭合、标签英文小写、标签不乱嵌套、用标签语义化来提高搜索的概率；<br>使用外链css和js、使结构表现行为的分离；<br>代码精简、开发组件化、代码易维护复用、改版升级方便。</p>
 
       
     </div>
@@ -553,7 +592,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-10 20:02:57" itemprop="dateModified" datetime="2021-03-10T20:02:57+08:00">2021-03-10</time>
+                <time title="修改时间：2021-03-11 11:33:11" itemprop="dateModified" datetime="2021-03-11T11:33:11+08:00">2021-03-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -631,7 +670,7 @@
 <td><font color="red">在Chromium项目中研发Blink渲染引擎(即浏览器核心)，内置于Chrome浏览器之中。Blink其实是Webkit的分支。Opera内核原为Presto，现为Blink</font></td>
 </tr>
 </tbody></table>
-<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？"><a href="#介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？" class="headerlink" title="介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？"></a>介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？</h2><p>浏览器内核包括两部分，渲染引擎和js引擎。<br>渲染引擎负责读取网页内容，整理讯息，计算网页的显示方式并显示页面，js引擎是解释执行js获取网页的动态效果。<br>后来JS引擎越来越独立，浏览器内核就倾向于只指渲染引擎。<br>IE:Trident<br>firefox:Gecko<br>chrome、safari:webkit // chrome为webkit的分支blink<br>Opera:Presto // Opera现为Blink<br>Microsoft Edge:EdgeHTML</p>
+<h1 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h1><h2 id="介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？"><a href="#介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？" class="headerlink" title="介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？"></a>介绍一下你对浏览器内核的理解？常见的浏览器内核有哪些？</h2><p>浏览器内核包括两部分，渲染引擎和js引擎。<br>渲染引擎负责读取网页内容，整理讯息，计算网页的显示方式并显示页面，js引擎是解释执行js获取网页的动态效果。<br>后来JS引擎越来越独立，浏览器内核就倾向于只指渲染引擎。<br>IE: Trident<br>firefox: Gecko<br>chrome、safari: webkit // chrome为webkit的分支blink<br>Opera: Presto // Opera现为Blink<br>Microsoft Edge: EdgeHTML</p>
 
       
     </div>
@@ -1217,13 +1256,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">78k</span>
+    <span title="站点总字数">79k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:11</span>
+    <span title="站点阅读时长">1:12</span>
 </div>
 
 <!--
