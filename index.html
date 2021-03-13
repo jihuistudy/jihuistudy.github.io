@@ -159,6 +159,349 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">【HTML】HTML重要标签整理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-03-11 16:52:17" itemprop="dateCreated datePublished" datetime="2021-03-11T16:52:17+08:00">2021-03-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-13 16:01:46" itemprop="dateModified" datetime="2021-03-13T16:01:46+08:00">2021-03-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="文本格式化标签"><a href="#文本格式化标签" class="headerlink" title="文本格式化标签"></a>文本格式化标签</h1><table>
+<thead>
+<tr>
+<th>标签</th>
+<th>显示效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;b&gt;&lt;/b&gt;</code>和<code>&lt;strong&gt;&lt;/strong&gt;</code></td>
+<td>文字以粗体方式显示(XHTML推荐使用strong)</td>
+</tr>
+<tr>
+<td><code>&lt;i&gt;&lt;/i&gt;</code>和<code>&lt;em&gt;&lt;/em&gt;</code></td>
+<td>文字以斜体方式显示(XHTML推荐使用em)</td>
+</tr>
+<tr>
+<td><code>&lt;s&gt;&lt;/s&gt;</code>和<code>&lt;del&gt;&lt;/del&gt;</code></td>
+<td>文字以加删除线方式显示(XHTML推荐使用del)</td>
+</tr>
+<tr>
+<td><code>&lt;u&gt;&lt;/u&gt;</code>和<code>&lt;ins&gt;&lt;/ins&gt;</code></td>
+<td>文字以加下划线方式显示(XHTML不赞成使用u)</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>区别：后排标签除了可以设置样式，还有强调的意思，语义更强烈。</p>
+</blockquote>
+<h1 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签<img></h1><h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p><code>&lt;img src=&quot;图像URL地址&quot; /&gt;</code></p>
+<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p>|  属性  |  属性值  |  描述  |<br>|  src  |  URL  |  图像的路径(必须要写)  |<br>|  alt  |  文本  |  图像不能显示时的替换文本  |<br>|  title  |  文本  |  鼠标悬停时显示的内容  |<br>|  width  |  像素(XHTML不支持%)  |  设置图像的宽度  |<br>|  height  |  像素(XHTML不支持%)  |  设置图像的高度  |<br>|  border  |  数字  |  设置图像边框的宽度  |</p>
+<h1 id="链接标签"><a href="#链接标签" class="headerlink" title="链接标签"></a>链接标签<a></a></h1><h2 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h2><p><code>&lt;a href=&quot;跳转目标&quot;&gt;&lt;/a&gt;</code></p>
+<h2 id="标签属性-1"><a href="#标签属性-1" class="headerlink" title="标签属性"></a>标签属性</h2><p>|  属性  |  属性值  |  描述  |<br>|  href  |  URL  |  规定链接指向的页面的URL(必须要写)  |<br>|  target  |  <code>_blank/_parent/_self/_top/framename</code>  |  规定在何处打开链接文档  |</p>
+<h2 id="链接的不同表现形式——href属性值"><a href="#链接的不同表现形式——href属性值" class="headerlink" title="链接的不同表现形式——href属性值"></a>链接的不同表现形式——href属性值</h2><ul>
+<li>外部链接：href需要设置为网址https://…</li>
+<li>内部链接：href设置为内部页面名称即可。例如：<code>&lt;a href=&quot;index.html&quot;&gt;首页&lt;/a&gt;</code></li>
+<li>空链接：将href设置为#或空(href=”#”或href=””)，可以起到刷新页面的作用。</li>
+<li>下载链接：即href属性值为下载资源，例如：<code>&lt;a href=&quot;day.zip&quot;&gt;下载&lt;/a&gt;</code></li>
+<li>电子邮件链接，用于链接到E-mail，关键字为mailto。例如：<code>&lt;a href=&quot;mailto:123@qq.com(收件人地址);456@qq.com(;用于连接多个收件人地址)?cc=抄送地址&amp;bcc=密件抄送地址&amp;subject=主题&amp;body=邮件内容&quot;&gt;发送&lt;/a&gt;</code></li>
+<li>锚点跳转：用于跳转到页面某一位置，目前常用于前端路由。</li>
+<li>用于实现特定的代码功能。例如：<code>&lt;a href=&quot;javascript:void(0);&quot;&gt;...&lt;/a&gt; //这里是让a标签失去链接功能，点击不会跳转也不会刷新页面，常用于导航栏</code></li>
+</ul>
+<h3 id="同一页面的锚点定位方法"><a href="#同一页面的锚点定位方法" class="headerlink" title="同一页面的锚点定位方法"></a>同一页面的锚点定位方法</h3><h4 id="方法一：使用-lt-a-gt-标签的name属性，设置锚点名称，再将表示链接的a标签的href属性设置为-锚点名称，就可以实现与锚点的连接。"><a href="#方法一：使用-lt-a-gt-标签的name属性，设置锚点名称，再将表示链接的a标签的href属性设置为-锚点名称，就可以实现与锚点的连接。" class="headerlink" title="方法一：使用&lt;a&gt;标签的name属性，设置锚点名称，再将表示链接的a标签的href属性设置为#锚点名称，就可以实现与锚点的连接。"></a>方法一：使用<code>&lt;a&gt;</code>标签的name属性，设置锚点名称，再将表示链接的a标签的href属性设置为<code>#锚点名称</code>，就可以实现与锚点的连接。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;a name&#x3D;&quot;a&quot;&gt;标题一&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;#a&quot;&gt;点我跳到标题一&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="方法二：使用id"><a href="#方法二：使用id" class="headerlink" title="方法二：使用id"></a>方法二：使用id</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;a id&#x3D;&quot;a&quot;&gt;标题一&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;a href&#x3D;&quot;#a&quot;&gt;点我跳到标题一&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+
+<p>注意：</p>
+<ul>
+<li>使用name属性只能针对a标签来定位，而对其他标签就不能起到定位作用。</li>
+<li>使用id的定位方法可以针对任何标签来定位。</li>
+</ul>
+<h3 id="用锚链接跳转到其他页面指定位置"><a href="#用锚链接跳转到其他页面指定位置" class="headerlink" title="用锚链接跳转到其他页面指定位置"></a>用锚链接跳转到其他页面指定位置</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;&lt;a name&#x3D;&quot;a&quot;&gt;标题一&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt; &#x2F;&#x2F; b页面的锚点</span><br><span class="line">&lt;a href&#x3D;&quot;b.html#a&quot;&gt;点我跳到标题一&lt;&#x2F;a&gt; &#x2F;&#x2F; a页面的跳转链接</span><br></pre></td></tr></table></figure>
+
+<h2 id="规定在何处打开链接文档——target属性值"><a href="#规定在何处打开链接文档——target属性值" class="headerlink" title="规定在何处打开链接文档——target属性值"></a>规定在何处打开链接文档——target属性值</h2><ul>
+<li><code>_blank</code>浏览器总在一个新窗口打开链接。</li>
+<li><code>_self</code>默认。在当前页面跳转。</li>
+<li><code>_parent</code>在父窗口有中打开被链接文档。</li>
+<li><code>_top</code>在整个窗口中打开被链接文档。</li>
+<li><code>framename</code>在指定的框架中打开被链接文档。</li>
+</ul>
+<h3 id="在一个特定的框架中如何使用HTML中的超链接定位？"><a href="#在一个特定的框架中如何使用HTML中的超链接定位？" class="headerlink" title="在一个特定的框架中如何使用HTML中的超链接定位？"></a>在一个特定的框架中如何使用HTML中的超链接定位？</h3><p>可以使用“target”属性在指定的框架中打开被链接文档。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;newpage.html&quot; target&#x3D;&quot;newframe&quot;&gt;New Page&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="src与href的区别？"><a href="#src与href的区别？" class="headerlink" title="src与href的区别？"></a>src与href的区别？</h2><ul>
+<li>src表示来源地址，用在<code>img、script、iframe</code>等元素上。</li>
+<li>href表示超文本引用，用在<code>link、a</code>等元素上。</li>
+</ul>
+<p>简单来说是src引入与href引用的区别。</p>
+<ul>
+<li>href 指向网络资源位置，建立当前文档和资源的连接。</li>
+<li>src将资源嵌入到当前文档中，在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也是如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96/" class="post-title-link" itemprop="url">【HTML】HTML标签的语义化</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-11 14:59:53 / 修改时间：15:50:12" itemprop="dateCreated datePublished" datetime="2021-03-11T14:59:53+08:00">2021-03-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>706</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="语义化的目的"><a href="#语义化的目的" class="headerlink" title="语义化的目的"></a>语义化的目的</h1><p>根据标签的语义，在合适的地方给一个最为合理的标签，让结构更清晰。</p>
+<ul>
+<li>方便代码的阅读和维护。</li>
+<li>同时让浏览器或是网络爬虫可以很好地解析，从而更好地分析其中的内容。</li>
+<li>使用语义化标签会具有更好地搜索引擎优化。<br><font color="red">HTML语义化可以让页面的内容结构化，便于浏览器解析和搜索引擎解析，利于SEO，并提高代码的可维护度</font></li>
+</ul>
+<h1 id="如何提高标签语义化？"><a href="#如何提高标签语义化？" class="headerlink" title="如何提高标签语义化？"></a>如何提高标签语义化？</h1><p>尽可能少使用无语义的标签<code>&lt;div&gt;</code>，多使用语义化的标签<code>&lt;header&gt;&lt;section&gt;&lt;footer&gt;</code></p>
+<h1 id="如何理解HTML语义化？"><a href="#如何理解HTML语义化？" class="headerlink" title="如何理解HTML语义化？"></a>如何理解HTML语义化？</h1><p>所谓“语义”就是为了更易读懂，这要分两部分：</p>
+<ul>
+<li>让人（写程序、读程序）更易读懂</li>
+<li>让机器（浏览器、搜索引擎）更易读懂</li>
+</ul>
+<h2 id="让人更易读懂"><a href="#让人更易读懂" class="headerlink" title="让人更易读懂"></a>让人更易读懂</h2><p>对于人来说，代码可读性、语义化就是一个非常广泛的概念了，例如定义 JS 变量的时候使用更易读懂的名称，定义 CSS 的 class 时也一样，例如length、list等，而不是使用a、b这种谁都看不懂的名称。</p>
+<h2 id="让机器更易读懂"><a href="#让机器更易读懂" class="headerlink" title="让机器更易读懂"></a>让机器更易读懂</h2><p>HTML 符合 XML 标准，但又和 XML 不一样 —— HTML 不允许像 XML 那样自定义标签名称，HTML 有自己规定的标签名称。<br>问题就在这里 —— HTML 为何要自己规定那么多标签名称呢，例如p div h1 ul等 —— 就是为了语义化。<br>拿搜索引擎来说，爬虫下载到我们网页的 HTML 代码，它如何更好地去理解网页的内容呢？—— 就是根据 HTML 既定的标签。<br>如果我们不按照 HTML 语义化来写，全部都用<code>&lt;div&gt;</code>标签，那搜索引擎将很难理解我们网页的内容。<br>为了加强 HTML 语义化，HTML5 标准中又增加了<code>&lt;header&gt;&lt;section&gt;&lt;article&gt;</code>等标签。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/" class="post-title-link" itemprop="url">【HTML】字符集</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-11 11:46:12 / 修改时间：15:00:49" itemprop="dateCreated datePublished" datetime="2021-03-11T11:46:12+08:00">2021-03-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>318</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><code>&lt;meta charset=&#39;UTF-8&#39;&gt; // 让html文件是以UTF-8编码保存的，浏览器根据编码去解码对应的html内容</code><br>字符集(Character set)是多个字符的集合。<br>计算机要准确的处理各种字符集文字，需要进行字符密码，以便计算机能够识别和存储各种文字。</p>
+<p>utf-8是目前最常用的字符集编码方式，常用的字符集编码方式还有gbk和gb2312。</p>
+<ul>
+<li>gb2312简单中文，包括6763个汉字</li>
+<li>BIG5繁体中文，港澳台等用</li>
+<li>GBK包含全部中文字符，是GB2312的扩展，加入对繁体字的支持，兼容GB2312。</li>
+<li>UTF-8则基本包含全世界所有国家需要用到的字符<blockquote>
+<p>这句代码非常关键，是必须要写的代码，否则可能引起乱码的情况。</p>
+</blockquote>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/10/%E3%80%90HTML%E3%80%91%E9%A1%B5%E9%9D%A2%E8%AF%AD%E8%A8%80lang/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -860,277 +1203,10 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/10/26/%E3%80%90JS%E3%80%91JavaScript%E7%AE%80%E5%8F%B2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/26/%E3%80%90JS%E3%80%91JavaScript%E7%AE%80%E5%8F%B2/" class="post-title-link" itemprop="url">【JS】JavaScript简史</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-26 12:31:19 / 修改时间：13:19:01" itemprop="dateCreated datePublished" datetime="2020-10-26T12:31:19+08:00">2020-10-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>339</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JS简史"><a href="#JS简史" class="headerlink" title="JS简史"></a>JS简史</h1><p>JS诞生于1995年。<br>在JS问世之前，必须把表单数据发送到服务器端才能验证表单中的输入内容是否符合条件，为服务器与用户加重了负担。JS的出现使得可以在客户端完成一些基本的验证任务。如今，JS的用途早已不局限于简单的数据验证，而是具备了与浏览器及其内容等几乎所有方面交互的能力。<br>而JavaScript之所以被这么命名，是Netscape为了搭上当时媒体热炒Java的顺风车，把LiveScript改名为JavaScript。<br>而ECMAScript是JavaScript实现的基础，是用来规范JavaScript的标准。</p>
-<h1 id="JS实现"><a href="#JS实现" class="headerlink" title="JS实现"></a>JS实现</h1><ul>
-<li>核心 ECMAScript，提供核心语言功能</li>
-<li>文档对象模型 DOM，提供访问和操作网页内容的方法和接口</li>
-<li>浏览器对象模型 BOM，提供与浏览器交互的方法和接口</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/10/24/%E3%80%90JS%E3%80%91-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%BE%AE%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/24/%E3%80%90JS%E3%80%91-%E5%AE%8F%E4%BB%BB%E5%8A%A1%E4%B8%8E%E5%BE%AE%E4%BB%BB%E5%8A%A1%E8%AF%A6%E8%A7%A3/" class="post-title-link" itemprop="url">Event loop宏任务与微任务详解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-24 22:31:50 / 修改时间：22:38:53" itemprop="dateCreated datePublished" datetime="2020-10-24T22:31:50+08:00">2020-10-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/10/24/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/24/%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B/" class="post-title-link" itemprop="url">进程与线程</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-24 19:53:17 / 修改时间：22:29:15" itemprop="dateCreated datePublished" datetime="2020-10-24T19:53:17+08:00">2020-10-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">计算机基础</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>855</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><font color="red">进程是资源分配的最小单位，线程是CPU调度的最小单位</font></p>
-<h1 id="1-什么是进程？"><a href="#1-什么是进程？" class="headerlink" title="1.什么是进程？"></a>1.什么是进程？</h1><p>进程是系统中正在运行的一个程序，程序一旦运行就是进程。<br>1、用户角度： 进程是程序的一次动态执行过程<br>2、操作系统： 进程是操作系统分配资源和调度的基本单位，也是最小单位</p>
-<h1 id="2-什么是线程？"><a href="#2-什么是线程？" class="headerlink" title="2.什么是线程？"></a>2.什么是线程？</h1><p>线程是进程的一个实体，是CPU调度和分配的基本单位，他是比进程更小的独立运行的单位。</p>
-<h1 id="3-进程与线程的关系？"><a href="#3-进程与线程的关系？" class="headerlink" title="3.进程与线程的关系？"></a>3.进程与线程的关系？</h1><p>1、一个线程只能属于一个进程，而一个进程可以有多个线程，但至少有一个线程（通常说的主线程）。    2、资源分配给进程，同一进程的所有线程共享该进程的所有资源。<br>3、线程是指进程内的一个执行单元，也是进程内的可调度实体。</p>
-<h1 id="4-进程与线程的区别？"><a href="#4-进程与线程的区别？" class="headerlink" title="4.进程与线程的区别？"></a>4.进程与线程的区别？</h1><p> 1、调度：线程作为调度和分配的基本单位，进程作为拥有资源的基本单位。    2、并发性：不仅进程之间可以并发执行，同一个进程的多个线程之间也可以并发执行。    3、拥有资源：进程是拥有资源的一个独立单位，线程不拥有系统资源，但可以访问隶属于进程的资源。</p>
-<h1 id="做一个生动形象的比喻"><a href="#做一个生动形象的比喻" class="headerlink" title="做一个生动形象的比喻"></a>做一个生动形象的比喻</h1><p>做个简单的比喻：进程=火车，线程=车厢</p>
-<ul>
-<li>线程在进程下行进（单纯的车厢无法运行）</li>
-<li>一个进程可以包含多个线程（一辆火车可以有多个车厢）</li>
-<li>不同进程间数据很难共享（一辆火车上的乘客很难换到另外一辆火车，比如站点换乘）</li>
-<li>同一进程下不同线程间数据很易共享（A车厢换到B车厢很容易）</li>
-<li>进程要比线程消耗更多的计算机资源（采用多列火车相比多个车厢更耗资源）</li>
-<li>进程间不会相互影响，一个线程挂掉将导致整个进程挂掉（一列火车不会影响到另外一列火车，但是如果一列火车上中间的一节车厢与前一节产生断裂，将影响后面的所有车厢）</li>
-<li>进程可以拓展到多机，进程最适合多核（不同火车可以开在多个轨道上，同一火车的车厢不能在行进的不同的轨道上）</li>
-<li>进程使用的内存地址可以上锁，即一个线程使用某些共享内存时，其他线程必须等它结束，才能使用这一块内存。（比如火车上的洗手间）－”互斥锁”</li>
-<li>进程使用的内存地址可以限定使用量（比如火车上的餐厅，最多只允许多少人进入，如果满了需要在门口等，等有人出来了才能进去）－“信号量”</li>
-</ul>
-<p><a href="http://www.ruanyifeng.com/blog/2013/04/processes_and_threads.html" target="_blank" rel="noopener">参考文献-阮一峰</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1198,7 +1274,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">40</span>
+          <span class="site-state-item-count">43</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1256,13 +1332,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">79k</span>
+    <span title="站点总字数">82k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:12</span>
+    <span title="站点阅读时长">1:15</span>
 </div>
 
 <!--

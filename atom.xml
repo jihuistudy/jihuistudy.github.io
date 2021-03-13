@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2021-03-10T12:15:12.258Z</updated>
+  <updated>2021-03-13T08:01:46.841Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,99 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【HTML】HTML重要标签整理</title>
+    <link href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/"/>
+    <id>https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/</id>
+    <published>2021-03-11T08:52:17.000Z</published>
+    <updated>2021-03-13T08:01:46.841Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;文本格式化标签&quot;&gt;&lt;a href=&quot;#文本格式化标签&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【HTML】HTML标签的语义化</title>
+    <link href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96/"/>
+    <id>https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E7%9A%84%E8%AF%AD%E4%B9%89%E5%8C%96/</id>
+    <published>2021-03-11T06:59:53.000Z</published>
+    <updated>2021-03-11T07:50:12.206Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;语义化的目的&quot;&gt;&lt;a href=&quot;#语义化的目的&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【HTML】字符集</title>
+    <link href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/"/>
+    <id>https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/</id>
+    <published>2021-03-11T03:46:12.000Z</published>
+    <updated>2021-03-11T07:00:49.222Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;code&gt;&amp;lt;meta charset=&amp;#39;UTF-8&amp;#39;&amp;gt; // 让html文件是以UTF-8编码保存的，浏览器根据编码去解码对应的html内容&lt;/code&gt;&lt;br&gt;字符集(Character
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【HTML】页面语言lang</title>
@@ -496,93 +589,6 @@
     
     
       <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数组常用API与分类</title>
-    <link href="https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/"/>
-    <id>https://jihuistudy.github.io/2020/09/11/%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8API%E4%B8%8E%E5%88%86%E7%B1%BB/</id>
-    <published>2020-09-11T13:31:11.000Z</published>
-    <updated>2020-09-13T05:36:59.878Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;数组迭代器&quot;&gt;&lt;a href=&quot;#数组迭代器&quot; class=&quot;headerlink&quot; title=&quot;数组迭代器&quot;&gt;&lt;/a&gt;数组迭代器&lt;/h1&gt;&lt;p&gt;arr.keys()返回索引值迭代器;&lt;br&gt;arr.values()返回元素值迭代器;&lt;br&gt;arr.entries()返回键值对。&lt;/p&gt;
-&lt;h1 id=&quot;遍历数组的数组API&quot;&gt;&lt;a href=&quot;#遍历数组的数组API&quot; class=&quot;headerlink&quot; title=&quot;遍历数组的数组API&quot;&gt;&lt;/a&gt;遍历数组的数组API&lt;/h1&gt;&lt;h2 id=&quot;1-forEach遍历数组所有元素&quot;&gt;&lt;a href=&quot;#1-forEach遍历数组所有元素&quot; class=&quot;headerlink&quot; title=&quot;1.forEach遍历数组所有元素&quot;&gt;&lt;/a&gt;1.forEach遍历数组所有元素&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr &amp;#x3D; [1,2,3,4,5];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.forEach(function (item,index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(index,item)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输出： 0 1; 1 2; 2 3; 3 4; 4 5;&lt;/p&gt;
-&lt;h2 id=&quot;2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot;&gt;&lt;a href=&quot;#2-every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot; class=&quot;headerlink&quot; title=&quot;2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&quot;&gt;&lt;/a&gt;2.every用来判断所有的数组元素是否都符合条件，有一个元素不符合条件就返回false&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var arr &amp;#x3D; [1,2,3,4,5];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;arr.every(function (item,index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	if(item &amp;lt; 4) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		return true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输出：false&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-      <category term="数组" scheme="https://jihuistudy.github.io/tags/%E6%95%B0%E7%BB%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>创建对象的几种方式</title>
-    <link href="https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
-    <id>https://jihuistudy.github.io/2020/09/08/%E5%88%9B%E5%BB%BA%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</id>
-    <published>2020-09-08T13:23:49.000Z</published>
-    <updated>2020-09-08T14:27:06.340Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;一共有6种创建对象的方式&lt;/p&gt;
-&lt;h1 id=&quot;1-Object构造函数生成&quot;&gt;&lt;a href=&quot;#1-Object构造函数生成&quot; class=&quot;headerlink&quot; title=&quot;1. Object构造函数生成&quot;&gt;&lt;/a&gt;1. Object构造函数生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; new Object();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.属性 &amp;#x3D; 属性值;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.方法 &amp;#x3D; function(str) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法代码&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Object是所有对象的基类，根，所有的JavaScript对象都是由Object延伸的&lt;/p&gt;
-&lt;h1 id=&quot;2-对象字面量生成&quot;&gt;&lt;a href=&quot;#2-对象字面量生成&quot; class=&quot;headerlink&quot; title=&quot;2. 对象字面量生成&quot;&gt;&lt;/a&gt;2. 对象字面量生成&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj &amp;#x3D; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	属性名称:属性值,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	方法名称:function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>继承详解</title>
-    <link href="https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/"/>
-    <id>https://jihuistudy.github.io/2020/09/07/%E7%BB%A7%E6%89%BF%E8%AF%A6%E8%A7%A3/</id>
-    <published>2020-09-07T14:10:21.000Z</published>
-    <updated>2020-09-11T13:03:42.539Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;继承的原理&quot;&gt;&lt;a href=&quot;#继承的原理&quot; class=&quot;headerlink&quot; title=&quot;继承的原理&quot;&gt;&lt;/a&gt;继承的原理&lt;/h1&gt;&lt;p&gt;与原型和原型链有关。每个函数都有个原型对象，这个对象用来存储通过这个函数所创建的所有实例的共有属性和方法。在读取某个对象属性的时候，从实例开始，如果实例有就返回，如果没有就找原型对象，找到了就返回。通过实例只能访问原型对象里的值，但是不能修改，这就实现了继承。通过继承可以使子类的实例使用在父类中定义的属性和方法。&lt;/p&gt;
-&lt;h1 id=&quot;继承的几种方式&quot;&gt;&lt;a href=&quot;#继承的几种方式&quot; class=&quot;headerlink&quot; title=&quot;继承的几种方式&quot;&gt;&lt;/a&gt;继承的几种方式&lt;/h1&gt;&lt;h2 id=&quot;1-原型链继承&quot;&gt;&lt;a href=&quot;#1-原型链继承&quot; class=&quot;headerlink&quot; title=&quot;1.原型链继承&quot;&gt;&lt;/a&gt;1.原型链继承&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function Parent1() &amp;#123; &amp;#x2F;&amp;#x2F; 父类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.name &amp;#x3D; &amp;#39;parent1&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.sum &amp;#x3D; function() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		alert(this.name)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Parent1.prototype.age &amp;#x3D; 50;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var p1 &amp;#x3D; new Parent1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;p1.sex &amp;#x3D; &amp;#39;man&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function Child1() &amp;#123; &amp;#x2F;&amp;#x2F; 子类&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	this.type &amp;#x3D; &amp;#39;child1&amp;#39;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Child1.prototype &amp;#x3D; new Parent1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var c1 &amp;#x3D; new Child1();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.name); &amp;#x2F;&amp;#x2F; &amp;#39;parent1&amp;#39;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.age); &amp;#x2F;&amp;#x2F; 50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1 instanceof Parent1); &amp;#x2F;&amp;#x2F; true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(c1.sex); &amp;#x2F;&amp;#x2F; undefined 新实例不会继承父类实例的属性！&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;重点：&lt;br&gt;让新实例的原型等于父类的实例。&lt;br&gt;特点：&lt;br&gt;1、实例可继承的属性有：实例的构造函数的属性，父类构造函数属性，父类原型的属性。（新实例不会继承父类实例的属性！）&lt;br&gt;缺点：&lt;br&gt;1、新实例无法向父类构造函数传参。&lt;br&gt;2、继承单一。&lt;br&gt;3、所有新实例都会共享父类实例的属性。（原型链中的原型对象是共用的，一个实例修改了原型属性，另一个实例的原型属性也会被修改！）&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
       <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     
