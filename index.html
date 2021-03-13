@@ -190,7 +190,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-13 16:01:46" itemprop="dateModified" datetime="2021-03-13T16:01:46+08:00">2021-03-13</time>
+                <time title="修改时间：2021-03-13 20:29:59" itemprop="dateModified" datetime="2021-03-13T20:29:59+08:00">2021-03-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -208,7 +208,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.4k</span>
+              <span>2.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -255,9 +255,65 @@
 <p>区别：后排标签除了可以设置样式，还有强调的意思，语义更强烈。</p>
 </blockquote>
 <h1 id="图像标签"><a href="#图像标签" class="headerlink" title="图像标签"></a>图像标签<img></h1><h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><p><code>&lt;img src=&quot;图像URL地址&quot; /&gt;</code></p>
-<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><p>|  属性  |  属性值  |  描述  |<br>|  src  |  URL  |  图像的路径(必须要写)  |<br>|  alt  |  文本  |  图像不能显示时的替换文本  |<br>|  title  |  文本  |  鼠标悬停时显示的内容  |<br>|  width  |  像素(XHTML不支持%)  |  设置图像的宽度  |<br>|  height  |  像素(XHTML不支持%)  |  设置图像的高度  |<br>|  border  |  数字  |  设置图像边框的宽度  |</p>
+<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>src</td>
+<td>URL</td>
+<td>图像的路径(必须要写)</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>文本</td>
+<td>图像不能显示时的替换文本</td>
+</tr>
+<tr>
+<td>title</td>
+<td>文本</td>
+<td>鼠标悬停时显示的内容</td>
+</tr>
+<tr>
+<td>width</td>
+<td>像素(XHTML不支持%)</td>
+<td>设置图像的宽度</td>
+</tr>
+<tr>
+<td>height</td>
+<td>像素(XHTML不支持%)</td>
+<td>设置图像的高度</td>
+</tr>
+<tr>
+<td>border</td>
+<td>数字</td>
+<td>设置图像边框的宽度</td>
+</tr>
+</tbody></table>
 <h1 id="链接标签"><a href="#链接标签" class="headerlink" title="链接标签"></a>链接标签<a></a></h1><h2 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h2><p><code>&lt;a href=&quot;跳转目标&quot;&gt;&lt;/a&gt;</code></p>
-<h2 id="标签属性-1"><a href="#标签属性-1" class="headerlink" title="标签属性"></a>标签属性</h2><p>|  属性  |  属性值  |  描述  |<br>|  href  |  URL  |  规定链接指向的页面的URL(必须要写)  |<br>|  target  |  <code>_blank/_parent/_self/_top/framename</code>  |  规定在何处打开链接文档  |</p>
+<h2 id="标签属性-1"><a href="#标签属性-1" class="headerlink" title="标签属性"></a>标签属性</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>href</td>
+<td>URL</td>
+<td>规定链接指向的页面的URL(必须要写)</td>
+</tr>
+<tr>
+<td>target</td>
+<td><code>_blank/_parent/_self/_top/framename</code></td>
+<td>规定在何处打开链接文档</td>
+</tr>
+</tbody></table>
 <h2 id="链接的不同表现形式——href属性值"><a href="#链接的不同表现形式——href属性值" class="headerlink" title="链接的不同表现形式——href属性值"></a>链接的不同表现形式——href属性值</h2><ul>
 <li>外部链接：href需要设置为网址https://…</li>
 <li>内部链接：href设置为内部页面名称即可。例如：<code>&lt;a href=&quot;index.html&quot;&gt;首页&lt;/a&gt;</code></li>
@@ -283,6 +339,11 @@
 <li><code>_parent</code>在父窗口有中打开被链接文档。</li>
 <li><code>_top</code>在整个窗口中打开被链接文档。</li>
 <li><code>framename</code>在指定的框架中打开被链接文档。</li>
+</ul>
+<h3 id="base标签——设置页面所有链接的打开方式"><a href="#base标签——设置页面所有链接的打开方式" class="headerlink" title="base标签——设置页面所有链接的打开方式"></a>base标签——设置页面所有链接的打开方式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;base target&#x3D;&quot;_blank&quot;&gt; &#x2F;&#x2F; 设置页面的所有链接从新的窗口打开</span><br><span class="line">&lt;&#x2F;head&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>base可以设置整体链接的打开状态</li>
+<li>base标签要写到<code>&lt;head&gt;&lt;/head&gt;</code>之间</li>
 </ul>
 <h3 id="在一个特定的框架中如何使用HTML中的超链接定位？"><a href="#在一个特定的框架中如何使用HTML中的超链接定位？" class="headerlink" title="在一个特定的框架中如何使用HTML中的超链接定位？"></a>在一个特定的框架中如何使用HTML中的超链接定位？</h3><p>可以使用“target”属性在指定的框架中打开被链接文档。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;newpage.html&quot; target&#x3D;&quot;newframe&quot;&gt;New Page&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
@@ -626,7 +687,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-11 11:21:52" itemprop="dateModified" datetime="2021-03-11T11:21:52+08:00">2021-03-11</time>
+                <time title="修改时间：2021-03-13 20:26:27" itemprop="dateModified" datetime="2021-03-13T20:26:27+08:00">2021-03-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -644,7 +705,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>984</span>
+              <span>989</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -688,6 +749,7 @@
 <li>一个是功能上的差别<br>  主要是XHTML可兼容各大浏览器、手机以及PAD，并且浏览器也能快速正确地编译网页</li>
 <li>另外是书写习惯的差别<br>  XHTML 元素必须被正确地嵌套，闭合，区分大小写，文档必须拥有根元素</li>
 </ul>
+<h3 id="扩展资料："><a href="#扩展资料：" class="headerlink" title="扩展资料："></a>扩展资料：</h3><p><img src="/2021/03/10/%E3%80%90HTML%E3%80%91%E6%96%87%E6%A1%A3%E7%B1%BB%E5%9E%8BDOCTYPE/XHTML.JPG" alt="Alt"></p>
 <h2 id="严格模式与混杂模式如何区分？如何触发这两种模式？"><a href="#严格模式与混杂模式如何区分？如何触发这两种模式？" class="headerlink" title="严格模式与混杂模式如何区分？如何触发这两种模式？"></a>严格模式与混杂模式如何区分？如何触发这两种模式？</h2><ul>
 <li><p>严格模式就是浏览器根据Web标准去解析页面的方法，是一种要求严格的DTD，不允许使用任何表现层的语法。严格模式的排版和JavaScript运行模式以该浏览器支持的最高标准运行。</p>
 </li>
