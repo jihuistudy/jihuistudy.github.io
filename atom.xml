@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2021-03-13T12:29:59.947Z</updated>
+  <updated>2021-03-15T14:18:34.737Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【HTML】表单标签</title>
+    <link href="https://jihuistudy.github.io/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/"/>
+    <id>https://jihuistudy.github.io/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/</id>
+    <published>2021-03-15T12:16:19.000Z</published>
+    <updated>2021-03-15T14:18:34.737Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;input表单控件&quot;&gt;&lt;a href=&quot;#input表单控件&quot; class=&quot;headerlink&quot; title=&quot;input表单控件&quot;&gt;&lt;/a&gt;input表单控件&lt;/h1&gt;&lt;h2 id=&quot;常用属性&quot;&gt;&lt;a href=&quot;#常用属性&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【HTML】HTML重要标签整理</title>
@@ -560,35 +591,6 @@
     
     
       <category term="算法" scheme="https://jihuistudy.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JS进制转换</title>
-    <link href="https://jihuistudy.github.io/2020/09/13/JS%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/"/>
-    <id>https://jihuistudy.github.io/2020/09/13/JS%E8%BF%9B%E5%88%B6%E8%BD%AC%E6%8D%A2/</id>
-    <published>2020-09-13T05:21:23.000Z</published>
-    <updated>2020-09-13T06:11:53.377Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;十进制转其他进制，数组转字符串&quot;&gt;&lt;a href=&quot;#十进制转其他进制，数组转字符串&quot; class=&quot;headerlink&quot; title=&quot;十进制转其他进制，数组转字符串&quot;&gt;&lt;/a&gt;十进制转其他进制，数组转字符串&lt;/h1&gt;&lt;figure
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     

@@ -159,6 +159,122 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+      <meta itemprop="name" content="纪惠">
+      <meta itemprop="description" content="坚持就是胜利">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="纪惠de博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/" class="post-title-link" itemprop="url">【HTML】表单标签</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-15 20:16:19 / 修改时间：22:18:34" itemprop="dateCreated datePublished" datetime="2021-03-15T20:16:19+08:00">2021-03-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>817</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="input表单控件"><a href="#input表单控件" class="headerlink" title="input表单控件"></a>input表单控件</h1><h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><p><img src="/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/input%E5%B1%9E%E6%80%A7.JPG" alt="Alt"></p>
+<h1 id="label标签"><a href="#label标签" class="headerlink" title="label标签"></a>label标签</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><p><code>&lt;label&gt;</code>标签主要目的是为了提高用户体验，为用户提高最优秀的服务。</p>
+<h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p><code>&lt;label&gt;</code>标签为input元素定义标注。</p>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><p>用于绑定一个表单元素，当点击<code>&lt;label&gt;</code>标签的时候，被绑定的表单元素就会获得输入焦点。</p>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><h3 id="方式一：用label直接包括input表单"><a href="#方式一：用label直接包括input表单" class="headerlink" title="方式一：用label直接包括input表单"></a>方式一：用label直接包括input表单</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;label&gt; 用户名： &lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;usename&quot; value&#x3D;&quot;请输入用户名&quot;&gt;&lt;&#x2F;label&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="方式二：for属性规定label标签与哪个id的表单元素绑定"><a href="#方式二：for属性规定label标签与哪个id的表单元素绑定" class="headerlink" title="方式二：for属性规定label标签与哪个id的表单元素绑定"></a>方式二：for属性规定label标签与哪个id的表单元素绑定</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;label for&#x3D;&quot;sex&quot;&gt;男&lt;&#x2F;label&gt;</span><br><span class="line">&lt;input type&#x3D;&quot;radio&quot; name&#x3D;&quot;sex&quot; id&#x3D;&quot;sex&quot;&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>当我们鼠标点击<code>&lt;label&gt;</code>标签里面的文字时， 光标会定位到指定的表单里面。</p>
+</blockquote>
+<h1 id="form表单域"><a href="#form表单域" class="headerlink" title="form表单域"></a>form表单域</h1><h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</p>
+<h2 id="语法-1"><a href="#语法-1" class="headerlink" title="语法"></a>语法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action&#x3D;&quot;url地址&quot; method&#x3D;&quot;提交方式&quot; name&#x3D;&quot;表单名称&quot;&gt;</span><br><span class="line">  各种表单控件</span><br><span class="line">&lt;&#x2F;form&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="常用属性-1"><a href="#常用属性-1" class="headerlink" title="常用属性"></a>常用属性</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>属性值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>action</td>
+<td>URL地址</td>
+<td>用于指定接收并处理表单数据的服务器程序的url地址</td>
+</tr>
+<tr>
+<td>method</td>
+<td>get/post等</td>
+<td>用于设置表单数据的提交方式</td>
+</tr>
+<tr>
+<td>name</td>
+<td>名称</td>
+<td>用于指定表单的名称，以区分同一个页面中的多个表单</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1181,90 +1297,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jihuistudy.github.io/2020/10/26/%E3%80%90JS%E3%80%91script%E6%A0%87%E7%AD%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-      <meta itemprop="name" content="纪惠">
-      <meta itemprop="description" content="坚持就是胜利">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="纪惠de博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/26/%E3%80%90JS%E3%80%91script%E6%A0%87%E7%AD%BE/" class="post-title-link" itemprop="url">【JS】script标签</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-26 13:28:58 / 修改时间：20:41:12" itemprop="dateCreated datePublished" datetime="2020-10-26T13:28:58+08:00">2020-10-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>429</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h1><p>async:表示应该立即下载脚本，但不应妨碍页面中的其他操作，比如下载其他资源或等待加载其他脚本，只对外部脚本文件有效。<br>defer：表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。<br>src：表示包含要执行代码的外部文件。<br>type：表示编写代码使用的脚本语言的内容类型，默认为text/javascript。  </p>
-<h2 id="defer"><a href="#defer" class="headerlink" title="defer"></a>defer</h2><p>这个属性的用途是表明脚本在执行时不会影响页面的构造。表示脚本可以延迟到文档完全被解析和显示之后再执行。<br>相当于告诉浏览器立即下载，但延迟执行。</p>
-<h1 id="Q-将-lt-script-gt-标签存放在-lt-head-gt-标签与-lt-body-gt-标签的区别？"><a href="#Q-将-lt-script-gt-标签存放在-lt-head-gt-标签与-lt-body-gt-标签的区别？" class="headerlink" title="Q:将&lt;script&gt;标签存放在&lt;head&gt;标签与&lt;body&gt;标签的区别？"></a>Q:将<code>&lt;script&gt;</code>标签存放在<code>&lt;head&gt;</code>标签与<code>&lt;body&gt;</code>标签的区别？</h1><p>将js代码存放在<code>&lt;head&gt;</code>标签内，必须等到全部JS代码都被下载、解析和执行完成后，才能开始呈现页面的内容，会使页面首屏渲染时间太长。<br>把js代码放在<code>&lt;body&gt;</code>标签内，在解析JS代码之前，页面的内容将完全呈现在浏览器中，页面白屏时间就变短了。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1336,7 +1368,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-count">44</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1394,13 +1426,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">82k</span>
+    <span title="站点总字数">83k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:15</span>
+    <span title="站点阅读时长">1:16</span>
 </div>
 
 <!--
