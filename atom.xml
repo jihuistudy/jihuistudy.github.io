@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jihuistudy.github.io/"/>
-  <updated>2021-03-19T03:10:03.562Z</updated>
+  <updated>2021-03-22T11:37:20.831Z</updated>
   <id>https://jihuistudy.github.io/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【HTML】HTML标签嵌套规则</title>
+    <link href="https://jihuistudy.github.io/2021/03/22/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99/"/>
+    <id>https://jihuistudy.github.io/2021/03/22/%E3%80%90HTML%E3%80%91HTML%E6%A0%87%E7%AD%BE%E5%B5%8C%E5%A5%97%E8%A7%84%E5%88%99/</id>
+    <published>2021-03-22T07:35:21.000Z</published>
+    <updated>2021-03-22T11:37:20.831Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;HTML标签元素分类&quot;&gt;&lt;a href=&quot;#HTML标签元素分类&quot; class=&quot;headerlink&quot; title=&quot;HTML标签元素分类&quot;&gt;&lt;/a&gt;HTML标签元素分类&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;块级元素
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【HTML】表格标签</title>
+    <link href="https://jihuistudy.github.io/2021/03/22/%E3%80%90HTML%E3%80%91%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE/"/>
+    <id>https://jihuistudy.github.io/2021/03/22/%E3%80%90HTML%E3%80%91%E8%A1%A8%E6%A0%BC%E6%A0%87%E7%AD%BE/</id>
+    <published>2021-03-22T05:55:41.000Z</published>
+    <updated>2021-03-22T12:44:03.829Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;创建表格&quot;&gt;&lt;a href=&quot;#创建表格&quot; class=&quot;headerlink&quot; title=&quot;创建表格&quot;&gt;&lt;/a&gt;创建表格&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="HTML" scheme="https://jihuistudy.github.io/tags/HTML/"/>
+    
+      <category term="黑马笔记" scheme="https://jihuistudy.github.io/tags/%E9%BB%91%E9%A9%AC%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>【CSS】文字文本样式</title>
@@ -52,7 +115,7 @@
     <link href="https://jihuistudy.github.io/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/"/>
     <id>https://jihuistudy.github.io/2021/03/15/%E3%80%90HTML%E3%80%91%E8%A1%A8%E5%8D%95%E6%A0%87%E7%AD%BE/</id>
     <published>2021-03-15T12:16:19.000Z</published>
-    <updated>2021-03-15T14:18:34.737Z</updated>
+    <updated>2021-03-22T07:33:15.500Z</updated>
     
     <summary type="html">
     
@@ -83,7 +146,7 @@
     <link href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/"/>
     <id>https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91HTML%E9%87%8D%E8%A6%81%E6%A0%87%E7%AD%BE%E6%95%B4%E7%90%86/</id>
     <published>2021-03-11T08:52:17.000Z</published>
-    <updated>2021-03-13T12:29:59.947Z</updated>
+    <updated>2021-03-22T05:51:46.508Z</updated>
     
     <summary type="html">
     
@@ -145,7 +208,7 @@
     <link href="https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/"/>
     <id>https://jihuistudy.github.io/2021/03/11/%E3%80%90HTML%E3%80%91%E5%AD%97%E7%AC%A6%E9%9B%86/</id>
     <published>2021-03-11T03:46:12.000Z</published>
-    <updated>2021-03-11T07:00:49.222Z</updated>
+    <updated>2021-03-22T05:48:42.413Z</updated>
     
     <summary type="html">
     
@@ -153,7 +216,7 @@
       
         
         
-          &lt;p&gt;&lt;code&gt;&amp;lt;meta charset=&amp;#39;UTF-8&amp;#39;&amp;gt; // 让html文件是以UTF-8编码保存的，浏览器根据编码去解码对应的html内容&lt;/code&gt;&lt;br&gt;字符集(Character
+          &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
         
       
     
@@ -545,56 +608,6 @@
       <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="Vue" scheme="https://jihuistudy.github.io/tags/Vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端复习企划-VUE</title>
-    <link href="https://jihuistudy.github.io/2020/10/11/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%92-VUE/"/>
-    <id>https://jihuistudy.github.io/2020/10/11/%E5%89%8D%E7%AB%AF%E5%A4%8D%E4%B9%A0%E4%BC%81%E5%88%92-VUE/</id>
-    <published>2020-10-11T06:01:39.000Z</published>
-    <updated>2020-10-12T07:17:30.595Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;1-说说你对MVC和MVVM架构的理解？&quot;&gt;&lt;a href=&quot;#1-说说你对MVC和MVVM架构的理解？&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="面试" scheme="https://jihuistudy.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>正则表达式知识点整理</title>
-    <link href="https://jihuistudy.github.io/2020/10/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/"/>
-    <id>https://jihuistudy.github.io/2020/10/05/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/</id>
-    <published>2020-10-05T10:37:38.000Z</published>
-    <updated>2020-10-05T10:39:26.132Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="前端" scheme="https://jihuistudy.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="JS" scheme="https://jihuistudy.github.io/tags/JS/"/>
     
   </entry>
   

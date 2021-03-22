@@ -28,7 +28,7 @@
 <meta property="og:description" content="CSS1.CSS哪些样式具有继承性？哪些没有？与字体、段落相关的样式通常都可以继承，与尺寸（盒子模型）相关的样式通常不能继承，颜色color，透明度opacity可以继承，背景颜色background-color不可以继承  字体相关属性font-family 字体系列font-weight 字体粗细程度font-size 字体大小font-style 字体风格 文本相关属性text-indent">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-09-01T02:07:19.000Z">
-<meta property="article:modified_time" content="2020-09-05T01:51:26.754Z">
+<meta property="article:modified_time" content="2021-03-19T10:45:46.132Z">
 <meta property="article:author" content="纪惠">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="面试">
@@ -194,7 +194,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 09:51:26" itemprop="dateModified" datetime="2020-09-05T09:51:26+08:00">2020-09-05</time>
+                <time title="修改时间：2021-03-19 18:45:46" itemprop="dateModified" datetime="2021-03-19T18:45:46+08:00">2021-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,14 +212,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.3k</span>
+              <span>4.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -261,9 +261,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.overflow &#123;</span><br><span class="line">	overflow: hidden;</span><br><span class="line">	width: 200px;</span><br><span class="line">	white-space: nowrap;</span><br><span class="line">	text-overflow: ellipsis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="9-网页单位有哪些？区别是什么？"><a href="#9-网页单位有哪些？区别是什么？" class="headerlink" title="9.网页单位有哪些？区别是什么？"></a>9.网页单位有哪些？区别是什么？</h2><ul>
-<li><p>自适应单位<br>百分比 % – 相对于谁？<br>相对于视口宽度的单位：vw<br>相对于视口高度的单位：vh<br>相对于视口宽度或者高度（取决于哪个小）的单位：vm<br>相对于父元素字体大小的单位：em<br>相对于根元素字体大小的单位：rem</p>
+<li><p>自适应单位<br>百分比 % – 相对于谁？<br>相对于视口宽度的单位：vw<br>相对于视口高度的单位：vh<br>相对于视口宽度或者高度（取决于哪个小）的单位：vm<br>相对于父元素字体大小的单位：em   会继承父级的字体大小： em = 像素值 / 父级font-size的像素值<br>相对于根元素字体大小的单位：rem</p>
 </li>
-<li><p>px像素，值是固定的</p>
+<li><p>px像素，值是固定的，相对于显示器屏幕分辨率，无法用浏览器字体放大功能</p>
 </li>
 </ul>
 <h2 id="10-对BFC规范的理解-见博客BFC详解"><a href="#10-对BFC规范的理解-见博客BFC详解" class="headerlink" title="10.对BFC规范的理解(见博客BFC详解)"></a><font color="red">10.对BFC规范的理解(见博客BFC详解)</font></h2><p>BFC(Block Formatting Context)，块级格式化上下文，是一个独立的渲染区域，让处于 BFC 内部的元素与外部的元素相互隔离，使内外元素的定位不会相互影响。</p>
@@ -306,8 +306,15 @@
 <li>移除空格</li>
 <li>使用margin负值</li>
 <li>使用font-size:0</li>
-<li>使用letter-spacing</li>
-<li>使用word-spacing</li>
+<li>使用letter-spacing设置文字间隔或字母间隔</li>
+<li>使用word-spacing设置单词间距</li>
+</ul>
+<h3 id="display-inline-block-什么时候会显示间隙"><a href="#display-inline-block-什么时候会显示间隙" class="headerlink" title="display:inline-block 什么时候会显示间隙?"></a>display:inline-block 什么时候会显示间隙?</h3><ul>
+<li>相邻的 inline-block 元素之间有换行或空格分隔的情况下会产生间距</li>
+<li>非 inline-block 水平元素设置为 inline-block 也会有水平间距</li>
+<li>可以借助 vertical-align:top; 消除垂直间隙</li>
+<li>可以在父级加 font-size：0; 在子元素里设置需要的字体大小，消除垂直间隙</li>
+<li>把 li 标签写到同一行可以消除垂直间隙，但代码可读性差</li>
 </ul>
 <h2 id="15-如果需要手动写动画，你认为最小时间间隔是多久，为什么？"><a href="#15-如果需要手动写动画，你认为最小时间间隔是多久，为什么？" class="headerlink" title="15.如果需要手动写动画，你认为最小时间间隔是多久，为什么？"></a>15.如果需要手动写动画，你认为最小时间间隔是多久，为什么？</h2><p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为<code>1/60*1000ms ＝ 16.7ms</code></p>
 <h2 id="16-几种引入图片-图标的方式，以及各自的优缺点-补"><a href="#16-几种引入图片-图标的方式，以及各自的优缺点-补" class="headerlink" title="16.几种引入图片/图标的方式，以及各自的优缺点 (补)"></a><font color="green">16.几种引入图片/图标的方式，以及各自的优缺点 (补)</font></h2><ul>
@@ -322,6 +329,31 @@
 </ul>
 <h2 id="17-CSS优化、提高性能的方法有哪些"><a href="#17-CSS优化、提高性能的方法有哪些" class="headerlink" title="17.CSS优化、提高性能的方法有哪些?"></a>17.CSS优化、提高性能的方法有哪些?</h2><p>-多个css合并，尽量减少HTTP请求<br>-将css文件在<code>&lt;head&gt;</code>标签内使用link标签引入<br>-移除空的CSS规则<br>-避免使用CSS表达式<br>-选择器优化嵌套，尽量避免层级过深<br>-充分利用css继承属性，减少代码量<br>-抽象提取公共样式，减少代码量<br>-属性值为0时，不加单位<br>-属性值为小于1的小数时，省略小数点前面的0<br>-使用css雪碧图</p>
 <h2 id="18-line-height三种赋值方式有何区别？（带单位、纯数字、百分比）"><a href="#18-line-height三种赋值方式有何区别？（带单位、纯数字、百分比）" class="headerlink" title="18.line-height三种赋值方式有何区别？（带单位、纯数字、百分比）"></a>18.line-height三种赋值方式有何区别？（带单位、纯数字、百分比）</h2><p>带单位：px 是固定值，而 em 会参考父元素 font-size 值计算自身的行高,它的子元素会继承该计算出的行高<br>纯数字：会把比例传递给后代。例如，父级行高为 1.5，子元素字体为 18px，则子元素行高为<code>比例 * 子元素字体大小</code>,即 <code>1.5 * 18 = 27px</code><br>百分比：将计算后的值传递给后代(子元素继承父元素计算出来的值),子元素行高为<code>百分比 * 父元素字体大小</code></p>
+<h2 id="19-line-height-的要点"><a href="#19-line-height-的要点" class="headerlink" title="19.line-height 的要点"></a>19.line-height 的要点</h2><ul>
+<li>line-height 指一行字的高度，包含了字间距，实际上是下一行基线到上一行基线距离</li>
+<li>如果一个标签没有定义 height 属性，那么其最终表现的高度是由 line-height 决定的</li>
+<li>一个容器没有设置高度，那么撑开容器高度的是 line-height 而不是容器内的文字内容</li>
+<li>把 line-height 值设置为 height 一样大小的值可以实现单行文字的垂直居中</li>
+<li>line-height 和 height 都能撑开一个高度，height 会触发 hasLayout，而 line-height 不会</li>
+</ul>
+<h3 id="什么是haslayout？"><a href="#什么是haslayout？" class="headerlink" title="什么是haslayout？"></a>什么是haslayout？</h3><p>IE使用Layout概念来控制元素的尺寸和位置。如果一个元素有Layout，它就有自身的尺寸和位置；如果没有，它的尺寸和位置由最近的拥有布局的祖先元素控制。</p>
+<ul>
+<li>在默认情况下，拥有Layout的元素包括：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;, &lt;body&gt;</span><br><span class="line">&lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</span><br><span class="line">&lt;img&gt;</span><br><span class="line">&lt;hr&gt;</span><br><span class="line">&lt;input&gt;, &lt;button&gt;, &lt;select&gt;, &lt;textarea&gt;, &lt;fieldset&gt;, &lt;legend&gt;</span><br><span class="line">&lt;iframe&gt;, &lt;embed&gt;, &lt;object&gt;, &lt;applet&gt;</span><br><span class="line">&lt;marquee&gt;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+<p>注意:<code>&lt;p&gt;</code>和<code>&lt;div&gt;</code>默认不拥有Layout。</p>
+</blockquote>
+<ul>
+<li>凡是具有以下CSS属性的元素，也会拥有布局：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">position: absolute</span><br><span class="line">float: left|right</span><br><span class="line">display: inline-block</span><br><span class="line">width: any value other than &#39;auto&#39;</span><br><span class="line">height: any value other than &#39;auto&#39;</span><br><span class="line">zoom: any value other than &#39;normal&#39; （IE专用属性）</span><br><span class="line">writing-mode: tb-rl（IE专用属性）</span><br><span class="line">overflow: hidden|scroll|auto（只对IE 7及以上版本有效）</span><br><span class="line">overflow-x|-y: hidden|scroll|auto（只对IE 7及以上版本有效）</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<blockquote>
+<p>hasLayout是IE特有的属性，不是CSS属性。<br>可以用Javascript函数hasLayout查看一个元素是否拥有Layout。如果有，这个函数就返回true；否则返回false。<br>hasLayout是一个只读属性，所以无法使用Javascript进行设置。</p>
+</blockquote>
+<h2 id="20-元素竖向的百分比设定是相对于容器的高度吗？"><a href="#20-元素竖向的百分比设定是相对于容器的高度吗？" class="headerlink" title="20.元素竖向的百分比设定是相对于容器的高度吗？"></a>20.元素竖向的百分比设定是相对于容器的高度吗？</h2><p>错，元素竖向的百分比设定是相对于容器的宽度，而不是高度。</p>
 
     </div>
 
@@ -406,7 +438,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">1.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS哪些样式具有继承性？哪些没有？"><span class="nav-number">1.1.</span> <span class="nav-text">1.CSS哪些样式具有继承性？哪些没有？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-浮动模型与层模型相关概念"><span class="nav-number">1.2.</span> <span class="nav-text">2.浮动模型与层模型相关概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-关于水平居中设置方法，垂直居中设置方法-见博客居中对齐的实现方式总结"><span class="nav-number">1.3.</span> <span class="nav-text">3.关于水平居中设置方法，垂直居中设置方法(见博客居中对齐的实现方式总结)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-浮动元素引起的问题和解决方法是什么？清除浮动有哪几种方式，各自的优缺点是什么？"><span class="nav-number">1.4.</span> <span class="nav-text">4.浮动元素引起的问题和解决方法是什么？清除浮动有哪几种方式，各自的优缺点是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-请说明position-absolute和float属性的异同"><span class="nav-number">1.5.</span> <span class="nav-text">5.请说明position:absolute和float属性的异同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-display-none和visibility-hidden的区别是什么？"><span class="nav-number">1.6.</span> <span class="nav-text">6.display:none和visibility:hidden的区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-元素隐藏的方法和区别"><span class="nav-number">1.7.</span> <span class="nav-text">7.元素隐藏的方法和区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-如何让超出宽度的文字显示为省略号？"><span class="nav-number">1.8.</span> <span class="nav-text">8.如何让超出宽度的文字显示为省略号？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-网页单位有哪些？区别是什么？"><span class="nav-number">1.9.</span> <span class="nav-text">9.网页单位有哪些？区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-对BFC规范的理解-见博客BFC详解"><span class="nav-number">1.10.</span> <span class="nav-text">10.对BFC规范的理解(见博客BFC详解)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-BFC布局与普通文档流布局区别"><span class="nav-number">1.11.</span> <span class="nav-text">11.BFC布局与普通文档流布局区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-CSS的引入方式有哪些？link与-import的区别有什么？"><span class="nav-number">1.12.</span> <span class="nav-text">12.CSS的引入方式有哪些？link与@import的区别有什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-两栏布局与三栏布局的实现总结-见博客圣杯布局与双飞翼布局究极解析"><span class="nav-number">1.13.</span> <span class="nav-text">13.两栏布局与三栏布局的实现总结(见博客圣杯布局与双飞翼布局究极解析)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-怎么去除display-inline-block元素的间隙？"><span class="nav-number">1.14.</span> <span class="nav-text">14.怎么去除display:inline-block元素的间隙？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-如果需要手动写动画，你认为最小时间间隔是多久，为什么？"><span class="nav-number">1.15.</span> <span class="nav-text">15.如果需要手动写动画，你认为最小时间间隔是多久，为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-几种引入图片-图标的方式，以及各自的优缺点-补"><span class="nav-number">1.16.</span> <span class="nav-text">16.几种引入图片&#x2F;图标的方式，以及各自的优缺点 (补)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-CSS优化、提高性能的方法有哪些"><span class="nav-number">1.17.</span> <span class="nav-text">17.CSS优化、提高性能的方法有哪些?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-line-height三种赋值方式有何区别？（带单位、纯数字、百分比）"><span class="nav-number">1.18.</span> <span class="nav-text">18.line-height三种赋值方式有何区别？（带单位、纯数字、百分比）</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS"><span class="nav-number">1.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-CSS哪些样式具有继承性？哪些没有？"><span class="nav-number">1.1.</span> <span class="nav-text">1.CSS哪些样式具有继承性？哪些没有？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-浮动模型与层模型相关概念"><span class="nav-number">1.2.</span> <span class="nav-text">2.浮动模型与层模型相关概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-关于水平居中设置方法，垂直居中设置方法-见博客居中对齐的实现方式总结"><span class="nav-number">1.3.</span> <span class="nav-text">3.关于水平居中设置方法，垂直居中设置方法(见博客居中对齐的实现方式总结)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-浮动元素引起的问题和解决方法是什么？清除浮动有哪几种方式，各自的优缺点是什么？"><span class="nav-number">1.4.</span> <span class="nav-text">4.浮动元素引起的问题和解决方法是什么？清除浮动有哪几种方式，各自的优缺点是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-请说明position-absolute和float属性的异同"><span class="nav-number">1.5.</span> <span class="nav-text">5.请说明position:absolute和float属性的异同</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-display-none和visibility-hidden的区别是什么？"><span class="nav-number">1.6.</span> <span class="nav-text">6.display:none和visibility:hidden的区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-元素隐藏的方法和区别"><span class="nav-number">1.7.</span> <span class="nav-text">7.元素隐藏的方法和区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-如何让超出宽度的文字显示为省略号？"><span class="nav-number">1.8.</span> <span class="nav-text">8.如何让超出宽度的文字显示为省略号？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-网页单位有哪些？区别是什么？"><span class="nav-number">1.9.</span> <span class="nav-text">9.网页单位有哪些？区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-对BFC规范的理解-见博客BFC详解"><span class="nav-number">1.10.</span> <span class="nav-text">10.对BFC规范的理解(见博客BFC详解)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-BFC布局与普通文档流布局区别"><span class="nav-number">1.11.</span> <span class="nav-text">11.BFC布局与普通文档流布局区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-CSS的引入方式有哪些？link与-import的区别有什么？"><span class="nav-number">1.12.</span> <span class="nav-text">12.CSS的引入方式有哪些？link与@import的区别有什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-两栏布局与三栏布局的实现总结-见博客圣杯布局与双飞翼布局究极解析"><span class="nav-number">1.13.</span> <span class="nav-text">13.两栏布局与三栏布局的实现总结(见博客圣杯布局与双飞翼布局究极解析)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-怎么去除display-inline-block元素的间隙？"><span class="nav-number">1.14.</span> <span class="nav-text">14.怎么去除display:inline-block元素的间隙？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#display-inline-block-什么时候会显示间隙"><span class="nav-number">1.14.1.</span> <span class="nav-text">display:inline-block 什么时候会显示间隙?</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-如果需要手动写动画，你认为最小时间间隔是多久，为什么？"><span class="nav-number">1.15.</span> <span class="nav-text">15.如果需要手动写动画，你认为最小时间间隔是多久，为什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-几种引入图片-图标的方式，以及各自的优缺点-补"><span class="nav-number">1.16.</span> <span class="nav-text">16.几种引入图片&#x2F;图标的方式，以及各自的优缺点 (补)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-CSS优化、提高性能的方法有哪些"><span class="nav-number">1.17.</span> <span class="nav-text">17.CSS优化、提高性能的方法有哪些?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#18-line-height三种赋值方式有何区别？（带单位、纯数字、百分比）"><span class="nav-number">1.18.</span> <span class="nav-text">18.line-height三种赋值方式有何区别？（带单位、纯数字、百分比）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#19-line-height-的要点"><span class="nav-number">1.19.</span> <span class="nav-text">19.line-height 的要点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是haslayout？"><span class="nav-number">1.19.1.</span> <span class="nav-text">什么是haslayout？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#20-元素竖向的百分比设定是相对于容器的高度吗？"><span class="nav-number">1.20.</span> <span class="nav-text">20.元素竖向的百分比设定是相对于容器的高度吗？</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -422,7 +454,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">45</span>
+          <span class="site-state-item-count">47</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -480,13 +512,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">85k</span>
+    <span title="站点总字数">90k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">1:17</span>
+    <span title="站点阅读时长">1:22</span>
 </div>
 
 <!--
